@@ -26,6 +26,8 @@ if settings.USE_MODELTRANSLATION:
     )
 
 urlpatterns += patterns('',
+    url(r'^submit_rsvp/$', 'wedding.views.submit_rsvp',
+        name='submit-rsvp'),
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 

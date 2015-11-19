@@ -222,6 +222,9 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.galleries",
     "mezzanine.twitter",
+    "bootstrapform",
+    "bootstrap3_datetime",
+    "multiselectfield",
     # "mezzanine.accounts",
     # "mezzanine.mobile",
 )
@@ -320,3 +323,14 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+
+#######################
+# EMAIL HOST SETTINGS #
+#######################
+
+EMAIL_HOST = 'gator3224.hostgator.com'
+EMAIL_HOST_USER = 'party@karenmichael.com'
+EMAIL_HOST_PASSWORD = '041482'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
