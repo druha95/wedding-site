@@ -1,0 +1,162 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="{% static "img/favicon.png" %}">
+	<title>#KarenMichael Photo Feed</title>
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href="{% static "css/normalize.css" %}" rel="stylesheet">
+	<link href="{% static "css/style.css" %}" rel="stylesheet">
+	<link href="{% static "css/main.css" %}" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			display: block;
+		}
+		h1 {
+			margin: 0;
+			text-transform: none;
+			font-size: 32px;
+		}
+		.wrap.full-width-nav {
+			padding: 0;
+			-webkit-box-shadow:none;
+			box-shadow:none;
+		}
+		div#instafeed {
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.tile {
+			display: inline-block;
+			padding: 0 10px 10px 10px;
+			margin-bottom: 25px;
+			vertical-align: top;
+		}
+		a.pic:hover {
+			opacity: 0.9;
+		}
+		.ig-meta {
+			position: relative;
+			width: inherit;
+			background: #f6efeb;
+			top: -4px;
+			padding: 10px 0;
+			border: 1px solid #CCC;
+			border-top: 0px;
+		}
+		p.likes {
+			position: relative;
+			margin-bottom: 10px;
+		  	font: 700 30px 'Amatic SC', sans-serif;
+		}
+		p.caption {
+			position: relative;
+			width: 320px;
+			margin-bottom: 5px;
+			font-size: 18px;
+			padding: 0 10px;
+		}
+		.unit.whole.pics {
+			text-align: center;
+		}
+		#instafeed a {
+    		 margin: 0; 
+		}
+		@media screen and (max-width: 400px) {
+			#instafeed img {
+				width: 100%;
+			}
+			a#logo {
+				display: inline-block;
+				height: 27px;
+				width: 200px;
+				background-size: 200px 27px;
+			}
+			.ig-meta, p.likes, p.caption {
+				width: 100%;
+			}
+		}
+	</style>
+
+    		<!-- Typekit script -->
+    		<script type="text/javascript" src="//use.typekit.net/jnv1lfi.js"></script>
+    		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    		<!-- Instafeed -->
+    		<script type="text/javascript" src="{% static "js/instafeed.min.js" %}"></script>
+			{% verbatim %}
+    		<script type="text/javascript">
+    			var feed = new Instafeed({
+    				get: 'tagged',
+    				tagName: 'karenmichael',
+    				clientId: 'c2a1ec3f7e24475d8d7bd60e746f8cab',
+    				resolution: 'low_resolution',
+    				limit: '60',
+    				sortBy: 'random',
+    				template: '<div class="tile"><a class="pic" href="{{link}}" target="blank"><img src="{{image}}" /></a><div class="ig-meta"><p class="likes txtmagenta">{{likes}} likes</p><p class="caption">"{{caption}}"</p></div></div>',
+    				filter: function(image) {
+		                var date = new Date(image.created_time*1000);
+		                if (date.getFullYear()>=2015 && date.getMonth()>=7 && date.getDate()>=1) {
+		                    return true; 
+		                } 
+		                else {
+		                    return false; 
+		                }
+		            }
+    			});
+    			feed.run();
+    		</script>
+    		{% endverbatim %}
+
+    		<!-- Responsive Nav JS -->
+    		<script src="../js/responsive-nav.j"></script>
+
+    		<!-- Twitter JS -->
+    		<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body id="home">
+		<div class="wrap full-width-nav">
+			<div class="contain">
+				<div class="grid">
+					<div class="unit whole pics">
+						<h1 class="center txtmagenta"><a href="http://www.polterweekend.com">#KarenMichael</a></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid">
+			<div class="unit whole">
+				<div id="instafeed"></div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Scripts at the bottom like a good boy -->
+		<!-- Responsive Nav is in Head -->
+		<!-- Image Slider -->
+		<script src="{% static "js/jquery.bxslider.min.js" %}"></script>
+		<!-- Magnific Popups -->
+		<script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+		<!-- Countdown -->
+		<script src="{% static "js/jquery.countdown.js" %}"></script>
+		<!-- Captions -->
+		<script src="{% static "js/jquery.hcaptions.js" %}"></script>
+		<!-- Main JS -->
+		<script src="{% static "js/main_photo.js" %}"></script>
+	</body>
+</html>

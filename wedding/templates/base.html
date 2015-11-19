@@ -1,0 +1,343 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Karen and Michael's Polterweekend</title>
+
+    <!-- Favicon--> 
+    <link rel="icon" type="image/png" href="{% static "img/favicon.png" %}">
+    
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="{% static "fonts/entypo/entypo.css" %}" rel="stylesheet" type="text/css">
+            
+    <!-- CSS general-->
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/animate.css" %}">
+    
+    <!-- First load Scripts --> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="{% static "js/jpreloader.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/TweenMax.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/instafeed.min.js" %}"></script>
+
+<script type="text/javascript">    
+    $(document).ready(function() {       
+        $('body').jpreLoader();    
+    }); 
+</script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'karenmichael',
+        clientId: 'c2a1ec3f7e24475d8d7bd60e746f8cab',
+        resolution: 'thumbnail',
+        limit: '5',
+        sortBy: 'random',
+        filter: function(image) {
+            var date = new Date(image.created_time*1000);
+            if (date.getFullYear()>=2015 && date.getMonth()>=7 && date.getDate()>=1) {
+                return true; 
+            } 
+            else {
+                return false; 
+            }
+        }
+    });
+    feed.run();
+</script>
+</head>
+
+<body>
+
+    <script>
+        var controller;
+        $(document).ready(function($) {
+            // init controller
+            controller = new ScrollMagic();
+        });
+    </script>
+    <script>
+        $(document).ready(function($) {
+            $('[data-toggle=dropdown]').each(function() {
+                this.addEventListener('click', function() {}, false);
+            });
+        });
+    </script>
+
+<section id="header">
+    <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-main navbar-element link1"><a href="#">The Party</a></li>
+                <li class="nav-main navbar-element link2"><a href="#">Night After</a></li>
+                <li class="nav-main navbar-element link3"><a href="#">Day After</a></li>
+                <li class="nav-main navbar-element link4"><a href="#">RSVP</a></li>
+                <li class="nav-main navbar-element link5"><a href="#">Photos</a></li>
+                <li id="nav-mobile" class="dropdown">
+                    <a id="menu-btn" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img id="logohome" src="{% static "img/MK.svg" %}">
+                    </a>
+                    <ul class="dropdown-menu" style="padding-top: 60px;">
+                        <li class="nav-fix"></li>
+                        <li class="navbar-element link6"><a href="#">The Party</a></li>
+                        <li class="navbar-element link7"><a href="#">Night After</a></li>
+                        <li class="navbar-element link8"><a href="#">Day After</a></li>
+                        <li class="navbar-element link9"><a href="#">RSVP</a></li>
+                        <li class="navbar-element link10"><a href="#">Photos</a></li>
+                        <li class="navbar-element" data-toggle="dropdown" style="background-color: #FFFFFF;"><a>&nbsp;</a></li>
+                        <div class="nav-overlay dropdown-toggle" data-toggle="dropdown"></div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+</section>
+
+<section id="home">
+    <div id="scrolldown">
+        <p>SCROLL</p>
+        <div class="mouse">
+            <span><p>&#8595;</p></span>
+        </div>
+    </div>
+    <div class="container"></div>
+</section>
+
+{% block main %}{% endblock %}
+
+<section id="getting-married">
+    <div class="container">
+        <div class="row"><img id="welcome" src="/static/media/uploads/landing/welcome.svg" alt="" width="77" height="77" /> <img id="bubble-endlich" src="/static/media/uploads/landing/finally.svg" alt="" width="55" height="55" /> <img id="bubble-gehtdoch" src="/static/media/uploads/landing/yes.svg" alt="" width="115" height="117" /></div>
+    </div>
+</section>
+
+<section id="the-polterweekend">
+    <div class="container">
+        <div class="row the-polterweekend">
+            <div id="carotxt" class="col-sm-4">
+                <div>
+                    <img id="polterabend" src="/static/media/uploads/landing/polterabend.svg" alt="polterabend" width="150" height="150" />
+                    <h1 class="txtmagenta" style="margin: 5px 0;">Polterabend</h1>
+                    <p>Starts at 6 PM on Friday, August 21, at the Atzelsberg Castle, Atzelsberg 1, 91080 Marloffstein.</p>
+                </div>
+            </div>
+            <div id="weekend" class="col-sm-4">
+                <h1 class="polter-weekend txtmagenta">THE POLTERWEEKEND</h1>
+                <h1 class="highlight txtmagenta">AUGUST 21 - 22, 2015</h1>
+            </div>
+            <div id="jotxt" class="col-sm-4">
+                <div>
+                    <img id="fruehschoppen" src="/static/media/uploads/fruehschoppen.svg" alt="fruehschoppen" width="150" height="150" />
+                    <h1 class="txtmagenta" style="margin: 5px 0;">Fr&uuml;hschoppen</h1>
+                    <p>Starts at 1 PM on Saturday, August 22, at the Entlas Keller beer garden, Cellar 5, 91054 Erlangen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="the-party">
+    <img id="bubble-das-fest" src="/static/media/uploads/the-party.svg" alt="" width="78" height="77" />
+    <img id="globe-lights" src="/static/media/uploads/globe-lights.svg" alt="globe-lights" />
+    <img id="location-arrow" src="/static/media/uploads/arrow-3.svg" alt="" width="93" height="165" />
+    <img id="location-arrow-2" src="/static/media/uploads/arrow-2.svg" alt="" width="215" height="69" />
+    <img id="location-arrow-3" src="/static/media/uploads/arrow.svg" alt="" width="146" height="97" />
+    <img id="party1" src="/static/media/uploads/party.svg" alt="" width="97" height="95" />
+    <img id="party2" src="/static/media/uploads/party.svg" alt="" width="97" height="95" />
+</section>
+
+<section id="the-party-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 partycontent txtmagenta">
+                <h1 class="highlight txtmagenta center" style="margin: 0px;">The location</h1>
+                <h1 class="center" style="margin: 0px;">Schloss Atzelsberg</h1>
+                <h1 class="highlight txtmagenta center" style="margin: 0px;">Dress code: summer chic</h1>
+            </div>
+            <div class="col-sm-8 festcontent" style="margin-bottom: 0px;">
+                <p>Our Polterabend starts with ap&eacute;ritif and hors d'oeuvres at 6 PM. Enjoy some bubbly from the Champagne House J. de Telmont. Did you know that Michael studied in the Champagne region? His first entrepreneurial venture was importing J. de Telmont from France to Germany.</p>
+                <p>&nbsp;</p>
+                <p>Just before sunset at 8 PM, we all gather in front of the Castle's barn, ready to smash old plates, bowls, and cups. The smashing of china is the highlight of a traditional Polterabend. Watch Karen and Michael demonstrate their amazing teamwork as they sweep up all the shards!</p>
+                <p>&nbsp;</p>
+                <p>After Karen and Michael clean up the smashed porcelain, we all head to the Castle's banquet hall at 9 PM to enjoy a Franconian dinner. After dinner, DJ Marcus (Franconia's most sought-after DJ!) spins hip hop for Michael and EDM for Karen.</p>
+                <p>&nbsp;</p>
+                <p class="italic">Gepoltert wird nach alter Sitte</p>
+                <p class="italic">Drum, Freunde, h&ouml;ret unsere Bitte:</p>
+                <p class="italic">Lasst Glas, M&uuml;ll und Schrott zur&uuml;ck,</p>
+                <p class="italic">Nur richt'ge Scherben bringen Gl&uuml;ck!</p>
+                <p class="italic">&nbsp;</p>
+            </div>
+            <div class="col-sm-4 festcontent">
+                <div class="right-sidebar"><img class="img-left icons" src="/static/media/uploads/aperitif.svg" alt="" width="360" height="360" />
+                    <h1 class="highlight txtmagenta">6 PM: Ap&eacute;ritif</h1>
+                    <p>Ap&eacute;ritifs and hors d'oeuvres at Atzelsberg Castle's lawn</p>
+                    <p>&nbsp;&nbsp;</p>
+                </div>
+                <div class="right-sidebar"><img class="img-left icons" src="/static/media/uploads/smash.svg" alt="" width="360" height="360" />
+                    <h1 class="highlight txtmagenta">8 PM: POLTERN</h1>
+                    <p>Smashing of plates, bowls, and cups by the Castle's barn</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="right-sidebar"><img class="img-left icons" src="/static/media/uploads/eat-drink.svg" alt="" width="360" height="360" />
+                    <h1 class="highlight txtmagenta">9 PM: ESSEN UND TRINKEN</h1>
+                    <p>Franconian dinner and wine at the Castle&rsquo;s banquet hall</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="right-sidebar"><img class="img-left icons" src="/static/media/uploads/dj.svg" alt="" width="360" height="360" />
+                    <h1 class="highlight txtmagenta">1O PM: FEIERN</h1>
+                    <p>DJ Marcus spinnin' hip hop for Michael and EDM for Karen</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="night-after">
+    <img id="bubble-night-after" src="/static/media/uploads/night-after.svg" alt="" width="96" height="96" />
+    <div class="container">&nbsp;</div>
+</section>
+
+<section id="the-party-text">
+    <div class="container">
+        <div class="row">
+            <div id="hotel-col" class="col-sm-6 partycontent">
+                <p>We have reserved rooms at NH Erlangen, 13 minutes away by taxi from the Atzelsberg Castle.</p>
+                <p>&nbsp;</p>
+                <p>Room costs 66.75 EUR per night, including taxes but not breakfast. You can reserve a room at this rate using the link below until August 9.</p>
+            </div>
+            <div id="hotel-col" class="col-sm-6 partycontent">
+                <p class="italic">For guests traveling to Erlangen, we suggest arriving on Friday afternoon, Aug 21, and leaving on Sunday morning, Aug 23.</p>
+                <p class="italic">&nbsp;</p>
+                <p class="italic">You can fly into one of three airports: Nuremberg (NUE), 20 minutes by car; Munich (MUC), 1.5 hours away, or Frankfurt (FRA), 2 hours away.</p>
+            </div>
+            <div class="col-sm-12 txtmagenta">
+                <h1 class="center txtmagenta" style="margin-top: 20px;">
+                    <a title="BOOK NOW" href="http://www.nh-hotels.de/events/de/eventdetail/25910/mk_polterabend.html" target="_blank">BOOK NOW &raquo;</a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="day-after"><img id="bubble-day-after" src="/static/media/uploads/day-after.svg" alt="" width="105" height="105" />
+    <div class="container">&nbsp;</div>
+</section>
+
+<section id="the-party-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 partycontent txtmagenta">
+                <h1 class="highlight txtmagenta center" style="margin: 0px;">The location</h1>
+                <h1 class="center" style="margin: 0px;">Entlas Keller</h1>
+            </div>
+            <div id="col-bottom" class="col-sm-6 partycontent">
+                <p>Be at Entlas Keller, an Erlangen favorite, at 1 PM on Saturday. Fr&uuml;hschoppen, plus a special tour of Entlas Keller&rsquo;s beer cellar, await.</p>
+                <p>&nbsp;</p>
+                <p>Fr&uuml;hschoppen (meaning: an alcoholic drink before midday in company) is the German and Austrian tradition to meet up at a pub in the late morning, traditionally held after church service on Sundays.</p>
+            </div>
+            <div id="col-last" class="col-sm-6 partycontent">
+                <p>Fr&uuml;hschoppen is often a kind of brunch, involving the consumption of alcoholic beverages. In keeping with tradition, join us as we sit under old chestnut trees and enjoy a Ma&szlig; of beer and Franconian culinary classics.</p>
+                <p>&nbsp;</p>
+                <p>At 2 PM, tour the Entlas Keller cellar with us. Visit the cave and get to see part of the 21 km tunnel dug into the hill to keep the beer cold.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="rsvp">
+    <img id="bubble-i-will-2" src="{% static "img/i-will.svg" %}">
+    <img id="bubble-to-the-party" src="{% static "img/will-party.svg" %}">
+    <div class="container smart-forms">
+        <div class="footer-weekend"></div>
+        <form method="post" action="/submit_rsvp/" id="smart-form">
+            {% csrf_token %}
+            <div class="col-sm-4">
+                <label class="field">
+                    <input type="text" name="name" id="sendername" class="gui-input" placeholder="Your name *">
+                </label>
+            </div>
+            <div class="col-sm-4">
+                <label class="field">
+                    <input type="email" name="email" id="senderemail" class="gui-input" placeholder="Your email">
+                </label>
+            </div>
+            <div class="col-sm-4" style="padding-bottom: 20px;">
+                <label class="field select">
+                    <select id="sendersubject" name="number_of_guests">
+                        <option value=""><span class="entypo txtwhite">&#9662;</span> No. of guests (incl. you) *</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </label>
+            </div>
+                <div class="form-footer col-sm-12">
+                    <button type="submit" id="gogo" class="button btn-primary">SUBMIT</button>
+                </div>
+                <div class="result"></div>
+                </form>
+            <div class="col-sm-3 footertel"></div>
+            <div class="col-sm-3 footertel">
+                <a href="mailto:party@karenmichael.com?Subject=Polterweekend"><img class="social-icons" src="{% static "img/mail.svg" %}" /><p>party@karenmichael.com</p></a>
+            </div>
+            <div class="col-sm-3 footertel">
+                <a href="tel:+4915901048528"><img class="social-icons" src="{% static "img/phone.svg" %}" /><p>+49 15901048528</p></a>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+</section>
+
+<section id="googlemap">
+    <div id="map-wrap"></div>
+</section>
+
+<section id="instagram">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="center txtmagenta">#KarenMichael</h1>
+                <div class="partycontent">
+                <p class="center">Help us relive the fun by tagging all of your photos with #KarenMichael before, during, and after our Polterweekend in Germany and wedding in the Philippines. View the feed real-time at: </p></div>
+                <div id="col-double-last"><h1 class="highlight txtmagenta"><a href="/photos/" target="_blank">polterweekend.com/photos</a></h1></div>
+                <div id="col-last"><div id="instafeed"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="#" class="toTop"><p class="entypo txtwhite">&hearts;</p></a>
+        </div>
+    </div>
+</section>
+
+<!-- Scripts -->
+<script src="{% static "js/jquery.scrollmagic.min.js" %}"></script>
+<script src="{% static "js/jquery.easing.1.3.js" %}"></script>
+<script type="text/javascript" src="{% static "js/main.js" %}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="{% static "js/map.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.form.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.validate.js" %}"></script>
+<script type="text/javascript" src="{% static "js/additional-methods.js" %}"></script>
+<script type="text/javascript" src="{% static "js/smart-form.js" %}"></script>
+<script type="text/javascript" src="{% static "js/scroll.js" %}"></script>
+
+</body>
+</html>
