@@ -1,3 +1,4 @@
+#!encoding:utf-8
 from django.core.mail import send_mail
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -11,8 +12,6 @@ class RsvpCreateView(CreateView):
     model = Rsvp
     template_name = 'pages/submit_rsvp.html'
     form_class = SubmitRsvpForm
-
-    # def get_success_url(self):
-    #     return self.object.working_machine.get_absolute_url()
+    success_url = '/'
 
 submit_rsvp = RsvpCreateView.as_view()
