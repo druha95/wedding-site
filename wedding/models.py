@@ -30,6 +30,8 @@ class Rsvp(models.Model):
         ("dimsum_brunch", _("Dimsum brunch, 12 noon, Saturday, Feb 20")),
     )
 
+    NUMBER_OF_GUESTS_CHOICES = [(i, i) for i in range(1, 7)]
+
     name = models.CharField(_("Name"), max_length=50)
     email = models.EmailField(_("Email"), max_length=50)
     rsvp = models.BooleanField(_("Rsvp"), default=True)
@@ -49,13 +51,13 @@ class Rsvp(models.Model):
         null=True)
     manila_date_into = models.DateField(
         _("Manila arrival date"), auto_now=False, null=True)
-    manila_time_into = models.DateTimeField(
+    manila_time_into = models.TimeField(
         _("Manila arrival time"), auto_now=False, null=True)
     manila_flight_out = models.CharField(
         _("Departure flight number (out of Manila)"), max_length=50, null=True)
     manila_date_out = models.DateField(
         _("Manila departure date"), auto_now=False, null=True)
-    manila_time_out = models.DateTimeField(
+    manila_time_out = models.TimeField(
         _("Manila departure time"), auto_now=False, null=True)
     manila_staying = models.CharField(
         _("Staying in Manila"), max_length=50, choices=EVENTS_CHOICES,
@@ -65,14 +67,14 @@ class Rsvp(models.Model):
         null=True)
     boracay_date_into = models.DateField(
         _("Boracay arrival date"), auto_now=False, null=True)
-    boracay_time_into = models.DateTimeField(
+    boracay_time_into = models.TimeField(
         _("Boracay arrival time"), auto_now=False, null=True)
     boracay_flight_out = models.CharField(
         _("Departure flight number (out of Boracay)"), max_length=50, null=True)
     boracay_date_out = models.DateField(
         _("Boracay departure date"), auto_now=False, null=True)
-    boracay_time_out = models.DateTimeField(
-        _("Boracay departure time"), auto_now=False, null=True)
+    boracay_time_out = models.TimeField(
+        _("Boracay departure time"), auto_now=False, null=True,)
     boracay_staying = models.CharField(
         _("Staying in Boracay"), max_length=50, choices=EVENTS_CHOICES,
         null=True)
@@ -82,7 +84,7 @@ class Rsvp(models.Model):
         _("Your dietary restrictions"), max_length=50, choices=DIETARY_CHOICES,
         null=True)
     number_of_guests = models.PositiveIntegerField(
-        _("No. of guests"), null=True)
+        _("No. of guests"), null=True, choices=NUMBER_OF_GUESTS_CHOICES)
     guest_name = models.CharField(_("Guest’s name"), max_length=50, null=True)
     guest_email = models.EmailField(
         _("Guest’s email"), max_length=50, null=True)

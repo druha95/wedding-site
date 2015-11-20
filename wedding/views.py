@@ -1,5 +1,4 @@
 #!encoding:utf-8
-from django.core.mail import send_mail
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import CreateView
@@ -18,7 +17,7 @@ submit_rsvp = RsvpCreateView.as_view()
 
 
 class RsvpMiniCreateView(CreateView):
-    """Create View for Rsvp"""
+    """Create View for Mini Rsvp"""
     model = Rsvp
     template_name = 'pages/submit_rsvp.html'
     form_class = SubmitRsvpMiniForm
