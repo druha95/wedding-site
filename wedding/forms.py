@@ -7,27 +7,25 @@ from bootstrap3_datetime.widgets import DateTimePicker
 
 
 class SubmitRsvpMiniForm(forms.ModelForm):
-    """Class for Rsvp submit form (user selected NO)"""
+    """Class for Rsvp submit form (user selected NO or nothing)"""
 
     class Meta:
         model = Rsvp
         fields = ['name', 'email', ]
 
     def save(self, commit=True):
-        new_rsvp = super(SubmitRsvpForm, self).save(commit=False)
-        self.fields['rsvp'] = False
-        name = self.fields['name']
-        email = self.fields['email']
+        new_rsvp = super(SubmitRsvpMiniForm, self).save(commit=False)
+        new_rsvp.rsvp = False
+        name = self.cleaned_data['name']
+        email = self.cleaned_data['email']
         subject_party = u'{} can\'t make it to the Philippines :('.format(name)
         subject_guest = u'Sad that we can\'t celebrate with you :('
         body_party = u'{} can\'t make it to the Philippines :('.format(name)
-        body_guest = u':(\n\nWe\'re sad that we can\'t celebrate with you. \
-            We hope to find another occasion for us to celebrate with \
-            you.\n\nLove,\nKaren + Michael'
+        body_guest = u':(\n\nWe\'re sad that we can\'t celebrate with you. We hope to find another occasion for us to celebrate with you.\n\nLove,\nKaren + Michael'
         # send mail to party@karenmichael.com
         send_mail(
             subject_party, body_party, 'party@karenmichael.com',
-            ['party@karenmichael.com'])
+            ['cherkaev.oleg@gmail.com'])
         # send mail to guest email
         send_mail(
             subject_guest, body_guest, 'party@karenmichael.com',

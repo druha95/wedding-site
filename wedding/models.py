@@ -81,7 +81,8 @@ class Rsvp(models.Model):
     dietary_restrictions = models.CharField(
         _("Your dietary restrictions"), max_length=50, choices=DIETARY_CHOICES,
         null=True)
-    number_of_guests = models.PositiveIntegerField(_("No. of guests"))
+    number_of_guests = models.PositiveIntegerField(
+        _("No. of guests"), null=True)
     guest_name = models.CharField(_("Guest’s name"), max_length=50, null=True)
     guest_email = models.EmailField(
         _("Guest’s email"), max_length=50, null=True)
