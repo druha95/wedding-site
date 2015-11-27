@@ -7,31 +7,31 @@
     <meta name="robots" content="noindex,nofollow">
     <title>Karen and Michael's Polterweekend</title>
 
-    <!-- Favicon--> 
+    <!-- Favicon-->
     <link rel="icon" type="image/png" href="{% static "img/favicon.png" %}">
-    
+
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link href="{% static "fonts/entypo/entypo.css" %}" rel="stylesheet" type="text/css">
-            
+
     <!-- CSS general-->
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/animate.css" %}">
-    
-    <!-- First load Scripts --> 
+
+    <!-- First load Scripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="{% static "js/jpreloader.js" %}"></script>
     <script type="text/javascript" src="{% static "js/TweenMax.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/instafeed.min.js" %}"></script>
 
-<script type="text/javascript">    
-    $(document).ready(function() {       
-        $('body').jpreLoader();    
-    }); 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('body').jpreLoader();
+    });
 </script>
 <script type="text/javascript">
     var feed = new Instafeed({
@@ -44,10 +44,10 @@
         filter: function(image) {
             var date = new Date(image.created_time*1000);
             if (date.getFullYear()>=2015 && date.getMonth()>=7 && date.getDate()>=1) {
-                return true; 
-            } 
+                return true;
+            }
             else {
-                return false; 
+                return false;
             }
         }
     });
@@ -77,19 +77,20 @@
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-main navbar-element link1"><a href="#">The Party</a></li>
-                <li class="nav-main navbar-element link2"><a href="#">Night After</a></li>
-                <li class="nav-main navbar-element link3"><a href="#">Day After</a></li>
-                <li class="nav-main navbar-element link4"><a href="#">RSVP</a></li>
-                <li class="nav-main navbar-element link5"><a href="#">Photos</a></li>
+                <li class="nav-main navbar-element link1"><a href="#">Bride & groom</a></li>
+                <li class="nav-main navbar-element link2"><a href="#">Two big days</a></li>
+                <li class="nav-main navbar-element link3"><a href="#">When & where</a></li>
+                <li class="nav-main navbar-element link4"><a href="#">Getting there</a></li>
+                <li class="nav-main navbar-element link5"><a href="#">RSVP</a></li>
+                <li class="nav-main navbar-element link6"><a href="#">Photos</a></li>
                 <li id="nav-mobile" class="dropdown">
                     <a id="menu-btn" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <img id="logohome" src="{% static "img/MK.svg" %}">
                     </a>
                     <ul class="dropdown-menu" style="padding-top: 60px;">
                         <li class="nav-fix"></li>
-                        <li class="navbar-element link6"><a href="#">The Party</a></li>
-                        <li class="navbar-element link7"><a href="#">Night After</a></li>
+                        <li class="navbar-element link6"><a href="#"></a></li>
+                        <li class="navbar-element link7"><a href="#"></a></li>
                         <li class="navbar-element link8"><a href="#">Day After</a></li>
                         <li class="navbar-element link9"><a href="#">RSVP</a></li>
                         <li class="navbar-element link10"><a href="#">Photos</a></li>
@@ -124,25 +125,105 @@
 <section id="the-polterweekend">
     <div class="container">
         <div class="row the-polterweekend">
-            <div id="carotxt" class="col-sm-4">
+            <div id="carotxt" class="col-sm-5">
                 <div>
-                    <img id="polterabend" src="/static/media/uploads/landing/polterabend.svg" alt="polterabend" width="150" height="150" />
+                    <img id="polterabend" src="/static/img/karen.jpg" alt="polterabend" width="150" height="150" />
                     <h1 class="txtmagenta" style="margin: 5px 0;">Polterabend</h1>
-                    <p>Starts at 6 PM on Friday, August 21, at the Atzelsberg Castle, Atzelsberg 1, 91080 Marloffstein.</p>
                 </div>
             </div>
-            <div id="weekend" class="col-sm-4">
-                <h1 class="polter-weekend txtmagenta">THE POLTERWEEKEND</h1>
-                <h1 class="highlight txtmagenta">AUGUST 21 - 22, 2015</h1>
+            <div id="weekend" class="col-sm-2">
+                <img id="bubble-das-brautpaar" src="/static/img/the-couple-heart.svg">
             </div>
-            <div id="jotxt" class="col-sm-4">
+            <div id="jotxt" class="col-sm-5">
                 <div>
-                    <img id="fruehschoppen" src="/static/media/uploads/fruehschoppen.svg" alt="fruehschoppen" width="150" height="150" />
-                    <h1 class="txtmagenta" style="margin: 5px 0;">Fr&uuml;hschoppen</h1>
-                    <p>Starts at 1 PM on Saturday, August 22, at the Entlas Keller beer garden, Cellar 5, 91054 Erlangen.</p>
+                    <img id="fruehschoppen" src="/static/img/michael.jpg" alt="fruehschoppen" width="150" height="150" />
+                    <h1 class="txtmagenta" style="margin: 5px 0;">Polterabend</h1>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="story">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="story__text">vklervbhlerb <br/>
+                vewvwervjkbewrh <br/>
+                    kewhglerugyu <br/>
+                </div>
+                <img class="story__img" src="/static/img/hbs.png" alt=""/>
+            </div>
+            <div class="col-sm-2 story_facts">
+                <img style="height: 120px" src="/static/img/facts-facts-facts.svg" alt=""/>
+            </div>
+            <div class="col-sm-5">
+                <div class="story__text">vklervbhlerb <br/>
+                    vewvwervjkbewrh <br/>
+                    kewhglerugyu <br/>
+                </div>
+                <img class="story__img" src="/static/img/champagne.png" alt=""/>
+            </div>
+            <div class="col-sm-12 story__continues">
+                <div class="story__continues__text"></div>
+                <div class="story__continues__arrow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="wedding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="/static/img/hands.png" height="150px" alt=""/>
+            </div>
+            <div class="col-sm-5">jwekbvvekgb <br/>
+            elgnwjkbg <br/>
+            lvjbegkb4 <br/>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                fewlfhewb <br/>
+                eklwefhw <br/>
+                vlewnvb
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="beach-wedding-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2">
+                <img src="/static/img/beach-wedding.svg" height="120px" alt=""/>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+    </div>
+</section>
+
+<section id="beach-wedding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            veeknvjernvile <br/>
+                vlwenrvjkber <br/>
+                vlwhevjbw <br/>
+            </div>
+            <div class="col-sm-6">
+                vw,ebvhweb <br/>
+                vklewhvlwbevweh <br/>
+                vfewhfg <br/>
+            </div>
+            <div class="col-sm-6">
+                vewlkrheigeryu <br/>
+                lvhwefewkb <br/>
+                vlewjgvewbu <br/>
+            </div>
+        </div>
+        
     </div>
 </section>
 
@@ -254,7 +335,7 @@
         </div>
     </div>
 </section>
-    
+
 <section id="rsvp">
     <img id="bubble-i-will-2" src="{% static "img/i-will.svg" %}">
     <img id="bubble-to-the-party" src="{% static "img/will-party.svg" %}">

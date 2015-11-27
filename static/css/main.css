@@ -390,6 +390,10 @@ img#haende {
   z-index: 3;
   height: 130px;
 }
+
+#weekend img {
+    height: 120px;
+}
 #nav-mobile {
   display: none; }  
 

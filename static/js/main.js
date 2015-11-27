@@ -108,9 +108,9 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("#weekend", 0.5, 
-				{marginTop: -400, ease: Back.easeOut},
-				{marginTop: 0, ease: Back.easeOut}
+	var tween = TweenMax.fromTo("#weekend", 0.5,
+                    {marginTop: -250, ease: Back.easeOut, rotation: 0},
+                    {marginTop: 50, ease: Back.easeOut, rotation: 350}
 				);
 
 	// build scene
