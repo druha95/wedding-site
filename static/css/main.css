@@ -60,8 +60,9 @@ html, body {
 ------------------------------------------------
 */
 h1 {
-  font: 700 3em/1em 'Amatic SC', sans-serif;
-  margin: 0.7em 0; }
+  font: 700 1.5em/2em 'Amatic SC', sans-serif;
+  /*margin: 0.7em 0; */
+}
 
 .thin {
   font-weight: 400; }
@@ -260,14 +261,14 @@ img#welcome {
   width: 400px;
   height: auto; }
 
-#bubble-endlich {
+#bubble-finally {
   position: absolute;
   left: 50%;
   margin: 460px 0 0 130px;
   height: 80px;
   width: 80px; }
 
-#bubble-gehtdoch {
+#bubble-yes {
   position: absolute;
   left: 50%;
   margin: 480px 0 0 -180px;
@@ -280,9 +281,10 @@ img#welcome {
   margin-left: -50px;
   z-index: 7;
   height: 120px;
-  height: 120px; }
+  height: 120px;
+}
 
-#bubble-fakten {
+#bubble-facts {
   margin-left: -50px;
   position: absolute;
   left: 50%;
@@ -381,14 +383,12 @@ img#haende {
   height: 130px;
   width: 130px; }
 
-#weekend {
-  /*width: 130px;*/
-  /*position: absolute;*/
-  /*top: 0%;*/
-  /*left: 41%;*/
-  /*margin-left: -65px;*/
-  z-index: 3;
-  height: 130px;
+#bubble-the-couple {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 7;
+    height: 120px;
 }
 
 #weekend img {
@@ -522,11 +522,12 @@ section#die-trauzeugen {
   z-index: 6; }
 
 /* Zusammen */
-section#zusammensein {
+section#story {
   position: relative;
   z-index: 5;
   font: 700 3em/1em 'Amatic SC', sans-serif;
-  background: url("../img/zigzag.png") top repeat-x #ded1ca; }
+  background: url("../img/zigzag.png") top repeat-x #F6EFEB;
+}
 
 #daycounter1, #daycounter2 {
   font: 700 1.8em/1em 'Amatic SC', sans-serif;
@@ -1105,11 +1106,11 @@ label.captcode {
     width: 80px;
     height: 80px;
     margin-left: -25px; }
-  #bubble-endlich {
+  #bubble-finally {
     margin: 300px 0 0 80px;
     height: 60px;
     width: 60px; }
-  #bubble-gehtdoch {
+  #bubble-yes {
     position: absolute;
     left: 50%;
     margin: 310px 0 0 -130px;
@@ -1119,7 +1120,7 @@ label.captcode {
     width: 140%;
     margin-left: -17%;
     top: 3%; }
-  section#zusammensein {
+  section#story {
     padding: 0 20px 0 20px;
     font: 700 2.2em/1em 'Amatic SC', sans-serif; }
   .uebernachtencontent {
@@ -1194,7 +1195,7 @@ label.captcode {
     background-size: cover;
     top: 10%;
     height: 88%; }
-  #carotxt {
+  #karentxt {
     /*margin-top: 0px !important; */
     margin-bottom: 20px !important; }
   #jotxt {
@@ -1206,7 +1207,7 @@ label.captcode {
     margin-top: 200px; }*/
   section#the-polterweekend {
     /*padding-top: 0px;*/ }
-  .row.zusammensein {
+  .row.story {
     margin-top: 200px; }
   section#night-after {
     background-size: cover;
@@ -1305,14 +1306,13 @@ label.captcode {
     bottom: 20px;
     position: absolute;
     right: 1% !important; }
-  #weekend {
-    width: 100%;
-    position: absolute;
-    top: 4%;
-    /*left: 0%;*/
-    /*margin-left: -65px;*/
-    z-index: 3;
-    height: 130px; }
+  .bubble-the-couple {
+      position: absolute;
+      left: 50%;
+      margin-left: -50px;
+      z-index: 7;
+      height: 120px;
+  }
   .navbar-element a {
     line-height: 50px !important;
     font-weight: bold !important; }
@@ -1434,10 +1434,10 @@ label.captcode {
 .polter-weekend {
   margin-bottom: 10px;
 }
-#carotxt p, #jotxt p {
+#karentxt p, #jotxt p {
     font-size: 18px;
 }
-#carotxt, #jotxt {
+#karentxt, #jotxt {
   margin-top: 80px;
   margin-bottom: 80px;
 }

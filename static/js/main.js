@@ -24,7 +24,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("#bubble-endlich", 0.2, 
+	var tween = TweenMax.fromTo("#bubble-finally", 0.2,
 				{scale: 0, ease: Back.easeOut},
 				{scale: 1, ease: Back.easeOut, delay: 1.8}
 				);
@@ -36,7 +36,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("#bubble-gehtdoch", 0.5, 
+	var tween = TweenMax.fromTo("#bubble-yes", 0.5,
 				{scale: 0, ease: Back.easeOut},
 				{scale: 1, ease: Back.easeOut, delay: 0.8}
 				);
@@ -60,7 +60,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("img#polterabend", 0.5, 
+	var tween = TweenMax.fromTo("img#karen", 0.5,
 				{marginLeft: -2000, rotation: -360, ease: Back.easeOut},
 				{marginLeft: 0, rotation: 0, ease: Back.easeOut, delay: 0.5}
 				);
@@ -72,7 +72,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("#carotxt", 0.5, 
+	var tween = TweenMax.fromTo("#karentxt", 0.5,
 				{opacity: 0},
 				{opacity: 1, delay: 0.5}
 				);
@@ -84,7 +84,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("img#fruehschoppen", 0.5, 
+	var tween = TweenMax.fromTo("img#michael", 0.5, 
 				{marginLeft: 2000, rotation: 0, ease: Back.easeOut},
 				{marginLeft: 0, rotation: -360, ease: Back.easeOut, delay: 1.2}
 				);
@@ -108,7 +108,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("#weekend", 0.5,
+	var tween = TweenMax.fromTo("#bubble-the-couple", 0.5,
                     {marginTop: -250, ease: Back.easeOut, rotation: 0},
                     {marginTop: 50, ease: Back.easeOut, rotation: 350}
 				);
@@ -202,30 +202,43 @@ $(document).ready(function($) {
 // 					.setTween(tween)
 // 					.addTo(controller);
 // });
-// $(document).ready(function($) {
-// 	// build tween
-// 	var tween = TweenMax.fromTo("img#bubble-fakten", 0.5, 
-// 				{marginTop: -120, ease: Back.easeOut},
-// 				{marginTop: 50, ease: Back.easeOut}
-// 				);
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("img#bubble-facts", 0.5,
+				{marginTop: -120, ease: Back.easeOut},
+				{marginTop: 50, ease: Back.easeOut}
+				);
 
-// 	// build scene
-// 	var scene = new ScrollScene({triggerElement: "section#zusammensein", triggerHook: 0.7})
-// 					.setTween(tween)
-// 					.addTo(controller);
-// });
-// $(document).ready(function($) {
-// 	// build tween
-// 	var tween = TweenMax.fromTo("div#counter1", 0.5, 
-// 				{marginLeft: "-200%", width: "100%"},
-// 				{marginLeft: 0}
-// 				);
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#story", triggerHook: 0.7})
+					.setTween(tween)
+					.addTo(controller);
+});
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("div#date1", 0.5,
+				{marginLeft: "-200%", width: "100%"},
+				{marginLeft: 0}
+				);
 
-// 	// build scene
-// 	var scene = new ScrollScene({triggerElement: "section#zusammensein", triggerHook: 0.5})
-// 					.setTween(tween)
-// 					.addTo(controller);
-// });
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#story", triggerHook: 0.5})
+					.setTween(tween)
+					.addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("div#hbs", 0.5,
+        {marginLeft: "-200%", width: "100%"},
+        {marginLeft: 0}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#story", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
 // $(document).ready(function($) {
 // 	// build tween
 // 	var tween = TweenMax.fromTo("div#duesseldorf", 0.3, 
@@ -238,18 +251,33 @@ $(document).ready(function($) {
 // 					.setTween(tween)
 // 					.addTo(controller);
 // });
-// $(document).ready(function($) {
-// 	// build tween
-// 	var tween = TweenMax.fromTo("div#counter2", 0.5, 
-// 				{marginLeft: "300%", width: "100%"},
-// 				{marginLeft: 0, delay: 1}
-// 				);
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("div#date2", 0.5,
+				{marginLeft: "300%", width: "100%"},
+				{marginLeft: 0, delay: 1}
+				);
 
-// 	// build scene
-// 	var scene = new ScrollScene({triggerElement: "section#zusammensein", triggerHook: 0.5})
-// 					.setTween(tween)
-// 					.addTo(controller);
-// });
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#story", triggerHook: 0.5})
+					.setTween(tween)
+					.addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#champagne", 0.5,
+        {marginLeft: "300%"},
+        {marginLeft: 0, delay: 1}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#story", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+
 // $(document).ready(function($) {
 // 	// build tween
 // 	var tween = TweenMax.fromTo("div#malediven", 0.3, 
@@ -288,7 +316,7 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("img#bubble-das-fest", 0.5, 
+	var tween = TweenMax.fromTo("img#bubble-das-fest", 0.5,
 				{marginTop: -150, ease: Back.easeOut},
 				{marginTop: "2%", ease: Back.easeOut }
 				);
