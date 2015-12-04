@@ -548,8 +548,8 @@ section#wedding {
 /* Das Fest */
 section#church-wedding-img{
   position: relative;
-  height: 800px;
-  background: url("../img/santuario.jpg") center center no-repeat;
+  height: 455px;
+  background: url("../img/santuario.jpg") 100% 100% no-repeat;
   background-size: cover; }
 
 section#das-fest {
@@ -557,6 +557,7 @@ section#das-fest {
   /*	background: url(../img/hyatt.jpg) center bottom no-repeat; */ }
 
 section#beach-wedding-img {
+    position: relative;
     background: url("../img/asya.jpg");
     background-size: cover;
     height: 800px;
