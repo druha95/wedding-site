@@ -304,7 +304,7 @@ div#warum-nicht {
   width: 100%;
   top: 6%; }
 
-#bubble-die-trauzeugen, #bubble-das-fest, #bubble-night-after, #bubble-day-after, #bubble-trauung {
+#bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung {
   position: absolute;
   left: 50%;
   margin-left: -65px;
@@ -342,7 +342,7 @@ div#warum-nicht {
   top: 35%;
   width: 100px; }
 
-img#haende {
+img#hands {
   position: absolute;
   left: 50%;
   width: 80%;
@@ -511,7 +511,7 @@ section#home {
     transform: translateY(10px); } }
 
 /* Das Brautpaar */
-section#the-polterweekend {
+section#couple {
   position: relative;
   padding-top: 100px;
   z-index: 6; }
@@ -527,6 +527,14 @@ section#story {
   z-index: 5;
   font: 700 3em/1em 'Amatic SC', sans-serif;
   background: url("../img/zigzag.png") top repeat-x #F6EFEB;
+}
+
+section#wedding {
+    min-height: 350px;
+}
+
+.wedding-row {
+    margin-top: 25%;
 }
 
 #daycounter1, #daycounter2 {
@@ -999,7 +1007,7 @@ label.captcode {
 ------------------------------------------------
 */
 @media (min-width: 1600px) {
-  img#haende {
+  img#hands {
     width: 60% !important;
     margin-left: -30% !important;
     height: auto; } 
@@ -1039,7 +1047,7 @@ label.captcode {
     width: 100px; }  
 /*  section#the-party {
     padding-bottom: 100px; }*/
-  img#haende {
+  img#hands {
     width: 85%;
     margin-left: -42%;
     height: auto; } 
@@ -1102,7 +1110,7 @@ label.captcode {
     display: none; }
   #warum-nicht {
     font-size: 0.9em; }
-  #bubble-das-fest, #bubble-night-after, #bubble-day-after, #bubble-trauung {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung {
     width: 80px;
     height: 80px;
     margin-left: -25px; }
@@ -1129,7 +1137,7 @@ label.captcode {
     font: 700 1.5em/1em 'Amatic SC', sans-serif; }
   #hourcounter1, #hourcounter2, #minutecounter1, #minutecounter2 {
     font: 700 0.9em/1em 'Amatic SC', sans-serif; }
-  img#haende {
+  img#hands {
     width: 150%;
     margin-left: -75%;
     height: auto; }
@@ -1249,7 +1257,7 @@ label.captcode {
   section#the-party {
     /*background-size: cover;*/
     height: 236px; }
-  #bubble-das-fest, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke {
     margin-top: 20px;
     width: 90px;
     height: 90px;

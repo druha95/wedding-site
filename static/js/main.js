@@ -46,18 +46,18 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenMax.fromTo("img#bubble-the-polterweekend", 0.5, 
-				{marginTop: -250, ease: Back.easeOut, rotation: 0},
-				{marginTop: 50, ease: Back.easeOut, rotation: 350}
-				);
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.4})
-					.setTween(tween)
-					.addTo(controller);
-});
+//$(document).ready(function($) {
+//	// build tween
+//	var tween = TweenMax.fromTo("img#bubble-the-polterweekend", 0.5,
+//				{marginTop: -250, ease: Back.easeOut, rotation: 0},
+//				{marginTop: 50, ease: Back.easeOut, rotation: 350}
+//				);
+//
+//	// build scene
+//	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.4})
+//					.setTween(tween)
+//					.addTo(controller);
+//});
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#karen", 0.5,
@@ -66,7 +66,7 @@ $(document).ready(function($) {
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.4})
+	var scene = new ScrollScene({triggerElement: "section#couple", triggerHook: 0.4})
 					.setTween(tween)
 					.addTo(controller);
 });
@@ -78,7 +78,7 @@ $(document).ready(function($) {
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.4})
+	var scene = new ScrollScene({triggerElement: "section#couple", triggerHook: 0.4})
 					.setTween(tween)
 					.addTo(controller);
 });
@@ -90,7 +90,7 @@ $(document).ready(function($) {
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.4})
+	var scene = new ScrollScene({triggerElement: "section#couple", triggerHook: 0.4})
 					.setTween(tween)
 					.addTo(controller);
 });
@@ -102,7 +102,7 @@ $(document).ready(function($) {
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.4})
+	var scene = new ScrollScene({triggerElement: "section#couple", triggerHook: 0.4})
 					.setTween(tween)
 					.addTo(controller);
 });
@@ -114,7 +114,7 @@ $(document).ready(function($) {
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-polterweekend", triggerHook: 0.6})
+	var scene = new ScrollScene({triggerElement: "section#couple", triggerHook: 0.6})
 					.setTween(tween)
 					.addTo(controller);
 });
@@ -229,8 +229,8 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
     // build tween
-    var tween = TweenMax.fromTo("div#hbs", 0.5,
-        {marginLeft: "-200%", width: "100%"},
+    var tween = TweenMax.fromTo("img#hbs", 0.5,
+        {marginLeft: "-200%"},
         {marginLeft: 0}
     );
 
@@ -412,13 +412,13 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("img#haende", 0.5, 
-				{marginTop: -650, ease: Bounce},
-				{marginTop: 0, ease: Bounce, delay: 0.7}
+	var tween = TweenMax.fromTo("img#hands", 0.5,
+				{marginTop: -700, ease: Bounce},
+				{marginTop: 0, ease: Bounce, delay: 0.5}
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
+	var scene = new ScrollScene({triggerElement: "section#wedding", triggerHook: 0.6})
 					.setTween(tween)
 					.addTo(controller);
 });
