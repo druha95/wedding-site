@@ -317,13 +317,20 @@ div#warum-nicht {
   top: 6%; }
 
 #bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-dress-code,
-#bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
+#bubble-wedding-party, #bubble-church-wedding, #bubble-getting-there {
   position: absolute;
   left: 50%;
   margin-left: -65px;
   z-index: 3;
   height: 130px;
   width: 130px; }
+
+#bubble-when-where {
+    left: 50%;
+    margin-left: 0px;
+    z-index: 3;
+    height: 130px;
+    width: 130px; }
 
 #location-arrow {
   position: absolute;
@@ -544,6 +551,10 @@ section#story {
 
 section#wedding {
     min-height: 350px;
+}
+
+section#getting-there-img {
+    height: 120px;
 }
 
 .wedding-row {
@@ -1062,7 +1073,7 @@ label.captcode {
 /*  section#the-party {
     padding-bottom: 100px; }*/
   img#hands {
-    width: 85%;
+    width: 82%;
     margin-left: -42%;
     height: auto; } 
   section#night-after, section#day-after {

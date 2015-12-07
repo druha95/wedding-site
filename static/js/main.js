@@ -119,18 +119,7 @@ $(document).ready(function($) {
 					.addTo(controller);
 });
 
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenMax.fromTo("#bubble-when-where", 0.5,
-                    {ease: Back.easeOut, rotation: 0},
-                    {ease: Back.easeOut, rotation: 350}
-				);
 
-	// build scene
-	var scene = new ScrollScene({triggerElement: "section#when-where", triggerHook: 0.6})
-					.setTween(tween)
-					.addTo(controller);
-});
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#bubble-dress-code.wedding-party", 0.5,
@@ -159,6 +148,19 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
     // build tween
+    var tween = TweenMax.fromTo("img#bubble-when-where", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#when-where", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
     var tween = TweenMax.fromTo("img#bubble-wedding-party", 0.5,
         {scale: 0, ease: Back.easeOut, rotation: 0},
         {scale: 1, ease: Back.easeOut, rotation: 360}
@@ -171,13 +173,111 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
     // build tween
-    var tween = TweenMax.fromTo("img.wedding-party__photo", 0.5,
+    var tween = TweenMax.fromTo("img#benito", 0.5,
         {scale: 0, ease: Back.easeOut, rotation: 0},
         {scale: 1, ease: Back.easeOut, rotation: 360}
     );
 
     // build scene
-    var scene = new ScrollScene({triggerElement: "section#wedding-party", triggerHook: 0.5})
+    var scene = new ScrollScene({triggerElement: "img#benito", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#zita", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#zita", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#kim", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#kim", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#kris", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#kris", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#achim", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#achim", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#hella", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#hella", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#oli", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#oli", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#simone", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#simone", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#alec", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "img#alec", triggerHook: 0.5})
         .setTween(tween)
         .addTo(controller);
 });
@@ -265,6 +365,47 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#bubble-plain", 1.5,
+        {marginTop: -300, ease: Back.easeOut},
+        {marginTop: 100, ease: Back.easeOut}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#getting-there-img", triggerHook: 0.7})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#bubble-path", 1.5,
+        {marginTop: "-50%", ease: Back.easeOut, height: 0},
+        {marginTop: "-4%", ease: Back.easeOut, height: 280}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#getting-there-img", triggerHook: 0.7})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#bubble-getting-there", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#getting-there-img", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("div#date1", 0.5,
