@@ -30,6 +30,13 @@ class Guest(models.Model):
         _("Guest’s dietary restrictions"), max_length=50,
         choices=DIETARY_CHOICES, null=True)
 
+    class Meta:
+        verbose_name = _("Guest")
+        verbose_name_plural = _("Guests")
+
+    def __str__(self):
+        return self.name
+
 
 class Rsvp(models.Model):
 
@@ -114,6 +121,7 @@ class Rsvp(models.Model):
         _("No. of guests"), null=True, choices=NUMBER_OF_GUESTS_CHOICES)
     additional_comment = models.TextField(
         _("Anything else"), max_length=200, null=True, blank=True)
+    guests = models.ManyToManyField(Guest)
 
     class Meta:
         verbose_name = _("RSVP")
