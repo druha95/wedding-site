@@ -303,10 +303,10 @@ $(document).ready(function($) {
 // 					.addTo(controller);
 // });
 $(document).ready(function($) {
-	// build tween
+	//build tween
 	var tween = TweenMax.fromTo("img#globe-lights", 0.5,
 				{marginTop: "-80%", ease: Back.easeOut},
-				{marginTop: "-50%", ease: Back.easeOut, delay: 1}
+				{marginTop: "-49.4%", ease: Back.easeOut, delay: 1}
 				);
 
 	// build scene
@@ -318,7 +318,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#bubble-beach-wedding", 0.5,
 				{marginTop: -150, ease: Back.easeOut},
-				{marginTop: "2%", ease: Back.easeOut }
+				{marginTop: "0%", ease: Back.easeOut }
 				);
 
 	// build scene
