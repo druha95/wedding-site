@@ -68,7 +68,7 @@ h1 {
   font-weight: 400; }
 
 a {
-  color: #7F1D78;
+  color: #ff46af;
   text-decoration: none !important; }
 
 .tel {
@@ -78,7 +78,7 @@ a:hover {
   text-decoration: none;
   color: #bf50b6; }
 a:visited {
-  color: #7F1D78 !important; }
+  color: #ff46af !important; }
 p {
   font: 600 1.5em/1.4em 'Josefin Sans', sans-serif; }
 
@@ -113,7 +113,7 @@ p.map {
 
 .entypo {
   font: normal 2em/0.7em 'entypo';
-  color: #7F1D78; }
+  color: #ff46af; }
 /*.entypo:hover {
   color: #bf50b6;
 }*/
@@ -208,7 +208,7 @@ body {
 
 #jprePercentage, #qLpercentage {
   font: 700 3em/1em 'Amatic SC', sans-serif !important;
-  color: #7F1D78;
+  color: #ff46af;
   text-align: center;
   position: absolute;
   left: 41%;
@@ -301,12 +301,12 @@ div#warum-nicht {
   position: absolute;
   left: -3%;
   z-index: 2;
-  width: 100%;
+  width: 104%;
   top: 6%; }
 
 #bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung {
   position: absolute;
-  left: 48%;
+  left: 50%;
   margin-left: -65px;
   z-index: 3;
   height: 130px;
@@ -460,7 +460,7 @@ section#home {
 
 #scrolldown p {
   font: 700 0.7em/1em 'Josefin Sans', sans-serif;
-  color: #7F1D78;
+  color: #ff46af;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
@@ -476,7 +476,7 @@ section#home {
   width: 26px;
   height: 46px;
   border-radius: 13px;
-  border: 2px solid #7F1D78;
+  border: 2px solid #ff46af;
   position: absolute;
   left: 50%;
   margin: 10px 0 0 -13px; }
@@ -560,7 +560,7 @@ section#beach-wedding-img {
     position: relative;
     background: url("../img/asya.jpg") 100% 100%;
     background-size: cover;
-    height: 420px;
+    height: 33.333333vw;
 }
 
 .festcontent {
@@ -637,7 +637,7 @@ section#googlemap {
 
 /* Footer */
 section#footer {
-  background: #7F1D78;
+  background: #ff46af;
   height: 50px;
   font-size: 1.5em;
   padding-top: 10px; }
@@ -755,13 +755,13 @@ section#footer {
 /* @form element :hover state 
 -------------------------------------------- */
 .smart-forms .gui-input:hover, .smart-forms .gui-textarea:hover, .smart-forms .select > select:hover, .smart-forms .select-multiple select:hover, .smart-forms .gui-input:hover ~ .input-hint, .smart-forms .file .gui-file:hover + .gui-input, .smart-forms .gui-textarea:hover ~ .input-hint {
-  border-color: #7F1D78 }
+  border-color: #ff46af }
 
 /* @form element :focus state 
 -------------------------------------------------------- */
 .smart-forms .gui-input:focus, .smart-forms .gui-textarea:focus, {
-  border-color: #7F1D78;
-  color: #7F1D78; }
+  border-color: #ff46af;
+  color: #ff46af; }
 
 .smart-forms .gui-textarea:focus {
   height: 120px; }
@@ -771,10 +771,10 @@ section#footer {
   z-index: 20\9; }
 
 .smart-forms .gui-input:focus ~ .field-icon i, .smart-forms .gui-textarea:focus ~ .field-icon i {
-  color: #7F1D78; }
+  color: #ff46af; }
 
 .smart-forms .select > select:focus + .arrow {
-  color: #7F1D78; }
+  color: #ff46af; }
 
 /* @buttons 
 ----------------------------------------------------- */
@@ -796,7 +796,7 @@ section#footer {
   background-color: #bf50b6; }
 
 .smart-forms .btn-primary:hover, .smart-forms .btn-primary:focus {
-  background-color: #7F1D78;
+  background-color: #ff46af;
   -webkit-transform: rotate(360deg) scale(1.2);
   -moz-transform: rotate(360deg) scale(1.2);
   transform: rotate(360deg) scale(1.2); }
@@ -831,11 +831,11 @@ section#footer {
 
 .smart-forms .alert-warning {
   color: #FFF;
-  background-color: #7F1D78; }
+  background-color: #ff46af; }
 
 .smart-forms .alert-error {
   color: #FFF;
-  background-color: #7F1D78; }
+  background-color: #ff46af; }
 
 .smart-forms .notification .close-btn:hover, .smart-forms .alert-info, .smart-forms .alert-success, .smart-forms .alert-warning, .smart-forms .alert-error {
   font: 700 1.4em/1em 'Josefin Sans', sans-serif !important;
@@ -845,7 +845,7 @@ section#footer {
   font: 700 1.2em/1em 'Josefin Sans', sans-serif !important;
   display: block;
   width: 100%;
-  color: #7F1D78; }
+  color: #ff46af; }
 
 select#sendersubject.error {
   margin-bottom: 10px;
@@ -1367,7 +1367,7 @@ label.captcode {
 
 /*NEW*/
 .txtmagenta {
-  color: #7F1D78;
+  color: #ff46af;
 }
 .txtmagenta a:hover {
   color: #bf50b6 !important;
@@ -1402,11 +1402,11 @@ label.captcode {
 .navbar-element {
     font: 700 30px 'Amatic SC', sans-serif;
     font-weight: bold;
-    color: #7F1D78;
+    color: #ff46af;
     /*border: 1px solid #FFFFFF;*/
 }
 .navbar-element a {
-    color: #7F1D78 !important;
+    color: #ff46af !important;
     background-color: #FFFFFF;
     text-align: center !important;
     font-size: 30px;
@@ -1434,7 +1434,7 @@ label.captcode {
 }
 .highlight {
   font-size: 30px;
-  color: #7F1D78;
+  color: #ff46af;
   margin: 0;
 }
 .img-left {

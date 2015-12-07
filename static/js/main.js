@@ -306,7 +306,7 @@ $(document).ready(function($) {
 	//build tween
 	var tween = TweenMax.fromTo("img#globe-lights", 0.5,
 				{marginTop: "-80%", ease: Back.easeOut},
-				{marginTop: "-49.4%", ease: Back.easeOut, delay: 1}
+				{marginTop: "-51.4%", ease: Back.easeOut, delay: 1}
 				);
 
 	// build scene
