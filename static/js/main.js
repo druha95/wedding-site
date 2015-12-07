@@ -306,7 +306,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#globe-lights", 0.5,
 				{marginTop: "-80%", ease: Back.easeOut},
-				{marginTop: "-40%", ease: Back.easeOut, delay: 2.6}
+				{marginTop: "-50%", ease: Back.easeOut, delay: 1}
 				);
 
 	// build scene
@@ -316,13 +316,13 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenMax.fromTo("img#bubble-das-fest", 0.5,
+	var tween = TweenMax.fromTo("img#bubble-beach-wedding", 0.5,
 				{marginTop: -150, ease: Back.easeOut},
 				{marginTop: "2%", ease: Back.easeOut }
 				);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
+	var scene = new ScrollScene({triggerElement: "section#beach-wedding-img", triggerHook: 0.6})
 					.setTween(tween)
 					.addTo(controller);
 });
