@@ -77,7 +77,7 @@ class SubmitRsvpForm(forms.ModelForm):
 
     class Meta:
         model = Rsvp
-        exclude = ['rsvp', ]
+        exclude = ['rsvp', 'guests', ]
 
     def save(self, commit=True):
         new_rsvp = super(SubmitRsvpForm, self).save(commit=False)
