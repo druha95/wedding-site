@@ -118,6 +118,19 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("#bubble-when-where", 0.5,
+                    {ease: Back.easeOut, rotation: 0},
+                    {ease: Back.easeOut, rotation: 350}
+				);
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#when-where", triggerHook: 0.6})
+					.setTween(tween)
+					.addTo(controller);
+});
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#bubble-dress-code.wedding-party", 0.5,
@@ -364,6 +377,19 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#bubble-church-wedding", 0.5,
+        {marginTop: -150, ease: Back.easeOut},
+        {marginTop: "0%", ease: Back.easeOut }
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#church-wedding-img", triggerHook: 0.6})
+        .setTween(tween)
+        .addTo(controller);
+});
+
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#location-arrow", 0.3, 

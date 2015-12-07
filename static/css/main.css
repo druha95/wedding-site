@@ -291,6 +291,18 @@ img#welcome {
   height: 120px;
   width: 120px; }
 
+#bubble-path {
+    position: absolute;
+    left: 43%;
+    margin-top: -4%;
+}
+
+#bubble-plain {
+    position: absolute;
+    left: 40%;
+    margin-top: 100px;
+}
+
 #counter1, #counter2 {
   margin-bottom: 50px !important; }
 
@@ -304,7 +316,8 @@ div#warum-nicht {
   width: 104%;
   top: 6%; }
 
-#bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-dress-code, #bubble-wedding-party {
+#bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-dress-code,
+#bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
   position: absolute;
   left: 50%;
   margin-left: -65px;
@@ -548,7 +561,7 @@ section#wedding {
 /* Das Fest */
 section#church-wedding-img{
   position: relative;
-  height: 455px;
+  height: 33.33333333vw;
   background: url("../img/santuario.jpg") 100% 100% no-repeat;
   background-size: cover; }
 
@@ -1111,7 +1124,8 @@ label.captcode {
     display: none; }
   #warum-nicht {
     font-size: 0.9em; }
-  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-dress-code, #bubble-wedding-party {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-dress-code,
+  #bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
     width: 80px;
     height: 80px;
     margin-left: -25px; }
@@ -1258,7 +1272,8 @@ label.captcode {
   section#the-party {
     /*background-size: cover;*/
     height: 236px; }
-  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke, #bubble-wedding-party {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke,
+  #bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
     margin-top: 20px;
     width: 90px;
     height: 90px;
