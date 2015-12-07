@@ -4,6 +4,33 @@ from django.utils.translation import ugettext_lazy as _
 from multiselectfield import MultiSelectField
 
 
+class Guest(models.Model):
+
+    SHOE_SIZE_CHOICES = (
+        (1, _("1")),
+        (2, _("2")),
+        (3, _("3")),
+        (4, _("4")),
+        (5, _("5")),
+    )
+
+    DIETARY_CHOICES = (
+        ("sunset_cruise", _("Sunset cruise, 3 PM, Sunday, Feb 14")),
+        ("beach_wedding", _("Beach wedding, 4 PM, Monday, Feb 15")),
+        ("chill_beach", _("Chill on the beach, 1 PM, Tuesday, Feb 16")),
+        ("church_wedding", _("Church wedding, 1 PM, Friday, Feb 19")),
+        ("dimsum_brunch", _("Dimsum brunch, 12 noon, Saturday, Feb 20")),
+    )
+
+    name = models.CharField(_("Guest's name"), max_length=50)
+    email = models.EmailField(_("Guest's email"), max_length=50)
+    shoe_size = models.PositiveIntegerField(
+        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True)
+    dietary_restrictions = models.CharField(
+        _("Guest’s dietary restrictions"), max_length=50,
+        choices=DIETARY_CHOICES, null=True)
+
+
 class Rsvp(models.Model):
 
     EVENTS_CHOICES = (
@@ -85,14 +112,6 @@ class Rsvp(models.Model):
         null=True)
     number_of_guests = models.PositiveIntegerField(
         _("No. of guests"), null=True, choices=NUMBER_OF_GUESTS_CHOICES)
-    guest_name = models.CharField(_("Guest’s name"), max_length=50, null=True)
-    guest_email = models.EmailField(
-        _("Guest’s email"), max_length=50, null=True)
-    guest_shoe_size = models.PositiveIntegerField(
-        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True)
-    guest_dietary_restrictions = models.CharField(
-        _("Guest’s dietary restrictions"), max_length=50,
-        choices=DIETARY_CHOICES, null=True)
     additional_comment = models.TextField(
         _("Anything else"), max_length=200, null=True, blank=True)
 
