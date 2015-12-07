@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load staticfiles mezzanine_tags bootstrap %}
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -53,6 +53,7 @@
     });
     feed.run();
 </script>
+    {{ submit_rsvp_form.media }}
 </head>
 
 <body>
@@ -587,6 +588,10 @@
     </div>
 </section>
 
+<section id="googlemap">
+    <div id="map-wrap"></div>
+</section>
+
 <section id="rsvp">
         <div class="container">
             <div class="row">
@@ -595,7 +600,16 @@
                         <img src="/static/img/yes.svg" height="120px" alt=""/>
                         <img src="/static/img/will-party.svg" height="120px" alt=""/>
                     </div>
-                    <div class="row"></div>
+                    <div class="row">
+                        <input type="radio" value="rsvp">YEAH!!
+                        <input type="radio" value="rsvp_mini">CAN'T :(
+                        <div id="rsvp-form-mini" class="smart-forms">
+                            {% include "pages/submit_rsvp_mini.html" %}
+                        </div>
+                        <div id="rsvp-form" class="smart-forms">
+                            {% include "pages/submit_rsvp.html" %}
+                        </div>
+                    </div>
                     <div class="row">
                         <img src="/static/img/submit.svg" height="100px" alt=""/>
                     </div>
@@ -616,7 +630,6 @@
     </section>
 
 
-
 <section id="instagram">
    <div class="container">
        <div class="row">
@@ -631,9 +644,7 @@
    </div>
 </section>
 
-<section id="googlemap">
-    <div id="map-wrap"></div>
-</section>
+
 
 
 <section id="footer">
