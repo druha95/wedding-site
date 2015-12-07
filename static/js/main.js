@@ -118,18 +118,56 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
-// $(document).ready(function($) {
-// 	// build tween
-// 	var tween = TweenMax.fromTo("img#bubble-die-trauzeugen", 0.5, 
-// 				{scale: 0, ease: Back.easeOut, rotation: 0},
-// 				{scale: 1, ease: Back.easeOut, rotation: 360}
-// 				);
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("img#bubble-dress-code.wedding-party", 0.5,
+				{scale: 0, ease: Back.easeOut, rotation: 0},
+				{scale: 1, ease: Back.easeOut, rotation: 360}
+				);
 
-// 	// build scene
-// 	var scene = new ScrollScene({triggerElement: "section#die-trauzeugen", triggerHook: 0.5})
-// 					.setTween(tween)
-// 					.addTo(controller);
-// });
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#dress-code.wedding-party", triggerHook: 0.5})
+					.setTween(tween)
+					.addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#bubble-dress-code.church-wedding", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#dress-code.church-wedding", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#bubble-wedding-party", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#wedding-party", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img.wedding-party__photo", 0.5,
+        {scale: 0, ease: Back.easeOut, rotation: 0},
+        {scale: 1, ease: Back.easeOut, rotation: 360}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#wedding-party", triggerHook: 0.5})
+        .setTween(tween)
+        .addTo(controller);
+});
 // $(document).ready(function($) {
 // 	// build tween
 // 	var tween = TweenMax.fromTo("img#henni", 0.5, 

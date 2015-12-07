@@ -304,7 +304,7 @@ div#warum-nicht {
   width: 104%;
   top: 6%; }
 
-#bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung {
+#bubble-die-trauzeugen, #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-dress-code, #bubble-wedding-party {
   position: absolute;
   left: 50%;
   margin-left: -65px;
@@ -1111,7 +1111,7 @@ label.captcode {
     display: none; }
   #warum-nicht {
     font-size: 0.9em; }
-  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-dress-code, #bubble-wedding-party {
     width: 80px;
     height: 80px;
     margin-left: -25px; }
@@ -1258,7 +1258,7 @@ label.captcode {
   section#the-party {
     /*background-size: cover;*/
     height: 236px; }
-  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke, #bubble-wedding-party {
     margin-top: 20px;
     width: 90px;
     height: 90px;
