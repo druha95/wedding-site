@@ -258,7 +258,7 @@ img#logohome {
 
 img#welcome {
   position: relative;
-  width: 200px;
+  width: 400px;
   height: auto; }
 
 #bubble-finally {
@@ -572,17 +572,18 @@ section#getting-there-img {
     height: 120px;
 }
 
+section#wedding-party {
+    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+}
+
 .wedding-row {
     margin-top: 25%;
 }
 
-#daycounter1, #daycounter2 {
-  font: 700 1.8em/1em 'Amatic SC', sans-serif;
+#date1, #date2 {
+  font-family: 'Amatic SC', sans-serif;
   color: #fff; }
 
-#hourcounter1, #hourcounter2, #minutecounter1, #minutecounter2 {
-  font: 700 1em/1em 'Amatic SC', sans-serif;
-  color: #fff; }
 
 /* Das Fest */
 section#church-wedding-img{
@@ -601,6 +602,16 @@ section#beach-wedding-img {
     background-size: cover;
     height: 33.333333vw;
 }
+
+section#beach-wedding {
+    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+}
+
+section#dress-code {
+    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+}
+
+
 
 .festcontent {
   padding: 30px 15px;
@@ -1466,6 +1477,67 @@ label.captcode {
 
 .wedding__text--pink h1 {
     color: #FF46AF;
+}
+
+.beach_wedding_pinktxt {
+    color: #FF46AF;
+    font-size: 1.4em;
+}
+
+.beach_wedding_pinktxt div {
+    margin-bottom: 20px;
+}
+
+.beach_wedding_pinktxt__title {
+    font-size: 1.7em;
+}
+
+.beach_wedding__pricestxt {
+    font-family: PrincessSofia;
+}
+
+.beach_wedding__sometxt {
+    text-align: justify;
+    color: #8c7466;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.beach_wedding__sometxt__remark {
+    text-align: justify;
+    color: #8c7466;
+}
+
+.dress-code__title {
+    color: #FF46AF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.dress-code__description {
+    color: #8c7466;
+}
+
+.beach_wedding__sometxt__remark__blue {
+    color: #3399FF;
+}
+
+.wedding-party__name {
+    color: #FF46AF;
+}
+
+.wedding-party__status {
+    color: #3399FF;
+    font-size: 0.5em;
+}
+
+.bridesmaids_list__title {
+    color: #FF46AF;
+}
+
+.bridesmaids_list__person {
+    color: #8c7466;
 }
 
 .col-sm-3 {
