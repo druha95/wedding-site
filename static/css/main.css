@@ -258,7 +258,7 @@ img#logohome {
 
 img#welcome {
   position: relative;
-  width: 400px;
+  width: 200px;
   height: auto; }
 
 #bubble-finally {
@@ -332,17 +332,32 @@ div#warum-nicht {
     height: 130px;
     width: 130px; }
 
-#location-arrow {
+img#location-arrow {
   position: absolute;
-  right: 48%;
-  top: 79%;
-  width: 45px; }
+    width: 150px;
+    transform: rotate(-120deg);
+    left: 20%;
+    top: 51%;  }
 
-#location-arrow-2 {
-  position: absolute;
-  right: 36%;
-  top: 63%;
-  width: 80px; }
+img#party-1 {
+    position: absolute;
+    left: 20%;
+    top: 28%;
+}
+
+img#location-arrow2 {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 18%;
+    top: 72%;
+    width: 80px; }
+
+img#party-2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 10%;
+    top: 70%
+}
 
 #location-arrow-3 {
   position: absolute;
@@ -817,7 +832,7 @@ section#footer {
 /* @primary button theme
 -------------------------------------------- */
 .smart-forms .btn-primary {
-  background-color: #bf50b6; }
+  background-color: #3399FF; }
 
 .smart-forms .btn-primary:hover, .smart-forms .btn-primary:focus {
   background-color: #ff46af;
@@ -1026,6 +1041,13 @@ label.captcode {
   .smart-forms .align-right {
     text-align: left; } }
 
+@media (min-width: 1025px) {
+    .container {
+        width: 1024px !important;
+        margin: 0 auto;
+    }
+}
+
 /*
 ------------------------------------------------
 	// Responsive 
@@ -1039,6 +1061,7 @@ label.captcode {
   }
 
 @media (min-width: 1200px) {
+
   p.highlight {
     font: 700 4.5em/1em 'Amatic SC', sans-serif !important; }
   p.highlight.nolarge {
@@ -1392,12 +1415,59 @@ label.captcode {
   }
 
 /*NEW*/
+
 .txtmagenta {
+    font-size: 3em;
+}
+.txtmagenta nobr {
   color: #ff46af;
+}
+
+.txtmagenta span {
+  color: #8c7466;
+    font-weight: 400;
 }
 .txtmagenta a:hover {
   color: #bf50b6 !important;
 }
+
+#date1 span {
+    color: #3399FF;
+}
+
+#date1 div {
+    color: white;
+}
+
+#date2 span {
+    color: #FF46AF;
+}
+
+#date2 div {
+    color: white;
+}
+
+#why-not {
+    color: white;
+}
+
+.story__continues__arrow {
+    margin: -30px 0;
+}
+
+
+.wedding__text div {
+    color: #8c7466;
+}
+
+.wedding__text--blue h1 {
+    color: #3399FF;
+}
+
+.wedding__text--pink h1 {
+    color: #FF46AF;
+}
+
 .col-sm-3 {
   margin: 0 0 80px 0;
 }
@@ -1428,11 +1498,11 @@ label.captcode {
 .navbar-element {
     font: 700 30px 'Amatic SC', sans-serif;
     font-weight: bold;
-    color: #ff46af;
+    color: #3399FF;
     /*border: 1px solid #FFFFFF;*/
 }
 .navbar-element a {
-    color: #ff46af !important;
+    color: #3399FF !important;
     background-color: #FFFFFF;
     text-align: center !important;
     font-size: 30px;
@@ -1441,7 +1511,7 @@ label.captcode {
     /*float: right;*/
 }
 .navbar-element a:hover {
-  color: #bf50b6 !important;
+  color: #ff46af !important;
 }
 
 .footertel {

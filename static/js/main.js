@@ -531,42 +531,42 @@ $(document).ready(function($) {
         .addTo(controller);
 });
 
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenMax.fromTo("img#location-arrow", 0.3, 
-				{scale: 0, ease: Back.easeOut, marginTop: 300},
-				{scale: 1, ease: Back.easeOut, marginTop:0, delay: 1.5 }
-				);
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
-					.setTween(tween)
-					.addTo(controller);
-});
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenMax.fromTo("img#location-arrow-2", 0.3, 
-				{scale: 0, ease: Back.easeOut, marginTop: -300, marginRight: -300},
-				{scale: 1, ease: Back.easeOut, marginTop: 0,  marginRight: 0, delay: 1.8 }
-				);
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
-					.setTween(tween)
-					.addTo(controller);
-});
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenMax.fromTo("img#location-arrow-3", 0.3, 
-				{scale: 0, ease: Back.easeOut, marginTop: -300, marginRight: 300},
-				{scale: 1, ease: Back.easeOut, marginTop: 0,  marginRight: 0, delay: 2.1 }
-				);
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
-					.setTween(tween)
-					.addTo(controller);
-});
+//$(document).ready(function($) {
+//	// build tween
+//	var tween = TweenMax.fromTo("img#location-arrow", 0.3,
+//				{scale: 0, ease: Back.easeOut, marginTop: 300},
+//				{scale: 1, ease: Back.easeOut, marginTop:0, delay: 1.5 }
+//				);
+//
+//	// build scene
+//	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
+//					.setTween(tween)
+//					.addTo(controller);
+//});
+//$(document).ready(function($) {
+//	// build tween
+//	var tween = TweenMax.fromTo("img#location-arrow-2", 0.3,
+//				{scale: 0, ease: Back.easeOut, marginTop: -300, marginRight: -300},
+//				{scale: 1, ease: Back.easeOut, marginTop: 0,  marginRight: 0, delay: 1.8 }
+//				);
+//
+//	// build scene
+//	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
+//					.setTween(tween)
+//					.addTo(controller);
+//});
+//$(document).ready(function($) {
+//	// build tween
+//	var tween = TweenMax.fromTo("img#location-arrow-3", 0.3,
+//				{scale: 0, ease: Back.easeOut, marginTop: -300, marginRight: 300},
+//				{scale: 1, ease: Back.easeOut, marginTop: 0,  marginRight: 0, delay: 2.1 }
+//				);
+//
+//	// build scene
+//	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
+//					.setTween(tween)
+//					.addTo(controller);
+//});
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#party1", 0.3, 

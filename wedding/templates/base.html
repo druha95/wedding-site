@@ -159,23 +159,23 @@
             <div class="col-sm-6">
                 <div id="date1">
                     <span>We met each other in</span>
-                    <h1>September 2006</h1>
+                    <div>September 2006</div>
                     <span>on the first day of class</span><br/>
-                    <span>At Harvard Business School</span>
+                    <span>At Harvard Business School...</span>
                 </div>
                 <img id="hbs" src="/static/img/hbs.png" height="250px" width="250px" alt=""/>
             </div>
             <div class="col-sm-6">
                 <div id="date2">
                     <span>and got engaged in</span>
-                    <h1>April 2015</h1>
+                    <div>April 2015</div>
                     <span>on the Harvard Foot Bridge</span><br/>
                     <span>just before we relocated to Berlin</span>
                 </div>
                 <img id="champagne"  src="/static/img/champagne.png" height="250px" width="250px" alt=""/>
             </div>
             <div class="col-sm-12 story__continues">
-                <div class="story__continues__text">
+                <div id="why-not" class="story__continues__text">
                     <span>A love story 8 years in the making.</span><br/>
                     <span>High time to get married</span>
                 </div>
@@ -191,13 +191,13 @@
     <img id="hands" src="/static/img/hands.png" width="90%" alt=""/>
     <div class="container">
         <div class="row wedding-row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 wedding__text wedding__text--blue">
                 <div class="col-sm-12">We'll say "I do" on our</div>
                 <h1 class="col-sm-12">beach wedding</h1>
                 <div class="col-sm-12">Monday, February 15, 2016</div>
                 <div class="col-sm-12">on Bobacay Island...</div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 wedding__text wedding__text--pink">
                 <div class="col-sm-12">...and then again on our</div>
                 <h1 class="col-sm-12">church wedding</h1>
                 <div class="col-sm-12">Friday, February 19, 2016</div>
@@ -210,6 +210,10 @@
 <section id="beach-wedding-img">
     <img id="bubble-beach-wedding" style="margin-top: 5%" src="/static/img/beach-wedding.svg" height="120px" alt=""/>
     <img id="globe-lights" src="/static/img/globe-lights.svg" alt=""/>
+    <img id="party-1" src="/static/img/party.svg" height="120px" alt=""/>
+    <img id="location-arrow" src="/static/img/arrow-2.svg" height="120px" alt=""/>
+    <img id="party-2" src="/static/img/party.svg" height="120px" alt=""/>
+    <img id="location-arrow2" src="/static/img/arrow-3.svg" height="120px" alt=""/>
 </section>
 
 <section id="beach-wedding">
@@ -597,7 +601,7 @@
             <div class="row">
                 <div class="col-sm-5">
                     <div class="row">
-                        <img src="/static/img/yes.svg" height="120px" alt=""/>
+                        <img src="/static/img/i-will.svg" height="120px" alt=""/>
                         <img src="/static/img/will-party.svg" height="120px" alt=""/>
                     </div>
                     <div class="row">
@@ -609,9 +613,6 @@
                         <div id="rsvp-form" class="smart-forms">
                             {% include "pages/submit_rsvp.html" %}
                         </div>
-                    </div>
-                    <div class="row">
-                        <img src="/static/img/submit.svg" height="100px" alt=""/>
                     </div>
                     <div class="row">
                         <img src="/static/img/mail.svg" height="40px" alt=""/>
