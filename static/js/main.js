@@ -509,7 +509,7 @@ $(document).ready(function($) {
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#bubble-beach-wedding", 0.5,
-				{marginTop: -150, ease: Back.easeOut},
+				{marginTop: "-150px", ease: Back.easeOut},
 				{marginTop: "0%", ease: Back.easeOut }
 				);
 

@@ -8,7 +8,7 @@
     <title>Karen and Michael's Polterweekend</title>
 
     <!-- Favicon-->
-    <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+    <link rel="icon" href="{% static "img/favicon.ico" %}">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
@@ -357,7 +357,7 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <h1 class="bridesmaids_list__title">BRIDESMAIDS</h1>
+                <h1 class="bridesmaids_list__title">bridesmaids</h1>
                 <div class="bridesmaids_list__person">Cectile Ang</div>
                 <div class="bridesmaids_list__person">Marie-Jose Helene Banham</div>
                 <div class="bridesmaids_list__person">Chitra Balireddi</div>
@@ -408,28 +408,32 @@
 
 <section id="dress-code" class="church-wedding">
     <div class="container">
-        <div class="row">
-            <h3>the location</h3>
-            <h1>santuario de asn antonio</h1>
-            <h3>Friday, Fabruary 19, 2016</h3>
+        <div class="row church-wedding__pinktxt">
+            <div>the location</div>
+            <div class="church-wedding__pinktxt__title">santuario de san antonio</div>
+            <div>Friday, Fabruary 19, 2016</div>
         </div>
 
         <div class="row">
-            <div class="col-sm-6">Ceremony start at 1 PM at Santuario de San Antonio. Cocktails start at 6 PM at Makati Shnagri-la, followed by dinner and dancing</div>
-            <div class="col-sm-6">See <span>day-by-day schedule, flight and hotel info</span>, and <span>other things to do in Manila</span></div>
+            <div class="col-sm-6 church-wedding__sometxt">
+                <p>Ceremony start at 1 PM at Santuario de San Antonio. Cocktails start at 6 PM at Makati Shnagri-la, followed by dinner and dancing</p>
+            </div>
+            <div class="col-sm-6 church-wedding__sometxt">
+                <p>See <span class="church-wedding__sometxt__blue"> day-by-day schedule, flight and hotel info</span>, and <span class="church-wedding__sometxt__blue">other things to do in Manila</span></p>
+            </div>
         </div>
     </div>
     <div class="container">
         <img id="bubble-dress-code" class="church-wedding" src="/static/img/dress-code.svg" alt=""  height="120px" />
         <div class="row">
             <div class="col-sm-6">
-                <h1>Hers</h1>
-                <h3>Eveninggown</h3>
+                <div class="dress-code__title">Hers</div>
+                <div class="dress-code__description">Eveninggown</div>
                 <img src="/static/img/hers-manila.png" height="200px" alt=""/>
             </div>
             <div class="col-sm-6">
-                <h1>His</h1>
-                <h3>Tuxedo</h3>
+                <div class="dress-code__title">His</div>
+                <div class="dress-code__description">Tuxedo</div>
                 <img src="/static/img/his-manila.png" height="200px" alt=""/>
             </div>
         </div>
@@ -446,10 +450,10 @@
                             <div class="col-sm-4">
                                 <img src="/static/img/flight.svg" height="70px" alt=""/>
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 when_where_text">
                                 <h3>Before Sunday, Feb 14</h3>
                                 <div>Fly to Caticlan</div>
-                                <div>Which flight should I book?</div>
+                                <div class="when_where_text__blue">Which flight should I book?</div>
                             </div>
                         </div>
 
@@ -457,7 +461,7 @@
                             <div class="col-sm-4">
                                 <img  src="/static/img/cruise.svg" height="70px" alt=""/>
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 when_where_text">
                                 <h3>Sunday, Feb 14</h3>
                                 <div>Sunset cruise</div>
                                 <div>3 pm | Boracay SunCruiser</div>
@@ -469,7 +473,7 @@
                             <div class="col-sm-4">
                                 <img src="/static/img/palm-trees.svg" height="70px" alt=""/>
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 when_where_text">
                                 <h3>Monday, Feb 15</h3>
                                 <div>Beach wedding</div>
                                 <div>4 pm | Asya</div>
@@ -482,7 +486,7 @@
                         <div class="col-sm-4">
                             <img src="/static/img/beach-ball.svg" height="70px" alt=""/>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 when_where_text">
                             <h3>Tuesday, Feb 16</h3>
                             <div>Chill on the beach</div>
                             <div>1 pm | Asya beachfront</div>
@@ -494,11 +498,11 @@
                         <div class="col-sm-4">
                             <img src="/static/img/snorkel.svg" height="70px" alt=""/>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 when_where_text">
                             <h3>Wednesday, Feb 17</h3>
                             <div>Free day</div>
                             <div>Chill on the beach</div>
-                            <div>What else can I do?</div>
+                            <div class="when_where_text__blue">What else can I do?</div>
                         </div>
                     </div>
 
@@ -506,11 +510,11 @@
                         <div class="col-sm-4">
                             <img src="/static/img/flight.svg" height="70px" alt=""/>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 when_where_text">
                             <h3>Thursday, Feb 18</h3>
                             <div>Flight back from Caticlan to Manila</div>
                             <div>Before 3pm</div>
-                            <div>Which flight should I book?</div>
+                            <div class="when_where_text__blue">Which flight should I book?</div>
                         </div>
                     </div>
                 </div>
@@ -519,7 +523,7 @@
                         <div class="col-sm-4">
                             <img src="/static/img/church.svg" height="70px" alt=""/>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 when_where_text">
                             <h3>Friday, Feb 19</h3>
                             <div>Church wedding</div>
                             <div>1 pm | Santuario de San Antonio</div>
@@ -531,7 +535,7 @@
                         <div class="col-sm-4">
                             <img src="/static/img/dinner.svg" height="70px" alt=""/>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 when_where_text">
                             <h3>Friday, Feb 19</h3>
                             <div>Reception</div>
                             <div>7 pm | Makati Shangri-la</div>
@@ -543,7 +547,7 @@
                         <div class="col-sm-4">
                             <img src="/static/img/dimsum.svg" height="70px" alt=""/>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 when_where_text">
                             <h3>Saturday, Feb 20</h3>
                             <div>Dimsum brunch</div>
                             <div>12 noon | Makati Shangri-la</div>

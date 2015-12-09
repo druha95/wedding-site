@@ -611,6 +611,10 @@ section#dress-code {
     font: 700 1.8em/1em 'Amatic SC', sans-serif;
 }
 
+section#when-where {
+    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+}
+
 
 
 .festcontent {
@@ -1512,7 +1516,7 @@ label.captcode {
 .dress-code__title {
     color: #FF46AF;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 .dress-code__description {
@@ -1538,6 +1542,50 @@ label.captcode {
 
 .bridesmaids_list__person {
     color: #8c7466;
+}
+
+.church-wedding__pinktxt {
+    color: #8c7466;
+}
+
+.church-wedding__pinktxt div {
+    margin-bottom: 20px;
+}
+
+.church-wedding__pinktxt__title {
+    font-size: 1.7em;
+    color: #FF46AF;
+}
+
+
+.church-wedding__sometxt {
+    text-align: justify;
+    color: #8c7466;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.church-wedding__sometxt__blue {
+    color: #3399FF;
+}
+
+.when_where_text {
+    text-align: left;
+    color: #8c7466;
+}
+
+.when_where_text div {
+    font: 600 0.4em/1.4em 'Josefin Sans', sans-serif;
+}
+
+.when_where_text h3 {
+    font-size: 1em;
+    color: #FF46AF;
+}
+
+.when_where_text__blue {
+    color: #3399FF;
 }
 
 .col-sm-3 {

@@ -33,12 +33,12 @@ function initialize(){
 	  anchor: new google.maps.Point(20,30)
 	};
     var entlas_keller = {
-        url: 'static/img/pointer-entlas-keller.png',
+        url: 'static/img/pointer-manila.png',
         size: new google.maps.Size(80, 80),
         origin: new google.maps.Point(0,0),
     };
     var schloss_atzelsberg = {
-        url: 'static/img/pointer-schloss-atzelsberg.png',
+        url: 'static/img/pointer-boracay.png',
         size: new google.maps.Size(80, 80),
         origin: new google.maps.Point(0,0),
     };
