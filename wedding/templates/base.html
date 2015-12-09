@@ -614,15 +614,15 @@
                         <img id="i-will" src="/static/img/i-will.svg" height="120px" alt=""/>
                         <img id="will-party" src="/static/img/will-party.svg" height="80px" alt=""/>
                     </div>
-                    <div class="row" style="margin-left: 8.3333%">
-                        <input type="radio" value="rsvp">YEAH!!
-                        <input type="radio" value="rsvp_mini">CAN'T :(
+                    <div class="row" style="margin-left: 8.3333%; text-align: left;">
+                        <label for="rsvp_yes"><input type="radio" id="rsvp_yes" value="rsvp">YEAH!!</label>
+                        <label style="margin-left: 25%;" for="rsvp_no"><input type="radio" id="rsvp_no" value="rsvp_mini">CAN'T :(</label>
                         <div id="rsvp-form-mini" class="smart-forms">
                             {% include "pages/submit_rsvp_mini.html" %}
                         </div>
-                        <!--<div id="rsvp-form" class="smart-forms">-->
-                            <!--{% include "pages/submit_rsvp.html" %}-->
-                        <!--</div>-->
+                        <div id="rsvp-form" class="smart-forms">
+                            {% include "pages/submit_rsvp.html" %}
+                        </div>
                     </div>
                     <div class="row">
                         <img src="/static/img/mail.svg" height="40px" alt=""/>

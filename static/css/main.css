@@ -1173,6 +1173,7 @@ label.captcode {
     right: 69%;
     top: 35%;
     width: 100px; }
+
 }
 
 @media (max-width: 640px) {
@@ -1190,11 +1191,12 @@ label.captcode {
     display: none; }
   #warum-nicht {
     font-size: 0.9em; }
-  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-dress-code,
+  #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-dress-code,
   #bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
     width: 80px;
     height: 80px;
-    margin-left: -25px; }
+    position: static;
+    margin-left: 0}
   #bubble-finally {
     margin: 300px 0 0 80px;
     height: 60px;
