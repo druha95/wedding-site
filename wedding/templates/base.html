@@ -213,7 +213,7 @@
     <img id="party-1" src="/static/img/party.svg" height="120px" alt=""/>
     <img id="location-arrow" src="/static/img/arrow-2.svg" height="120px" alt=""/>
     <img id="party-2" src="/static/img/party.svg" height="120px" alt=""/>
-    <img id="location-arrow2" src="/static/img/arrow-3.svg" height="120px" alt=""/>
+    <img id="location-arrow2" src="/static/img/arrow.svg" height="150px" alt=""/>
 </section>
 
 <section id="beach-wedding">
@@ -573,25 +573,29 @@
 <section id="getting-there">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 getting-there__text">
                 <h1>Manila</h1>
                 <p>Book an international flight that arrives in Manila(IATA code MNL) on Saturday, February 13,
                 and departs a day after the church wedding on Saturday night, February 20. <span>View flights to Manila >></span></p>
+                <br/>
                 <p>If you are  connecting directly to Caticlan, allow for 3 hours of transit time in Manila. You need to take a taxi
-                from one terminal to the next</p>
+                from one terminal to the next</p><br/>
+
                 <p>We have reserved rooms from Feb 18 - 20 at Makati Shangri-la, wedding reception and after-party location. Superior rooms cast 11,647
-                pesos per night(~$250), including breakfast, Wi-Fi, and taxes</p>
+                pesos per night(~$250), including breakfast, Wi-Fi, and taxes</p><br/>
 
                 <h2>reserve a room at shangri-la >></h2>
                 <h2>find other hotels near shangri-la >></h2>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 getting-there__text">
                 <h1>Boracay</h1>
                 <p>Book a domestic flight out of Manila and into Caticlan (IATA code MPH) on sunday morning,
                  Feb 14. <span>View flights >></span> Fly back to Manila on Thursday early afternoon, Feb 18 <span>View flights >></span></p>
+                <br/>
                 <p>We have reserved rooms at two hotels from Feb 14 - 18 <span>Asya</span>, the wedding location, and Villa Caemilla, a 15-minute walk away.</p>
+                <br/>
                 <p>Asay rooms start at 17,100 pesos per night (~$375). Villa Cemilla rooms start at 7,800 pesos per night (~$170). Prices include round-trip
-                land and boat transfers from Caticlan, breakfast, Wi-Fi, and taxes.</p>
+                land and boat transfers from Caticlan, breakfast, Wi-Fi, and taxes.</p><br/>
 
                 <h2>reserve a room at asya >></h2>
                 <h2>reserve a room at villa caemilla >></h2>
@@ -601,39 +605,39 @@
     </div>
 </section>
 
-<section id="googlemap">
-    <div id="map-wrap"></div>
-</section>
 
 <section id="rsvp">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-sm-5 col-sm-offset-1">
                     <div class="row">
-                        <img src="/static/img/i-will.svg" height="120px" alt=""/>
-                        <img src="/static/img/will-party.svg" height="120px" alt=""/>
+                        <img id="i-will" src="/static/img/i-will.svg" height="120px" alt=""/>
+                        <img id="will-party" src="/static/img/will-party.svg" height="80px" alt=""/>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-left: 8.3333%">
                         <input type="radio" value="rsvp">YEAH!!
                         <input type="radio" value="rsvp_mini">CAN'T :(
                         <div id="rsvp-form-mini" class="smart-forms">
                             {% include "pages/submit_rsvp_mini.html" %}
                         </div>
-                        <div id="rsvp-form" class="smart-forms">
-                            {% include "pages/submit_rsvp.html" %}
-                        </div>
+                        <!--<div id="rsvp-form" class="smart-forms">-->
+                            <!--{% include "pages/submit_rsvp.html" %}-->
+                        <!--</div>-->
                     </div>
                     <div class="row">
                         <img src="/static/img/mail.svg" height="40px" alt=""/>
                         <img class="pull-right" src="/static/img/phone.svg" height="40px" alt=""/>
                     </div>
                 </div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <img src="/static/img/gifts.svg" height="120px" alt=""/>
-                    <h1>l;ewvjwen vkewjv ewjh vw wekv ewjv w</h1>
-                    <h2>vklwenr;vjkr vejkv erv e krv er</h2>
-                    <div>lven;ewjrvne rj erv ernktrg je vhae rvjler vhe v ve vje vhe rjije vaeaj</div>
+                <div class="col-sm-5 col-sm-offset-1 gift_text">
+                    <img id="gifts" src="/static/img/gifts.svg" height="120px" alt=""/>
+                    <div class="gift_text__txt">
+                        <h1>Come to the Philipines for our wedding week!</h1><br/>
+                        <h3>Celebrating with you is the only gift we need.</h3><br/>
+                        <p>If you are so determined to do more to make us extra happy, it's easy</p><br/>
+                        <p>We would like to remember our wedding as one big party, and we would be thrilled you if you you could party
+                            with us - till  the sun comes up.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -654,6 +658,9 @@
    </div>
 </section>
 
+<section id="googlemap">
+        <div id="map-wrap"></div>
+    </section>
 
 
 

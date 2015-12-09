@@ -303,6 +303,12 @@ img#welcome {
     margin-top: 100px;
 }
 
+#gifts {
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+}
+
 #counter1, #counter2 {
   margin-bottom: 50px !important; }
 
@@ -347,16 +353,15 @@ img#party-1 {
 
 img#location-arrow2 {
     position: absolute;
-    transform: rotate(90deg);
-    left: 18%;
-    top: 72%;
-    width: 80px; }
+    left: 14%;
+    top: 62%;
+    width: 150px; }
 
 img#party-2 {
     position: absolute;
-    transform: rotate(-90deg);
+    transform: rotate(-20deg);
     left: 10%;
-    top: 70%
+    top: 47%
 }
 
 #location-arrow-3 {
@@ -383,6 +388,12 @@ img#hands {
   width: 80%;
   margin-left: -40%;
   height: auto; }
+
+img#will-party {
+    vertical-align: top;
+    margin-left: -25px;
+    transform: rotate(20deg);
+}
 
 #bubble-geschenke {
   position: absolute;
@@ -615,6 +626,12 @@ section#when-where {
     font: 700 1.8em/1em 'Amatic SC', sans-serif;
 }
 
+section#getting-there {
+    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+}
+
+
+
 
 
 .festcontent {
@@ -663,7 +680,7 @@ section#the-party-text {
 
 /* Anmeldung */
 section#rsvp {
-  background: #f6efeb;
+  background: #C6E1FE;
   position: relative;
   z-index: 10; }
 
@@ -1503,9 +1520,7 @@ label.captcode {
 .beach_wedding__sometxt {
     text-align: justify;
     color: #8c7466;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 15px;
+    font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;
 }
 
 .beach_wedding__sometxt__remark {
@@ -1561,9 +1576,7 @@ label.captcode {
 .church-wedding__sometxt {
     text-align: justify;
     color: #8c7466;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 15px;
+    font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;
 }
 
 .church-wedding__sometxt__blue {
@@ -1576,7 +1589,7 @@ label.captcode {
 }
 
 .when_where_text div {
-    font: 600 0.4em/1.4em 'Josefin Sans', sans-serif;
+    font: 600 0.4em/1.3em 'Josefin Sans', sans-serif;
 }
 
 .when_where_text h3 {
@@ -1586,6 +1599,45 @@ label.captcode {
 
 .when_where_text__blue {
     color: #3399FF;
+}
+
+.getting-there__text {
+    font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;
+    text-align: justify;
+    color: #8c7466;
+}
+
+.getting-there__text h1 {
+    text-align: center;
+    color: #FF46AF;
+    font: 700 5em/1em 'Amatic SC', sans-serif;
+}
+
+.gift_text {
+    text-align: left;
+    background: #FFE4F3;
+
+}
+
+.gift_text__txt {
+    margin-top: 135px;
+    padding-bottom: 40px;
+}
+
+.gift_text h1 {
+    color: #FF46AF;
+    font: 700 4em/1em 'Amatic SC', sans-serif;
+}
+
+.gift_text h3 {
+    color: #FF46AF;
+    font: 700 2em/1em 'Amatic SC', sans-serif;
+}
+
+.gift_text p {
+    font: 600 1.1em/1.5em 'Josefin Sans', sans-serif;
+    text-align: justify;
+    color: #8c7466;
 }
 
 .col-sm-3 {
