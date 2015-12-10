@@ -109,8 +109,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("#bubble-the-couple", 0.5,
-                    {marginTop: -250, ease: Back.easeOut, rotation: 0},
-                    {marginTop: 50, ease: Back.easeOut, rotation: 350}
+                    {marginTop: -450, ease: Back.easeOut, rotation: 0, visibility: 'hidden'},
+                    {marginTop: 50, ease: Back.easeOut, rotation: 350, visibility: 'visible'}
 				);
 
 	// build scene
@@ -356,8 +356,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#bubble-facts", 0.5,
-				{marginTop: -120, ease: Back.easeOut},
-				{marginTop: 50, ease: Back.easeOut}
+				{marginTop: -120, ease: Back.easeOut, visibility: "hidden"},
+				{marginTop: 50, ease: Back.easeOut, visibility: "visible"}
 				);
 
 	// build scene
@@ -369,8 +369,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
     // build tween
     var tween = TweenMax.fromTo("img#bubble-plain", 1.5,
-        {marginTop: -300, ease: Back.easeOut},
-        {marginTop: 100, ease: Back.easeOut}
+        {marginTop: -300, ease: Back.easeOut, visibility:'hidden'},
+        {marginTop: 100, ease: Back.easeOut, visibility:'visible'}
     );
 
     // build scene
@@ -382,8 +382,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
     // build tween
     var tween = TweenMax.fromTo("img#bubble-path", 1.5,
-        {marginTop: "-50%", ease: Back.easeOut, height: 0},
-        {marginTop: "-4%", ease: Back.easeOut, height: 280}
+        {marginTop: "-50%", ease: Back.easeOut, height: 0, visibility:'hidden'},
+        {marginTop: "-4%", ease: Back.easeOut, height: 280, visibility:'visible'}
     );
 
     // build scene

@@ -1193,8 +1193,8 @@ label.captcode {
     font-size: 0.9em; }
   #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-dress-code,
   #bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     position: static;
     margin-left: 0}
   #bubble-finally {
@@ -1208,9 +1208,9 @@ label.captcode {
     height: 40px;
     width: 40px; }
   #globe-lights {
-    width: 140%;
-    margin-left: -17%;
-    top: 3%; }
+      width: 106%;
+      margin-left: -1%;
+      top: 3%; }
   section#story {
     padding: 0 20px 0 20px;
     font: 700 2.2em/1em 'Amatic SC', sans-serif; }
@@ -1299,7 +1299,7 @@ label.captcode {
   section#the-polterweekend {
     /*padding-top: 0px;*/ }
   .row.story {
-    margin-top: 200px; }
+    margin-top: 50px; }
   section#night-after {
     background-size: cover;
     height: 150px;
@@ -1340,12 +1340,17 @@ label.captcode {
   section#the-party {
     /*background-size: cover;*/
     height: 236px; }
-  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke,
-  #bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
+  #bubble-beach-wedding, #bubble-night-after, #bubble-day-after, #bubble-trauung, #bubble-geschenke {
     margin-top: 20px;
     width: 90px;
     height: 90px;
     margin-left: -40px; }
+
+  #bubble-wedding-party, #bubble-church-wedding, #bubble-when-where {
+      margin: 0;
+      width: 90px;
+      height: 90px;
+  }
   #bubble-i-will-2 {
     margin-left: -50px;
     height: 100px;
@@ -1398,14 +1403,29 @@ label.captcode {
     bottom: 20px;
     position: absolute;
     right: 1% !important; }
-  .bubble-the-couple {
-      position: absolute;
+  #bubble-the-couple {
+      position: static;
       left: 50%;
-      margin-left: -50px;
+      margin-left: 0;
       z-index: 7;
       height: 120px;
   }
-  .navbar-element a {
+  #bubble-facts {
+    margin-left: 0;
+    position: static; }
+
+    #bubble-path {
+        position: absolute;
+        left: 33%;
+        margin-top: -12% !important;
+    }
+
+    #bubble-plain {
+        position: absolute;
+        left: 20%;
+        margin-top: 100px;
+    }
+    .navbar-element a {
     line-height: 50px !important;
     font-weight: bold !important; }
   .navbar-element a:hover {
