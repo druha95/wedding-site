@@ -691,6 +691,10 @@ section#rsvp {
   position: relative;
   z-index: 10; }
 
+section#rsvp .container > .row {
+    padding-right: 15px;
+}
+
 .geschenkecontent {
   text-align: left;
   padding: 200px 0 30px 0;
@@ -1743,12 +1747,13 @@ label.captcode {
 
 .gift_text h1 {
     color: #FF46AF;
-    font: 700 4em/1em 'Amatic SC', sans-serif;
+    font: 700 3em/1em 'Amatic SC', sans-serif;
+    margin: 0;
 }
 
 .gift_text h3 {
     color: #FF46AF;
-    font: 700 2em/1em 'Amatic SC', sans-serif;
+    font: 700 1.5em/1em 'Amatic SC', sans-serif;
 }
 
 .gift_text p {
@@ -1765,6 +1770,24 @@ label.captcode {
 
 .icons_img {
     text-align: left;
+}
+
+.icons_img__block--mail .icons_img__block__image {
+    padding-left: 30px;
+}
+
+.icons_img__block--phone {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.icons_img__block--phone .icons_img__block__image {
+    padding-right: 16px;
+}
+
+.icons_img__block__link {
+    font-size: 11px;
+    color: #3399FF;
 }
 
 .submit_button_center {
@@ -1938,4 +1961,10 @@ section#instagram .partycontent {
     right: 3%;
     top: 9px;
     pointer-events: none;
+}
+
+.rsvp_block {
+    margin-left: 8.33333%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
