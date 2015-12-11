@@ -715,7 +715,7 @@ section#googlemap {
 
 /* Footer */
 section#footer {
-  background: #ff46af;
+  background: url("../img/zigzag.png") top repeat-x #ff46af;
   height: 50px;
   font-size: 1.5em;
   padding-top: 10px; }
@@ -1889,7 +1889,7 @@ section#instagram {
 section#instagram h1 {
     color: #FF46AF;
 }
-section#instagram .center {
+section#instagram .partycontent {
     font: 600 1em/1.3em 'Josefin Sans', sans-serif;
     color: #8c7466;
 }
