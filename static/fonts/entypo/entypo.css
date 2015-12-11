@@ -20,6 +20,11 @@
 	font-style: normal;
 }
 
+@font-face {
+    font-family: princessSofia;
+    src: url("../princessSofia/PrincessSofia-Regular.ttf") format("opentype");
+}
+
 section#characters ul {
 	list-style: none;
 }
@@ -30,4 +35,3 @@ section#characters li {
 	font-size: 4em;
 }
 
- 
