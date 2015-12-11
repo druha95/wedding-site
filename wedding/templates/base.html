@@ -619,7 +619,24 @@
                         <label class="label_rsvp label_rsvp--yes" for="rsvp_yes"><input type="radio" id="rsvp_yes" value="rsvp">YEAH!!</label>
                         <label class="label_rsvp label_rsvp--no" style="margin-left: 25%;" for="rsvp_no"><input type="radio" id="rsvp_no" value="rsvp_mini">CAN'T :(</label>
                         <div id="rsvp-form-mini" class="smart-forms">
-                            {% include "pages/submit_rsvp_mini.html" %}
+                            <div class="container">
+                                <div class="col-md-3">
+                                    <form action="/submit_rsvp_mini/" method="post" role="form" class="form-horizontal">
+                                        {% csrf_token %}
+                                            <div id="div_name" class="form-group">
+                                                <input id="id_name" class="form-control" maxlength="50" name="name" type="text" placeholder="Your name *">
+                                                {{ form.name.errors }}
+                                            </div>
+                                            <div id="div_email" class="form-group">
+                                                <input id="id_email" class="form-control" maxlength="50" name="email" type="email" placeholder="Your email *">
+                                                {{ form.email.errors }}
+                                            </div>
+                                            <div class="form-group submit_button_center">
+                                                <button type="submit" id="gogo" class="button btn-primary">SUBMIT</button>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <!--<div id="rsvp-form" class="smart-forms">-->
                             <!--{% include "pages/submit_rsvp.html" %}-->

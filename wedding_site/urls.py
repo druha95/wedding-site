@@ -7,8 +7,6 @@ from django.contrib import admin
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
-from wedding.views import wedding_page
-
 
 admin.autodiscover()
 
@@ -32,7 +30,6 @@ urlpatterns += patterns('',
         name='submit-rsvp'),
     url(r'^submit_rsvp_mini/$', 'wedding.views.submit_mini_rsvp',
         name='submit-mini-rsvp'),
-    url("^$", wedding_page, {"slug": "/"}, name="home"),
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 
@@ -58,7 +55,7 @@ urlpatterns += patterns('',
     # "/.html" - so for this case, the template "pages/index.html"
     # should be used if you want to customize the homepage's template.
 
-    # url("^$", "mezzanine.pages.views.page", {"slug": "/"}, name="home"),
+    url("^$", "mezzanine.pages.views.page", {"slug": "/"}, name="home"),
 
     # HOMEPAGE FOR A BLOG-ONLY SITE
     # -----------------------------
