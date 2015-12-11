@@ -631,6 +631,7 @@ section#dress-code.wedding-party {
 section#when-where {
     font: 700 1.8em/1em 'Amatic SC', sans-serif;
     background: url("../img/zigzag.png") top repeat-x #DED1CA;
+    padding-bottom: 60px;
 }
 
 section#getting-there {

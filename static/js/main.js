@@ -369,8 +369,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
     // build tween
     var tween = TweenMax.fromTo("img#bubble-plain", 1.5,
-        {marginTop: -300, ease: Back.easeOut, visibility:'hidden'},
-        {marginTop: 100, ease: Back.easeOut, visibility:'visible'}
+        {marginTop: -50, ease: Back.easeOut, scale:0},
+        {marginTop: 100, ease: Back.easeOut, scale:1}
     );
 
     // build scene
@@ -382,8 +382,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
     // build tween
     var tween = TweenMax.fromTo("img#bubble-path", 1.5,
-        {marginTop: "-50%", ease: Back.easeOut, height: 0, visibility:'hidden'},
-        {marginTop: "-4%", ease: Back.easeOut, height: 280, visibility:'visible'}
+        {marginTop: "-10%", ease: Back.easeOut, height: 0, scale:0},
+        {marginTop: "-4%", ease: Back.easeOut, height: 280, scale:1}
     );
 
     // build scene
@@ -532,6 +532,19 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#i-will", 0.5,
+        {marginTop: -150, ease: Back.easeOut, scale:0},
+        {marginTop: -15, ease: Back.easeOut, scale:1 }
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#rsvp", triggerHook: 0.6})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#location-arrow", 0.3,
 				{scale: 0, ease: Back.easeOut, left: 0, top:0},
@@ -618,6 +631,19 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("img#will-party", 0.3,
+				{scale: 0, ease: Back.easeOut, rotation:0},
+				{scale: 1, ease: Back.easeOut, rotation:-340 }
+				);
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#rsvp", triggerHook: 0.6})
+					.setTween(tween)
+					.addTo(controller);
+});
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#party2", 0.3, 
@@ -681,8 +707,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenMax.fromTo("img#bubble-i-will-2", 0.5, 
-				{marginTop: -250, ease: Back.easeOut},
-				{marginTop: 40, ease: Back.easeOut }
+				{marginTop: -250, ease: Back.easeOut, scale:0},
+				{marginTop: 40, ease: Back.easeOut, scale:1 }
 				);
 
 	// build scene
