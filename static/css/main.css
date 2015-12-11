@@ -1925,3 +1925,6 @@ section#instagram .center {
   left: 0;
   right: 0;
 }
+.form-horizontal label {
+  display: none;
+}
