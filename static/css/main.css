@@ -1925,3 +1925,19 @@ section#instagram .partycontent {
   left: 0;
   right: 0;
 }
+
+.smart-forms {
+    text-align: left;
+}
+
+.datetime_picker_wrapper {
+    position: relative;
+}
+
+.datetime_picker_wrapper .glyphicon.glyphicon-calendar {
+    position: absolute;
+    display: inline-block;
+    right: 3%;
+    top: 9px;
+    pointer-events: none;
+}
