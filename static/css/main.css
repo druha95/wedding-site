@@ -333,7 +333,7 @@ div#warum-nicht {
 
 #bubble-when-where {
     left: 50%;
-    margin-left: 0px;
+    margin: 15px 0;
     z-index: 3;
     height: 130px;
     width: 130px; }
@@ -578,7 +578,7 @@ section#story {
 
 section#wedding {
     min-height: 350px;
-    font: 700 3em/1em 'Amatic SC', sans-serif;
+    font: 700 2em/1em 'Amatic SC', sans-serif;
 }
 
 section#getting-there-img {
@@ -621,16 +621,20 @@ section#beach-wedding {
 }
 
 section#dress-code {
-    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+    font: 700 2em/1em 'Amatic SC', sans-serif;
+}
+
+section#dress-code.wedding-party {
     margin-top: -30px;
 }
 
 section#when-where {
     font: 700 1.8em/1em 'Amatic SC', sans-serif;
+    background: url("../img/zigzag.png") top repeat-x #F6EFEB;
 }
 
 section#getting-there {
-    font: 700 1.8em/1em 'Amatic SC', sans-serif;
+    font: 700 2em/1em 'Amatic SC', sans-serif;
 }
 
 
@@ -1639,7 +1643,7 @@ label.captcode {
 }
 
 #wedding-party .col-sm-6 {
-    margin:  0 0 15px 0;
+    margin: 15px 0;
 }
 
 #wedding-party .col-sm-6.col_first_line {
@@ -1681,6 +1685,7 @@ label.captcode {
     text-align: justify;
     color: #8c7466;
     font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;
+    margin: 15px 0;
 }
 
 .church-wedding__sometxt__blue {
@@ -1715,6 +1720,12 @@ label.captcode {
     text-align: center;
     color: #FF46AF;
     font: 700 5em/1em 'Amatic SC', sans-serif;
+}
+
+.getting-there__text h2 {
+    text-align: left;
+    font: 700 4em/1em 'Amatic SC', sans-serif;
+    color: #3399FF;
 }
 
 .gift_text {
