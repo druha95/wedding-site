@@ -1,22 +1,274 @@
-{% load staticfiles mezzanine_tags bootstrap %}
-<div class="container">
-	<div class="col-md-3">
-	    <form action="/submit_rsvp/" method="post" role="form" class="form-horizontal">
-	    	{% with submit_rsvp_form as form %}
-		        {% for field in form.visible_fields %}
-			        <div id="div_{{ field.html_name }}" 
-			             class="form-group{% if field.errors %} has-error{% endif %}">
-			            {{ field|bootstrap }}
-			        </div>
-		        {% endfor %}
-		        {% for hidden in form.hidden_fields %}
-		            {{ hidden }}
-		        {% endfor %}
-		        {% csrf_token %}
-		        <div class="form-group">
-		            <button type="submit" id="gogo" class="button btn-primary">SUBMIT</button>
-		        </div>
-	        {% endwith %}
-	    </form>
-    </div>
+<div class="col-sm-10 col-sm-offset-1">
+    <form action="/submit_rsvp/" method="post" role="form" class="form-horizontal">
+        <div id="div_name" class="form-group">
+            <input id="id_name" class="form-control" maxlength="50" name="name" type="text" placeholder="Your full name" required>
+            {{ form.name.errors }}
+        </div>
+        <div id="div_email" class="form-group">
+            <input id="id_email" class="form-control" maxlength="50" name="email" type="email" placeholder="Your email" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_street_address" class="form-group">
+            <input id="id_street_address" class="form-control" maxlength="50" name="street_address" type="text" placeholder="Street address" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_street_address_cont" class="form-group">
+            <input id="id_street_address_cont" class="form-control" maxlength="50" name="street_address_cont" type="text" placeholder="Street address (continued)" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_city" class="form-group">
+            <input id="id_city" class="form-control" maxlength="50" name="city" type="text" placeholder="City" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_state" class="form-group">
+            <input id="id_state" class="form-control" maxlength="50" name="state" type="text" placeholder="State / Province / Region" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_zip_code" class="form-group">
+            <input id="id_zip_code" class="form-control" maxlength="50" name="zip_code" type="number" placeholder="Zip / Postal code" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_country" class="form-group">
+            <input id="id_country" class="form-control" maxlength="50" name="country" type="text" placeholder="Country" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_events" class="form-group">
+            <label for="id_events_0">Events attended:</label><ul class="errorlist"><li>{{ form.email.errors }}</li></ul>
+            <ul id="id_events">
+                <li>
+                    <label for="id_events_0"><input id="id_events_0" name="events" type="checkbox" value="sunset_cruise"> Sunset cruise, 3 PM, Sunday, Feb 14</label>
+                </li>
+                <li>
+                    <label for="id_events_1"><input id="id_events_1" name="events" type="checkbox" value="beach_wedding"> Beach wedding, 4 PM, Monday, Feb 15</label>
+                </li>
+                <li>
+                    <label for="id_events_2"><input id="id_events_2" name="events" type="checkbox" value="chill_beach"> Chill on the beach, 1 PM, Tuesday, Feb 16</label>
+                </li>
+                <li>
+                    <label for="id_events_3"><input id="id_events_3" name="events" type="checkbox" value="church_wedding"> Church wedding, 1 PM, Friday, Feb 19</label>
+                </li>
+                <li>
+                    <label for="id_events_4"><input id="id_events_4" name="events" type="checkbox" value="dimsum_brunch"> Dimsum brunch, 12 noon, Saturday, Feb 20</label>
+                </li>
+            </ul>
+        </div>
+
+        <div id="div_manila_flight_into" class="form-group">
+            <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Manila arrival flight number (into Manila)" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_manila_date_into" class="form-group">
+            <div class="input-group date" id="id_manila_date_into_picker">
+                <input class="form-control" id="id_manila_date_into" name="manila_date_into" type="text" placeholder="Manila date into">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            {{ form.email.errors }}
+            <script>
+                $(function() {
+                    $("#id_manila_date_into_picker").datetimepicker({"pickTime": false, "language": "en", "format": "MM-DD-YYYY"});
+                });
+            </script>
+        </div>
+
+        <div id="div_manila_time_into" class="form-group">
+            <div class="input-group date" id="id_manila_time_into_picker">
+                <input class="form-control" id="id_manila_time_into" name="manila_time_into" type="text" placeholder="Manila time into">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            {{ form.email.errors }}
+            <script>
+                $(function() {
+                    $("#id_manila_time_into_picker").datetimepicker({"pickSeconds": false, "format": "HH:mm", "language": "en", "pickDate": false});
+                });
+            </script>
+        </div>
+
+        <div id="div_manila_flight_out" class="form-group">
+            <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila)" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_manila_date_out" class="form-group">
+            <div class="input-group date" id="id_manila_date_out_picker">
+                <input class="form-control" id="id_manila_date_out" name="manila_date_out" type="text" placeholder="Manila date out">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script>
+                $(function() {
+                    $("#id_manila_date_out_picker").datetimepicker({"pickTime": false, "language": "en", "format": "MM-DD-YYYY"});
+                });
+            </script>
+        </div>
+
+        <div id="div_manila_time_out" class="form-group">
+            <div class="input-group date" id="id_manila_time_out_picker">
+                <input class="form-control" id="id_manila_time_out" name="manila_time_out" type="text" placeholder="Manila time out">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script>
+                $(function() {
+                    $("#id_manila_time_out_picker").datetimepicker({"pickSeconds": false, "format": "HH:mm", "language": "en", "pickDate": false});
+                });
+            </script>
+        </div>
+
+
+        <div id="div_manila_staying" class="form-group">
+            {{ form.email.errors }}
+            <select id="id_manila_staying" name="manila_staying">
+                <option value="" selected="selected">Staying in Manila</option>
+                <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+            </select>
+        </div>
+
+        <div id="div_boracay_flight_into" class="form-group">
+            <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Boracay arrival flight number (into Boracay)" required>
+            {{ form.email.errors }}
+        </div>
+
+        <div id="div_boracay_date_into" class="form-group">
+            <div class="input-group date" id="id_boracay_date_into_picker">
+                <input class="form-control" id="id_boracay_date_into" name="boracay_date_into" type="text" placeholder="Boracay date into">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script>
+                $(function() {
+                    $("#id_boracay_date_into_picker").datetimepicker({"pickTime": false, "language": "en", "format": "MM-DD-YYYY"});
+                });
+            </script>
+        </div>
+
+        <div id="div_boracay_time_into" class="form-group">
+            <div class="input-group date" id="id_boracay_time_into_picker">
+                <input class="form-control" id="id_boracay_time_into" name="boracay_time_into" type="text" placeholder="Boracay time into">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script>
+                $(function() {
+                    $("#id_boracay_time_into_picker").datetimepicker({"pickSeconds": false, "format": "HH:mm", "language": "en", "pickDate": false});
+                });
+            </script>
+        </div>
+
+        <div id="div_boracay_flight_out" class="form-group">
+            <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Boracay)" required>
+            {{ form.email.errors }}
+        </div>
+
+
+        <div id="div_boracay_date_out" class="form-group">
+            <div class="input-group date" id="id_boracay_date_out_picker">
+                <input class="form-control" id="id_boracay_date_out" name="boracay_date_out" type="text" placeholder="Boracay date out">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script>
+                $(function() {
+                    $("#id_boracay_date_out_picker").datetimepicker({"pickTime": false, "language": "en", "format": "MM-DD-YYYY"});
+                });
+            </script>
+        </div>
+
+        <div id="div_boracay_time_out" class="form-group">
+            <div class="input-group date" id="id_boracay_time_out_picker">
+                <input class="form-control" id="id_boracay_time_out" name="boracay_time_out" type="text" placeholder="Boracay time out">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script>
+                $(function() {
+                    $("#id_boracay_time_out_picker").datetimepicker({"pickSeconds": false, "format": "HH:mm", "language": "en", "pickDate": false});
+                });
+            </script>
+        </div>
+
+        <div id="div_boracay_staying" class="form-group">
+            {{ form.email.errors }}
+            <select id="id_boracay_staying" name="boracay_staying">
+                <option value="" selected="selected">Staying in Boracay</option>
+                <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+            </select>
+        </div>
+
+        <div id="div_shoe_size" class="form-group">
+            {{ form.email.errors }}
+            <select id="id_shoe_size" name="shoe_size">
+                <option value="" selected="selected">Your shoe size</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <div id="div_dietary_restrictions" class="form-group">
+            {{ form.email.errors }}
+            <select id="id_dietary_restrictions" name="dietary_restrictions">
+                <option value="" selected="selected">Your dietary restrictions</option>
+                <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+            </select>
+        </div>
+
+        <div id="div_number_of_guests" class="form-group">
+            {{ form.email.errors }}
+            <select id="id_number_of_guests" name="number_of_guests">
+                <option value="" selected="selected">No. of guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+
+
+        <div id="div_additional_comment" class="form-group">
+            <textarea cols="40" id="id_additional_comment" maxlength="200" name="additional_comment" rows="10" placeholder="Anything else"></textarea>
+            {{ form.email.errors }}
+        </div>
+
+
+
+        <input type="hidden" name="csrfmiddlewaretoken" value="OCNpHguOnrwjd4paK85KZG3ZrtevP3U0">
+        <div class="form-group submit_button_center">
+            <button type="submit" id="gogo" class="button btn-primary">SUBMIT</button>
+        </div>
+
+    </form>
 </div>
