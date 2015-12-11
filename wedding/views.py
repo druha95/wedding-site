@@ -11,7 +11,7 @@ class RsvpCreateView(CreateView):
     Create View for Rsvp
     """
     model = Rsvp
-    template_name = 'pages/submit_rsvp.html'
+    template_name = 'base.html'
     form_class = SubmitRsvpForm
     success_url = '/'
 
