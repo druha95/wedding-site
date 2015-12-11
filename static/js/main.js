@@ -531,18 +531,57 @@ $(document).ready(function($) {
         .addTo(controller);
 });
 
-//$(document).ready(function($) {
-//	// build tween
-//	var tween = TweenMax.fromTo("img#location-arrow", 0.3,
-//				{scale: 0, ease: Back.easeOut, marginTop: 300},
-//				{scale: 1, ease: Back.easeOut, marginTop:0, delay: 1.5 }
-//				);
-//
-//	// build scene
-//	var scene = new ScrollScene({triggerElement: "section#the-party", triggerHook: 0.6})
-//					.setTween(tween)
-//					.addTo(controller);
-//});
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenMax.fromTo("img#location-arrow", 0.3,
+				{scale: 0, ease: Back.easeOut, left: 0, top:0},
+				{scale: 1, ease: Back.easeOut, left:"18%", top:"48%"}
+				);
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#beach-wedding-img", triggerHook: 0.6})
+					.setTween(tween)
+					.addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#location-arrow2", 0.3,
+        {scale: 0, ease: Back.easeOut, left: 0},
+        {scale: 1, ease: Back.easeOut, left:"11%"}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#beach-wedding-img", triggerHook: 0.6})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#party-1", 0.3,
+        {scale: 0, ease: Back.easeOut, left: 0},
+        {scale: 1, ease: Back.easeOut, left:"19%"}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#beach-wedding-img", triggerHook: 0.6})
+        .setTween(tween)
+        .addTo(controller);
+});
+
+$(document).ready(function($) {
+    // build tween
+    var tween = TweenMax.fromTo("img#party-2", 0.3,
+        {scale: 0, ease: Back.easeOut, left: 0},
+        {scale: 1, ease: Back.easeOut, left:"5%"}
+    );
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "section#beach-wedding-img", triggerHook: 0.6})
+        .setTween(tween)
+        .addTo(controller);
+});
 //$(document).ready(function($) {
 //	// build tween
 //	var tween = TweenMax.fromTo("img#location-arrow-2", 0.3,

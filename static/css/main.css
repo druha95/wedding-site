@@ -573,7 +573,7 @@ section#story {
   position: relative;
   z-index: 5;
   font: 700 3em/1em 'Amatic SC', sans-serif;
-  background: url("../img/zigzag.png") top repeat-x #F6EFEB;
+  background: url("../img/zigzag.png") top repeat-x #DED1CA;
 }
 
 section#wedding {
@@ -630,7 +630,7 @@ section#dress-code.wedding-party {
 
 section#when-where {
     font: 700 1.8em/1em 'Amatic SC', sans-serif;
-    background: url("../img/zigzag.png") top repeat-x #F6EFEB;
+    background: url("../img/zigzag.png") top repeat-x #DED1CA;
 }
 
 section#getting-there {
@@ -1652,6 +1652,7 @@ label.captcode {
 
 .bridesmaids_list__title {
     color: #FF46AF;
+    font-size: 2.5em;
 }
 
 .bridesmaids_list__person {
@@ -1660,6 +1661,7 @@ label.captcode {
 
 .groomsman_list__title {
     color: #FF46AF;
+    font-size: 2.5em;
 }
 
 .groomsman_list__person {
@@ -1880,8 +1882,18 @@ label.captcode {
 }
 section#instagram {
   position: relative;
-  z-index: 10; 
+  z-index: 10;
+  background: #DED1CA;
 }
+
+section#instagram h1 {
+    color: #FF46AF;
+}
+section#instagram .center {
+    font: 600 1em/1.3em 'Josefin Sans', sans-serif;
+    color: #8c7466;
+}
+
 #instafeed a {
   margin: 0 5px;
 }
