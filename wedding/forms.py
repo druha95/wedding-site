@@ -111,4 +111,5 @@ class SubmitRsvpForm(forms.ModelForm):
             [str(email)], html_message=body_guest_html)
         if commit:
             new_rsvp.save()
+            self.save_m2m()
         return new_rsvp
