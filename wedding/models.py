@@ -2,6 +2,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from multiselectfield import MultiSelectField
+from django_countries import countries
 
 
 class Guest(models.Model):
@@ -77,7 +78,8 @@ class Rsvp(models.Model):
     state = models.CharField(
         _("State / Province / Region"), max_length=50, null=True)
     zip_code = models.PositiveIntegerField(_("Zip / Postal code"), null=True)
-    country = models.CharField(_("Country"), max_length=50, null=True)
+    country = models.CharField(_("Country"), max_length=50, choices=countries,
+                               null=True)
     events = MultiSelectField(
         _("Events attended"), choices=EVENTS_CHOICES, null=True)
     manila_flight_into = models.CharField(

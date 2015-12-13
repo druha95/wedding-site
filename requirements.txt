@@ -1,4 +1,5 @@
 Mezzanine==4.0.1
 django-bootstrap-form==3.2
 django-bootstrap3-datetimepicker==2.2.3
+django-countries==3.4.1
 django-multiselectfield==0.1.3

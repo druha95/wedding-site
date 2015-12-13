@@ -1,3 +1,4 @@
+{% load country %}
 <div class="col-sm-8 col-sm-offset-2 col-xs-2 col-xs-offset-3">
     <form action="/submit_rsvp/" method="post" role="form" class="form-horizontal">
         {% csrf_token %}
@@ -36,7 +37,7 @@
         </div>
 
         <div id="div_country" class="form-group">
-            <input id="id_country" class="form-control" maxlength="50" name="country" type="text" placeholder="Country" required>
+            {% country_field %}
             {{ form.country.errors }}
         </div>
 

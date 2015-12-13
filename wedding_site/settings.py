@@ -225,6 +225,7 @@ INSTALLED_APPS = (
     "bootstrapform",
     "bootstrap3_datetime",
     "multiselectfield",
+    "django_countries",
     # "mezzanine.accounts",
     # "mezzanine.mobile",
 )
