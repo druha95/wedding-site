@@ -2009,6 +2009,13 @@ section#instagram .partycontent {
     position: relative;
 }
 
+.smart-forms h2 {
+    color: #FF46AF;
+    font: 700 2.2em/1em 'Amatic SC', sans-serif;
+    margin: 30px 0 15px 0;
+    text-align: center;
+}
+
 .arrow_down {
     position: absolute;
     top: 18px;
@@ -2026,3 +2033,4 @@ section#instagram .partycontent {
     background: white;
     pointer-events: none;
 }
+
