@@ -37,9 +37,13 @@
         </div>
 
         <div id="div_country" class="form-group">
+            <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
             {% country_field %}
             {{ form.country.errors }}
+            <div class="arrow_up"></div>
         </div>
+
+        <h2>which events will you attend?</h2>
 
         <div id="div_events" class="form-group">
             <div>{{ form.events.errors }}</div>
@@ -61,6 +65,8 @@
                 </li>
             </ul>
         </div>
+
+        <h2>when do you arrive in manila?</h2>
 
         <div id="div_manila_flight_into" class="form-group">
             <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Manila arrival flight number (into Manila)" required>
@@ -127,6 +133,7 @@
 
         <div id="div_manila_staying" class="form-group">
             {{ form.manila_staying.errors }}
+            <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
             <select id="id_manila_staying" name="manila_staying">
                 <option value="" selected="selected">Staying in Manila</option>
                 <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
@@ -135,7 +142,10 @@
                 <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
                 <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
             </select>
+            <div class="arrow_up"></div>
         </div>
+
+        <h2>when dou you arrive in boracay?</h2>
 
         <div id="div_boracay_flight_into" class="form-group">
             <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Boracay arrival flight number (into Boracay)" required>
@@ -202,6 +212,7 @@
 
         <div id="div_boracay_staying" class="form-group">
             {{ form.boracay_staying.errors }}
+            <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
             <select id="id_boracay_staying" name="boracay_staying">
                 <option value="" selected="selected">Staying in Boracay</option>
                 <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
@@ -210,10 +221,14 @@
                 <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
                 <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
             </select>
+            <div class="arrow_up"></div>
         </div>
+
+        <h2>other important stuff like...</h2>
 
         <div id="div_shoe_size" class="form-group">
             {{ form.shoe_size.errors }}
+            <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
             <select id="id_shoe_size" name="shoe_size">
                 <option value="" selected="selected">Your shoe size</option>
                 <option value="1">1</option>
@@ -222,10 +237,12 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
+            <div class="arrow_up"></div>
         </div>
 
         <div id="div_dietary_restrictions" class="form-group">
             {{ form.dietary_restrictions.errors }}
+            <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
             <select id="id_dietary_restrictions" name="dietary_restrictions">
                 <option value="" selected="selected">Your dietary restrictions</option>
                 <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
@@ -234,10 +251,14 @@
                 <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
                 <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
             </select>
+            <div class="arrow_up"></div>
         </div>
+
+        <h2>any special guests?</h2>
 
         <div id="div_number_of_guests" class="form-group">
             {{ form.number_of_guests.errors }}
+            <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
             <select id="id_number_of_guests" name="number_of_guests">
                 <option value="" selected="selected">No. of guests</option>
                 <option value="1">1</option>
@@ -247,8 +268,10 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
             </select>
+            <div class="arrow_up"></div>
         </div>
 
+        <h2>anything else?</h2>
 
         <div id="div_additional_comment" class="form-group">
             <textarea cols="40" id="id_additional_comment" maxlength="200" name="additional_comment" rows="10" placeholder="Anything else"></textarea>

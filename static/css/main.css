@@ -750,7 +750,8 @@ section#footer {
 .smart-forms label, .smart-forms input, .smart-forms button, .smart-forms select, .smart-forms textarea {
   margin: 10px 0 !important;
   font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;
-  outline: none; }
+  outline: none;
+}
 
 /* @universal rules for all elements 
 ---------------------------------------------------- */
@@ -1968,4 +1969,60 @@ section#instagram .partycontent {
     margin-left: 8.33333%;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.smart-forms form select {
+    background: white;
+    width: 100%;
+    margin: 10px 0 !important;
+    font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;
+    outline: none;
+    height: 34px;
+    padding: 6px 24px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.smart-forms textarea {
+    background: white;
+    width: 100%;
+    margin: 10px 0 !important;
+    font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;
+    outline: none;
+    padding: 6px 24px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.smart-forms input[type="checkbox"] {
+    background: white;
+}
+
+#div_events label {
+    font: 600 1em/2em 'Josefin Sans', sans-serif;
+    text-align: justify;
+    color: #8c7466;
+}
+
+.smart-forms .form-group {
+    position: relative;
+}
+
+.arrow_down {
+    position: absolute;
+    top: 18px;
+    font-size: 12px;
+    left: 12px;
+    pointer-events: none;
+}
+
+.arrow_up {
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    right: 6px;
+    top: 18px;
+    background: white;
+    pointer-events: none;
 }
