@@ -2061,3 +2061,12 @@ section#instagram .partycontent {
     pointer-events: none;
 }
 
+
+#rsvp-form {
+    display: none;
+}
+
+#guest-form {
+    display: none;
+}
+

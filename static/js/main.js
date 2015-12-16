@@ -740,3 +740,20 @@ $(document).ready(function($) {
 					.setTween(tween)
 					.addTo(controller);
 });
+
+
+
+$(document).ready(function($) {
+    $("input:radio[name=yes_no]").click(function() {
+        var value = $(this).val();
+        if(value == 'rsvp') {
+            $("#rsvp-form-mini").css('display', 'none');
+            $("#rsvp-form").css('display', 'block');
+            $("#guest-form").css('display', 'block');
+        } else if(value == 'rsvp_mini') {
+            $("#rsvp-form-mini").css('display', 'block');
+            $("#rsvp-form").css('display', 'none');
+            $("#guest-form").css('display', 'none');
+        }
+    });
+});
