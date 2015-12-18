@@ -1,5 +1,5 @@
 from django.contrib import admin
-from wedding.models import Guest, Rsvp
+from wedding.models import Rsvp
 
 
 class RsvpAdmin(admin.ModelAdmin):
@@ -13,4 +13,3 @@ class RsvpAdmin(admin.ModelAdmin):
     )
 
 admin.site.register(Rsvp, RsvpAdmin)
-admin.site.register(Guest)

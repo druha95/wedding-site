@@ -3,7 +3,7 @@ from django import forms
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
-from wedding.models import Guest, Rsvp
+from wedding.models import Rsvp
 from bootstrap3_datetime.widgets import DateTimePicker
 
 
@@ -77,7 +77,7 @@ class SubmitRsvpForm(forms.ModelForm):
 
     class Meta:
         model = Rsvp
-        exclude = ['rsvp', 'guests', ]
+        exclude = ['rsvp', ]
 
     def save(self, commit=True):
         new_rsvp = super(SubmitRsvpForm, self).save(commit=False)
@@ -111,13 +111,4 @@ class SubmitRsvpForm(forms.ModelForm):
             [str(email)], html_message=body_guest_html)
         if commit:
             new_rsvp.save()
-            self.save_m2m()
         return new_rsvp
-
-
-class GuestForm(forms.ModelForm):
-    """Class for Guest form"""
-
-    class Meta:
-        model = Guest
-        fields = ['name', 'email', 'shoe_size', 'dietary_restrictions']

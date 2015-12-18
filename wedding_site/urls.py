@@ -30,8 +30,6 @@ urlpatterns += patterns('',
         name='submit-rsvp'),
     url(r'^submit_rsvp_mini/$', 'wedding.views.submit_mini_rsvp',
         name='submit-mini-rsvp'),
-    url(r'^submit_guest/$', 'wedding.views.submit_guest',
-        name='submit_guest'),
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 

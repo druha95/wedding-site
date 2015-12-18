@@ -5,40 +5,6 @@ from multiselectfield import MultiSelectField
 from django_countries import countries
 
 
-class Guest(models.Model):
-
-    SHOE_SIZE_CHOICES = (
-        (1, _("1")),
-        (2, _("2")),
-        (3, _("3")),
-        (4, _("4")),
-        (5, _("5")),
-    )
-
-    DIETARY_CHOICES = (
-        ("sunset_cruise", _("Sunset cruise, 3 PM, Sunday, Feb 14")),
-        ("beach_wedding", _("Beach wedding, 4 PM, Monday, Feb 15")),
-        ("chill_beach", _("Chill on the beach, 1 PM, Tuesday, Feb 16")),
-        ("church_wedding", _("Church wedding, 1 PM, Friday, Feb 19")),
-        ("dimsum_brunch", _("Dimsum brunch, 12 noon, Saturday, Feb 20")),
-    )
-
-    name = models.CharField(_("Guest's name"), max_length=50)
-    email = models.EmailField(_("Guest's email"), max_length=50)
-    shoe_size = models.PositiveIntegerField(
-        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True)
-    dietary_restrictions = models.CharField(
-        _("Guest’s dietary restrictions"), max_length=50,
-        choices=DIETARY_CHOICES, null=True)
-
-    class Meta:
-        verbose_name = _("Guest")
-        verbose_name_plural = _("Guests")
-
-    def __str__(self):
-        return self.name
-
-
 class Rsvp(models.Model):
 
     EVENTS_CHOICES = (
@@ -121,9 +87,43 @@ class Rsvp(models.Model):
         null=True)
     number_of_guests = models.PositiveIntegerField(
         _("No. of guests"), null=True, choices=NUMBER_OF_GUESTS_CHOICES)
+    guests_name_1 = models.CharField(_("Guest's name"), blank=True, max_length=50)
+    guests_email_1 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
+    guests_shoe_size_1 = models.PositiveIntegerField(
+        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_1 = models.CharField(
+        _("Guest’s dietary restrictions"), max_length=50,
+        choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_name_2 = models.CharField(_("Guest's name"), blank=True, max_length=50)
+    guests_email_2 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
+    guests_shoe_size_2 = models.PositiveIntegerField(
+        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_2 = models.CharField(
+        _("Guest’s dietary restrictions"), max_length=50,
+        choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_name_3 = models.CharField(_("Guest's name"), blank=True, max_length=50)
+    guests_email_3 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
+    guests_shoe_size_3 = models.PositiveIntegerField(
+        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_3 = models.CharField(
+        _("Guest’s dietary restrictions"), max_length=50,
+        choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_name_4 = models.CharField(_("Guest's name"), blank=True, max_length=50)
+    guests_email_4 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
+    guests_shoe_size_4 = models.PositiveIntegerField(
+        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_4 = models.CharField(
+        _("Guest’s dietary restrictions"), max_length=50,
+        choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_name_5 = models.CharField(_("Guest's name"), blank=True, max_length=50)
+    guests_email_5 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
+    guests_shoe_size_5 = models.PositiveIntegerField(
+        _("Guest’s shoe size"), choices=SHOE_SIZE_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_5 = models.CharField(
+        _("Guest’s dietary restrictions"), max_length=50,
+        choices=DIETARY_CHOICES, null=True, blank=True)
     additional_comment = models.TextField(
         _("Anything else"), max_length=200, null=True, blank=True)
-    guests = models.ManyToManyField(Guest)
 
     class Meta:
         verbose_name = _("RSVP")
