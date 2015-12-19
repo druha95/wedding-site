@@ -757,3 +757,17 @@ $(document).ready(function($) {
         }
     });
 });
+
+$(document).ready(function($) {
+    $("#id_number_of_guests").on('change', function() {
+        for(var i=1; i<=5; i++) {
+            $(".guest_form_" + i).css('display', "none");
+        }
+
+        var value = $(this).val();
+
+        for(var j=1; j<=value; j++) {
+            $(".guest_form_" + j).css('display', "block");
+        }
+    });
+});

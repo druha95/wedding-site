@@ -2070,3 +2070,16 @@ section#instagram .partycontent {
     display: none;
 }
 
+
+.guest_form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.guest_form_1,
+.guest_form_2,
+.guest_form_3,
+.guest_form_4,
+.guest_form_5 {
+    display: none;
+}
