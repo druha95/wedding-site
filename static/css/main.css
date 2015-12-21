@@ -1815,7 +1815,7 @@ label.captcode {
 }
 
 .icons_img__block__link {
-    font-size: 11px;
+    font-size: 0.6em;
     color: #3399FF;
 }
 
@@ -2084,4 +2084,14 @@ section#instagram .partycontent {
 .guest_form_5 {
     display: none;
     margin-bottom: 15px;
+}
+
+.label_rsvp--no {
+    margin-left: 25%;
+}
+
+
+#rsvp_yes,
+#rsvp_no {
+
 }
