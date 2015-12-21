@@ -2054,11 +2054,12 @@ section#instagram .partycontent {
 .arrow_up {
     position: absolute;
     width: 18px;
-    height: 24px;
-    right: 6px;
-    top: 18px;
+    height: 32px;
+    right: 0px;
+    top: 11px;
     background: white;
     pointer-events: none;
+    border-radius: 0 4px 4px 0;
 }
 
 
@@ -2082,4 +2083,5 @@ section#instagram .partycontent {
 .guest_form_4,
 .guest_form_5 {
     display: none;
+    margin-bottom: 15px;
 }
