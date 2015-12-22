@@ -1487,34 +1487,6 @@ label.captcode {
       font-size: 1.5em !important;
   }
 
-  img#location-arrow {
-    position: absolute;
-    width: 80px;
-    transform: rotate(-120deg);
-    left: 20% !important;
-    top: 34% !important;  }
-
-  img#party-1 {
-    position: absolute;
-    left: 22% !important;
-    top: 20% !important;
-    width: 30px;
-  }
-
-  img#location-arrow2 {
-    position: absolute;
-    left: 15% !important;
-    top: 50%;
-    width: 80px; }
-
-  img#party-2 {
-    position: absolute;
-    width: 30px;
-    transform: rotate(-20deg);
-    left: 10% !important;
-    top: 50% !important;
-
-  }
 
   .beach_wedding_pinktxt, .beach_wedding__txt {
       padding: 0 15px !important;
@@ -1539,6 +1511,10 @@ label.captcode {
 
   section#dress-code .col-sm-6 {
       margin: 40px 0 !important;
+  }
+
+  .label_rsvp span {
+      margin-left: 0 !important;
   }
 }
 
@@ -1792,9 +1768,12 @@ label.captcode {
 }
 
 .label_rsvp {
-    margin-left: -30px;
     color: #FF46AF;
     font: 700 4em/1em 'Amatic SC', sans-serif;
+}
+
+.label_rsvp span {
+    margin-left: 15px;
 }
 
 .icons_img {
@@ -2093,5 +2072,99 @@ section#instagram .partycontent {
 
 #rsvp_yes,
 #rsvp_no {
+    vertical-align: middle;
+}
 
+
+@media (max-width: 400px) {
+    img#location-arrow {
+        position: absolute;
+        width: 60px;
+        transform: rotate(-120deg);
+        left: 14% !important;
+        top: 42% !important;  }
+
+    img#party-1 {
+        position: absolute;
+        left: 15% !important;
+        top: 34% !important;
+        width: 30px;
+    }
+
+    img#location-arrow2 {
+        position: absolute;
+        left: 11% !important;
+        top: 52%;
+        width: 60px; }
+
+    img#party-2 {
+        position: absolute;
+        width: 30px;
+        transform: rotate(-25deg) !important;
+        left: 6% !important;
+        top: 54% !important;
+
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    img#location-arrow {
+        position: absolute;
+        width: 60px;
+        transform: rotate(-120deg);
+        left: 20% !important;
+        top: 42% !important;  }
+
+    img#party-1 {
+        position: absolute;
+        left: 20% !important;
+        top: 34% !important;
+        width: 30px;
+    }
+
+    img#location-arrow2 {
+        position: absolute;
+        left: 16% !important;
+        top: 52%;
+        width: 60px; }
+
+    img#party-2 {
+        position: absolute;
+        width: 30px;
+        transform: rotate(-25deg) !important;
+        left: 11% !important;
+        top: 54% !important;
+
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    img#location-arrow {
+        position: absolute;
+        width: 80px;
+        transform: rotate(-120deg);
+        left: 20% !important;
+        top: 40% !important;  }
+
+    img#party-1 {
+        position: absolute;
+        left: 15% !important;
+        top: 34% !important;
+        width: 40px;
+    }
+
+    img#location-arrow2 {
+        position: absolute;
+        left: 11% !important;
+        top: 50%;
+        width: 80px; }
+
+    img#party-2 {
+        position: absolute;
+        width: 40px;
+        transform: rotate(-25deg) !important;
+        left: 11% !important;
+        top: 54% !important;
+
+    }
 }
