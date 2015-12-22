@@ -1187,16 +1187,14 @@ label.captcode {
     top: 35%;
     width: 100px; }
 
+  .label_rsvp span {
+      margin-left: 0 !important;
+  }
+
 }
 
 @media (max-width: 640px) {
-  img#logohome {
-    background-color: #FFFFFF;
-    right: 33%;
-    margin: -18px 0 0 -35px;
-    width: 70px;
-    height: 62px;
-    z-index: 9999; }
+
   img#welcome {
     width: 250px;
     height: auto; }
@@ -1282,6 +1280,13 @@ label.captcode {
 }
 
 @media (max-width: 767px) {
+    img#logohome {
+        background-color: #FFFFFF;
+        right: 33%;
+        margin: -18px 0 0 -35px;
+        width: 70px;
+        height: 62px;
+        z-index: 9999; }
   /*bootstrap sm break point */
   .nav-main {
     display: none !important; }
@@ -2138,24 +2143,24 @@ section#instagram .partycontent {
     }
 }
 
-@media (min-width: 601px) and (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 800px) {
     img#location-arrow {
         position: absolute;
         width: 80px;
         transform: rotate(-120deg);
         left: 20% !important;
-        top: 40% !important;  }
+        top: 38% !important;  }
 
     img#party-1 {
         position: absolute;
-        left: 15% !important;
-        top: 34% !important;
+        left: 21% !important;
+        top: 24% !important;
         width: 40px;
     }
 
     img#location-arrow2 {
         position: absolute;
-        left: 11% !important;
+        left: 13% !important;
         top: 50%;
         width: 80px; }
 
@@ -2163,8 +2168,39 @@ section#instagram .partycontent {
         position: absolute;
         width: 40px;
         transform: rotate(-25deg) !important;
-        left: 11% !important;
-        top: 54% !important;
+        left: 9% !important;
+        top: 51% !important;
+
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    img#location-arrow {
+        position: absolute;
+        width: 100px;
+        transform: rotate(-120deg);
+        left: 23% !important;
+        top: 43% !important;  }
+
+    img#party-1 {
+        position: absolute;
+        left: 24% !important;
+        top: 29% !important;
+        width: 50px;
+    }
+
+    img#location-arrow2 {
+        position: absolute;
+        left: 18% !important;
+        top: 59%;
+        width: 100px; }
+
+    img#party-2 {
+        position: absolute;
+        width: 50px;
+        transform: rotate(-25deg) !important;
+        left: 15% !important;
+        top: 57% !important;
 
     }
 }
