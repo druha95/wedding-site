@@ -369,8 +369,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
     // build tween
     var tween = TweenMax.fromTo("img#bubble-plain", 1.5,
-        {marginTop: -50, ease: Back.easeOut, scale:0},
-        {marginTop: 100, ease: Back.easeOut, scale:1}
+        {scale:0, ease: Back.easeOut },
+        {scale:1, marginTop: 0, ease: Back.easeOut}
     );
 
     // build scene
@@ -382,8 +382,8 @@ $(document).ready(function($) {
 $(document).ready(function($) {
     // build tween
     var tween = TweenMax.fromTo("img#bubble-path", 1.5,
-        {marginTop: "-10%", ease: Back.easeOut, height: 0, scale:0},
-        {marginTop: "-4%", ease: Back.easeOut, height: 280, scale:1}
+        {scale:0, ease: Back.easeOut, height: 0 },
+        {scale:1,marginTop: "0", ease: Back.easeOut, height: 260}
     );
 
     // build scene
