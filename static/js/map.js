@@ -14,7 +14,7 @@ function initialize(){
 					      { visibility: "simplified" },
 					      { gamma: 1.56 },
 					      { saturation: -10 },
-					      { hue: "#f6efeb" }
+					      { hue: "#3399FF" }
 					    ]
 					  }
 					];
