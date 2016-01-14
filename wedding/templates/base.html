@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link href="{% static "fonts/entypo/entypo.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css" %}" rel="stylesheet" type="text/css">
 
     <!-- CSS general-->
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
@@ -26,14 +26,13 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="{% static "js/jpreloader.js" %}"></script>
     <script type="text/javascript" src="{% static "js/jquery.datetimepicker.full.min.js" %}"></script>
-    <script type="text/javascript" src="{% static "js/TweenMax.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/instafeed.min.js" %}"></script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('body').jpreLoader();
-    });
+    //    $(document).ready(function() {
+    //        $('body').jpreLoader();
+    //    });
 </script>
 <script type="text/javascript">
     var feed = new Instafeed({
@@ -60,13 +59,13 @@
 
 <body>
 
-    <script>
-        var controller;
-        $(document).ready(function($) {
-            // init controller
-            controller = new ScrollMagic();
-        });
-    </script>
+    <!--<script>-->
+        <!--var controller;-->
+        <!--$(document).ready(function($) {-->
+            <!--// init controller-->
+            <!--controller = new ScrollMagic();-->
+        <!--});-->
+    <!--</script>-->
     <script>
         $(document).ready(function($) {
             $('[data-toggle=dropdown]').each(function() {
@@ -78,8 +77,8 @@
 <section id="header">
     <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
-        <div>
-            <ul class="nav navbar-nav navbar-right">
+        <div class="nav_wrapper">
+            <ul class="nav navbar-nav">
                 <li class="nav-main navbar-element link1"><a href="#couple">Bride & groom</a></li>
                 <li class="nav-main navbar-element link2"><a href="#wedding">Two big days</a></li>
                 <li class="nav-main navbar-element link3"><a href="#when-where">When & where</a></li>
@@ -88,7 +87,7 @@
                 <li class="nav-main navbar-element link6"><a href="#instagram">Photos</a></li>
                 <li id="nav-mobile" class="dropdown">
                     <a id="menu-btn" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <img id="logohome" src="{% static "img/MK.svg" %}">
+                        <!--<img id="logohome" src="{% static "img/MK.svg" %}">-->
                     </a>
                     <ul class="dropdown-menu" style="padding-top: 80px;">
                         <li class="nav-fix"></li>
@@ -108,57 +107,50 @@
     </nav>
 </section>
 
-<section id="home">
-    <div id="scrolldown">
-        <p>SCROLL</p>
-        <div class="mouse">
-            <span><p>&#8595;</p></span>
-        </div>
-    </div>
-    <div class="container"></div>
-</section>
+<!--<section id="home">-->
+    <!--<div id="scrolldown">-->
+        <!--<p>SCROLL</p>-->
+        <!--<div class="mouse">-->
+            <!--<span><p>&#8595;</p></span>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="container"></div>-->
+<!--</section>-->
 
 {% block main %}{% endblock %}
 
 <section id="getting-married">
-    <div class="container">
-        <div class="row">
-            <img id="welcome" src="/static/img/welcome.svg" alt="" width="77" height="77" />
-            <img id="bubble-finally" src="/static/img/finally.svg" alt="" width="55" height="55" />
-            <img id="bubble-yes" src="/static/img/yes.svg" alt="" width="115" height="117" /></div>
-    </div>
+    <img id="karen-michael" src="/static/img/karen-michael.png" alt=""/>
 </section>
 
 <section id="couple">
+    <div class="karenmichael">Karen + Michael</div>
+    <div class="karenmichael_married">are getting married</div>
+
+
     <div class="container">
-        <div class="row">
-            <img id="bubble-the-couple" height="120px" width="120px" src="/static/img/the-couple-heart.svg">
+        <div class="row bride_groom_row">
             <div id="karentxt" class="col-sm-6">
                 <div>
-                    <img id="karen" src="/static/img/karen.jpg" alt="polterabend" width="150" height="150" />
+                    <img id="karen" src="/static/img/karen.jpg" alt="polterabend" width="180" height="180" />
                     <h1 class="txtmagenta">
-                        <span>The Bridge</span>
                         <nobr>Karen Ong</nobr>
+                        <br/>
+                        <span>The Bridge</span>
                     </h1>
                 </div>
             </div>
             <div id="jotxt" class="col-sm-6">
                 <div>
-                    <img id="michael" src="/static/img/michael.jpg" alt="fruehschoppen" width="150" height="150" />
+                    <img id="michael" src="/static/img/michael.jpg" alt="fruehschoppen" width="180" height="180" />
                     <h1 class="txtmagenta">
-                        <span>The Groom</span>
+                        <span>The Groom</span><br/>
                         <nobr>Michael Reich</nobr>
                     </h1>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="story">
-    <div class="container">
-        <div class="row story">
-            <img id="bubble-facts" style="height: 120px" src="/static/img/facts-facts-facts.svg" alt=""/>
+        <div class="row story_row">
             <div class="col-sm-6">
                 <div id="date1">
                     <span>We met each other in</span>
@@ -166,7 +158,6 @@
                     <span>on the first day of class</span><br/>
                     <span>At Harvard Business School...</span>
                 </div>
-                <img id="hbs" src="/static/img/hbs.png" height="250px" width="250px" alt=""/>
             </div>
             <div class="col-sm-6">
                 <div id="date2">
@@ -175,79 +166,95 @@
                     <span>on the Harvard Foot Bridge</span><br/>
                     <span>just before we relocated to Berlin</span>
                 </div>
-                <img id="champagne"  src="/static/img/champagne.png" height="250px" width="250px" alt=""/>
             </div>
             <div class="col-sm-12 story__continues">
                 <div id="why-not" class="story__continues__text">
                     <span>A love story 8 years in the making.</span><br/>
                     <span>High time to get married</span>
                 </div>
-                <div class="story__continues__arrow">
-                    <img src="/static/img/arrow-down.svg" width="120px" alt=""/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="img-wedding-section">
+    <img id="two-weddings-img" src="/static/img/two-weddings.png" alt=""/>
+</section>
+
+<section id="two-wedding-section">
+    <div class="two_wedding_title"><span>Two Weddings</span></div>
+    <div class="container">
+        <div class="row two_wedding_date_row">
+            <div class="col-sm-6">
+                <div id="wedding1">
+                    <span>We’ll say “I Do” on our.</span>
+                    <div>Beach Wedding</div>
+                    <span>Monday, February 15, 2016</span><br/>
+                    <span>On Borclay Island...</span>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="wedding2">
+                    <span>…and then again on our</span>
+                    <div>Church Wedding</div>
+                    <span>Friday, February 19, 2016</span><br/>
+                    <span>In Manila.</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="wedding">
-    <img id="hands" src="/static/img/hands.png" width="90%" alt=""/>
+
+<section id="beach-wedding-img">
     <div class="container">
-        <div class="row wedding-row">
-            <div class="col-sm-6 wedding__text wedding__text--blue">
-                <div class="col-sm-12">We'll say "I do" on our</div>
-                <h2 class="col-sm-12">BEACH WEDDING</h2>
-                <div class="col-sm-12">Monday, February 15, 2016</div>
-                <div class="col-sm-12">on Boracay Island...</div>
-            </div>
-            <div class="col-sm-6 wedding__text wedding__text--pink">
-                <div class="col-sm-12">...and then again on our</div>
-                <h2 class="col-sm-12">CHURCH WEDDING</h2>
-                <div class="col-sm-12">Friday, February 19, 2016</div>
-                <div class="col-sm-12">in Manilla</div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <img id="img-beach-wedding" src="/static/img/beach.png" alt=""/>
             </div>
         </div>
     </div>
-</section>
-
-<section id="beach-wedding-img">
-    <img id="bubble-beach-wedding" style="margin-top: 5%" src="/static/img/beach-wedding.svg" height="120px" alt=""/>
-    <img id="globe-lights" src="/static/img/globe-lights.svg" alt=""/>
-    <img id="party-1" src="/static/img/party.svg" height="80px" alt=""/>
-    <img id="location-arrow" src="/static/img/arrow-2.svg" height="120px" alt=""/>
-    <img id="party-2" src="/static/img/party.svg" height="100px" alt=""/>
-    <img id="location-arrow2" src="/static/img/arrow.svg" height="150px" alt=""/>
 </section>
 
 <section id="beach-wedding">
     <div class="container">
         <div class="row">
-            <div class="row">
-                <div class="beach_wedding_pinktxt">
-                    <div>the location</div>
-                    <div class="beach_wedding_pinktxt__title">ASAY PREMIER SUITES BORACAY</div>
-                    <div>Monday, February, 2016</div>
-                </div>
-
-                <div class="beach_wedding__pricestxt">
-                    <div>Boracay is a glorious and magical place</div>
-                    <div>You'll see it the minute you get to shore</div>
-                </div>
-            </div>
             <div class="row beach_wedding__txt">
-                <div class="col-sm-6 beach_wedding__sometxt">
-                    <p>On Sunday, Valentine’s Day, join Karen & Michael for a pre-wedding sunset cruise, a perfect way to enjoy Boracay’s postcard-perfect sunset.</p>
-                    <br/>
-                    <p>On Monday, February 15, wedding ceremony starts at 4 PM, followed by cocktails, dinner and dancing. All these will take place on Asya’s beach.</p>
+                <div class="col-sm-12 beach_wedding__sometxt">
+                    <div>
+                        <span>beach wedding</span>
+                        <div>Asya Premier Suites Borcay</div>
+                        <span>Monday, February 15, 2016</span>
+                    </div>
+                    <div class="boracay_title">
+                        Borcay is a glorious and magical place <br/>
+                        You’ll see it the minute you get to shore.
+                    </div>
                 </div>
-                <div class="col-sm-6 beach_wedding__sometxt">
-                    <p>On Tuesday, February 16, recover from last night's festivities. Have late lunch and relax on Asya's beachfront from 1 PM onwards.</p>
-                    <br/>
-                    <p class="beach_wedding__sometxt__remark">
-                        <span>See</span>
-                        <span class="beach_wedding__sometxt__remark__blue">day-by-day schedule, flight and hotel info, </span>
-                        <span>and </span>
-                        <span class="beach_wedding__sometxt__remark__blue">other things to do in Boracay</span>
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <p class="boracay_paragraph">
+                        On Sunday, Valentine’s Day, join Karen & Michael for a pre-wedding sunset
+                        cruise, a perfect way to enjoy Boracay’s postcard-perfect sunset.
+                    </p>
+
+                    <p class="boracay_paragraph">
+                        On Monday, February 15, wedding ceremony starts at 4PM, followed by
+                        cocktails, dinner and dancing. All these will take place on Asya’s beach.
+                    </p>
+
+                    <p class="boracay_paragraph">
+                        On Tuesday, February 16, recover from last night’s festivities. Have late lunch
+                        and relax on Asya’s beachfront from 1PM onwards.
+                    </p>
+
+                    <p class="boracay_paragraph">
+                        See
+                        <a href="">day-by-day schedule</a>
+                        and flight
+                        <a href="">and hotel info</a>
+                        .
                     </p>
                 </div>
             </div>
@@ -258,358 +265,435 @@
 <section id="dress-code" class="wedding-party">
     <div class="container">
         <div class="row">
-            <img id="bubble-dress-code" class="wedding-party" style="height: 120px" src="/static/img/dress-code.svg" alt=""/>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3 col-sm-offset-2">
                     <div class="dress-code__title">hers</div>
-                    <div class="dress-code__description">Whitesummer dress, <br/> flip-flops</div>
-                    <img src="/static/img/hers-boracay.png" height="200px" alt=""/>
+                    <div class="dress-code__description">
+                        <span>White flowy dress, </span><br/>
+                        <span>flip-flops</span>
+                    </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-2">
+                    <div id="bubble-dress-code">
+                        Dress<br/>
+                        Code
+                    </div>
+                </div>
+                <div class="col-sm-3">
                     <div class="dress-code__title">his</div>
-                    <div class="dress-code__description">White T-shirt, <br/> white shorts</div>
-                    <img src="/static/img/his-boracay.png" height="200px" alt=""/>
+                    <div class="dress-code__description">
+                        <span>White T-shirt, </span><br/>
+                        <span>white shorts</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="wedding-party">
-    <div class="container">
-        <img id="bubble-wedding-party" src="/static/img/wedding-party.svg" height="120px" alt=""/>
-        <div class="row">
-            <div class="col-sm-6 col_first_line">
-                <img class="wedding-party__photo" id="benito" src="/static/img/benito.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="benitotxt">Benito Ong</div>
-                <div class="wedding-party__status">
-                    Father of the bridge
-                </div>
-            </div>
-            <div class="col-sm-6 col_first_line">
-                <img class="wedding-party__photo" id="achim" src="/static/img/achim.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="achimtxt">Hans-Joachim Reich</div>
-                <div class="wedding-party__status">
-                    Father of the groom
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="wedding-party__photo" id="zita" src="/static/img/zita.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="zitatxt">Zita Ong</div>
-                <div class="wedding-party__status">
-                    Mother of the bridge
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img class="wedding-party__photo" id="hella" src="/static/img/hella.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="hellatxt">Hella Reich</div>
-                <div class="wedding-party__status">
-                    Mother of the groom
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="wedding-party__photo" id="kim" src="/static/img/kim.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="kimtxt">Kimberley Ong</div>
-                <div class="wedding-party__status">
-                    Sister of the bridge, maid of honor
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img class="wedding-party__photo" id="oli" src="/static/img/oli.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="olitxt">Oliver Reich</div>
-                <div class="wedding-party__status">
-                    Brother of the groom, best man
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div  class="col-sm-6">
-                <img class="wedding-party__photo" id="kris" src="/static/img/kris.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="kristxt">Kristoffer Ong</div>
-                <div class="wedding-party__status">
-                    Brother of the bridge, groomsman
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img class="wedding-party__photo" id="simone" src="/static/img/simone.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="simonetxt">Simone Reich</div>
-                <div class="wedding-party__status">
-                    Sister of the groom, bridesmaid
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <img class="wedding-party__photo" id="alec" src="/static/img/alec.jpg" height="120px" alt=""/>
-                <div class="wedding-party__name" id="alectxt">Alec Detwiler</div>
-                <div class="wedding-party__status">
-                    Officiant
-                </div>
-            </div>
-            <div class="col-sm-4"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="bridesmaids_list__title">bridesmaids</h1>
-                <div class="bridesmaids_list__person">Cectile Ang</div>
-                <div class="bridesmaids_list__person">Marie-Jose Helene Banham</div>
-                <div class="bridesmaids_list__person">Chitra Balireddi</div>
-                <div class="bridesmaids_list__person">Gladys Jane Co-Chan</div>
-                <div class="bridesmaids_list__person">Carissa Dizon-Gajria</div>
-                <div class="bridesmaids_list__person">Sally Handerson-Kettle</div>
-                <div class="bridesmaids_list__person">Ellen Ke</div>
-                <div class="bridesmaids_list__person">Melissa Lau</div>
-                <div class="bridesmaids_list__person">Angela Leonar</div>
-                <div class="bridesmaids_list__person">Simone Reich</div>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="groomsman_list__title">GroomsMen</h1>
-                <div class="groomsman_list__person">Alec Detwiler</div>
-                <div class="groomsman_list__person">Scott Griffin</div>
-                <div class="groomsman_list__person">Jason Kreuziger</div>
-                <div class="groomsman_list__person">Markus Hanauer</div>
-                <div class="groomsman_list__person">Karl Neumar</div>
-                <div class="groomsman_list__person">Kristoffer Ong</div>
-                <div class="groomsman_list__person">Christian Papp</div>
-                <div class="groomsman_list__person">Florian Sallman</div>
-                <div class="groomsman_list__person">Fabian Schneider</div>
-                <div class="groomsman_list__person">Gunther Tutein</div>
-                <div class="groomsman_list__person">Rafael Zikavashvili</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="bridesmaids_list__title">Flower Girls</h1>
-
-                <div class="bridesmaids_list__person">Liza Anquetil</div>
-                <div class="bridesmaids_list__person">Linda Babettte Hanauer</div>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="groomsman_list__title">Ring Bearers</h1>
-
-                <div class="groomsman_list__person">Andre Anquetil</div>
-                <div class="groomsman_list__person">Jorge Conde</div>
             </div>
         </div>
     </div>
 </section>
 
 <section id="church-wedding-img">
-    <img id="bubble-church-wedding" src="/static/img/church-wedding.svg" alt="" width="120" height="120" />
-</section>
-
-<section id="dress-code" class="church-wedding">
     <div class="container">
-        <div class="row church-wedding__pinktxt">
-            <div>the location</div>
-            <div class="church-wedding__pinktxt__title">santuario de san antonio</div>
-            <div>Friday, Fabruary 19, 2016</div>
-        </div>
-
         <div class="row">
-            <div class="col-sm-6 church-wedding__sometxt">
-                <p>Ceremony start at 1 PM at Santuario de San Antonio. Cocktails start at 6 PM at Makati Shnagri-la, followed by dinner and dancing</p>
-            </div>
-            <div class="col-sm-6 church-wedding__sometxt">
-                <p>See <span class="church-wedding__sometxt__blue"> day-by-day schedule, flight and hotel info</span>, and <span class="church-wedding__sometxt__blue">other things to do in Manila</span></p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <img id="bubble-dress-code" class="church-wedding" src="/static/img/dress-code.svg" alt=""  height="120px" />
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="dress-code__title">Hers</div>
-                <div class="dress-code__description">Eveninggown</div>
-                <img src="/static/img/hers-manila.png" height="200px" alt=""/>
-            </div>
-            <div class="col-sm-6">
-                <div class="dress-code__title">His</div>
-                <div class="dress-code__description">Tuxedo</div>
-                <img src="/static/img/his-manila.png" height="200px" alt=""/>
+            <div class="col-sm-6 col-sm-offset-3">
+                <img id="img-church-wedding" src="/static/img/building.png" alt=""/>
             </div>
         </div>
     </div>
 </section>
 
-<section id="when-where">
-    <div class="container">
-        <img id="bubble-when-where" src="/static/img/when-where.svg" alt=""  height="120px" />
-        <div class="row">
+    <section id="church-wedding">
+        <div class="container">
             <div class="row">
-                    <div class="col-sm-4">
-                        <div class="row">
-                                <div class="col-sm-4 col-xs-4  col-xs-offset-2 col-sm-offset-0">
-                                <img src="/static/img/flight.svg" height="70px" alt=""/>
-                            </div>
-                            <div class="col-sm-8 when_where_text">
-                                <h3>Before Sunday, Feb 14</h3>
-                                <div>Fly to Caticlan</div>
-                                <div class="when_where_text__blue">Which flight should I book?</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                                <img  src="/static/img/cruise.svg" height="70px" alt=""/>
-                            </div>
-                            <div class="col-sm-8 when_where_text">
-                                <h3>Sunday, Feb 14</h3>
-                                <div>Sunset cruise</div>
-                                <div>3 pm | Boracay SunCruiser</div>
-                                <div>All-white beach/swimwear</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                                <img src="/static/img/palm-trees.svg" height="70px" alt=""/>
-                            </div>
-                            <div class="col-sm-8 when_where_text">
-                                <h3>Monday, Feb 15</h3>
-                                <div>Beach wedding</div>
-                                <div>4 pm | Asya</div>
-                                <div>All-white beach/swimwear</div>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                            <img src="/static/img/beach-ball.svg" height="70px" alt=""/>
-                        </div>
-                        <div class="col-sm-8 when_where_text">
-                            <h3>Tuesday, Feb 16</h3>
-                            <div>Chill on the beach</div>
-                            <div>1 pm | Asya beachfront</div>
-                            <div>Beachwear/swimwear</div>
+                <div class="row church_wedding__txt">
+                    <div class="col-sm-12 church_wedding__sometxt">
+                        <div>
+                            <span>church wedding</span>
+                            <div>Santuario De San Antonio</div>
+                            <span>Friday, February 19, 2016</span>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-sm-offset-3">
 
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                            <img src="/static/img/snorkel.svg" height="70px" alt=""/>
-                        </div>
-                        <div class="col-sm-8 when_where_text">
-                            <h3>Wednesday, Feb 17</h3>
-                            <div>Free day</div>
-                            <div>Chill on the beach</div>
-                            <div class="when_where_text__blue">What else can I do?</div>
-                        </div>
-                    </div>
+                        <p class="antonio_paragraph">
+                            Ceremony starts at 1PM at Santuario de San Antonio. Cocktails start at 6PM
+                            at Makati Shangri-la followed by dinner and dancing.
+                        </p>
 
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                            <img src="/static/img/flight.svg" height="70px" alt=""/>
-                        </div>
-                        <div class="col-sm-8 when_where_text">
-                            <h3>Thursday, Feb 18</h3>
-                            <div>Flight back from Caticlan to Manila</div>
-                            <div>Before 3pm</div>
-                            <div class="when_where_text__blue">Which flight should I book?</div>
-                        </div>
+                        <p class="anonio_paragraph">
+                            See
+                            <a href="">day-by-day schedule</a>
+                            and flight
+                            <a href="">and hotel info</a>
+                            .
+                        </p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                            <img src="/static/img/church.svg" height="70px" alt=""/>
-                        </div>
-                        <div class="col-sm-8 when_where_text">
-                            <h3>Friday, Feb 19</h3>
-                            <div>Church wedding</div>
-                            <div>1 pm | Santuario de San Antonio</div>
-                            <div>Black tie</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dress-code" class="church-party">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-2">
+                        <div class="dress-code__title">hers</div>
+                        <div class="dress-code__description">
+                            <span>Evening gown</span><br/>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                            <img src="/static/img/dinner.svg" height="70px" alt=""/>
-                        </div>
-                        <div class="col-sm-8 when_where_text">
-                            <h3>Friday, Feb 19</h3>
-                            <div>Reception</div>
-                            <div>7 pm | Makati Shangri-la</div>
-                            <div>Black tie</div>
+                    <div class="col-sm-2">
+                        <div id="bubble-dress-code">
+                            Dress<br/>
+                            Code
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">
-                            <img src="/static/img/dimsum.svg" height="70px" alt=""/>
-                        </div>
-                        <div class="col-sm-8 when_where_text">
-                            <h3>Saturday, Feb 20</h3>
-                            <div>Dimsum brunch</div>
-                            <div>12 noon | Makati Shangri-la</div>
-                            <div>Sunday best</div>
+                    <div class="col-sm-3">
+                        <div class="dress-code__title">his</div>
+                        <div class="dress-code__description">
+                            <span>Tuxedo</span><br/>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
-    </div>
+    </section>
 
-</section>
+<!--<section id="wedding-party">-->
+    <!--<div class="container">-->
+        <!--<img id="bubble-wedding-party" src="/static/img/wedding-party.svg" height="120px" alt=""/>-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6 col_first_line">-->
+                <!--<img class="wedding-party__photo" id="benito" src="/static/img/benito.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="benitotxt">Benito Ong</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Father of the bridge-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 col_first_line">-->
+                <!--<img class="wedding-party__photo" id="achim" src="/static/img/achim.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="achimtxt">Hans-Joachim Reich</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Father of the groom-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
-<section id="getting-there-img">
-    <div class="container">
-        <div class="plane_path">
-            <img id="bubble-plain" src="/static/img/plane.svg" height="70px" alt=""/>
-            <img id="bubble-path"  src="/static/img/flight-path.svg" height="280px" alt=""/>
-        </div>
-        <img id="bubble-getting-there" src="/static/img/getting-there.svg" height="120px" alt=""/>
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+                <!--<img class="wedding-party__photo" id="zita" src="/static/img/zita.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="zitatxt">Zita Ong</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Mother of the bridge-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+                <!--<img class="wedding-party__photo" id="hella" src="/static/img/hella.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="hellatxt">Hella Reich</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Mother of the groom-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
-    </div>
-</section>
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+                <!--<img class="wedding-party__photo" id="kim" src="/static/img/kim.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="kimtxt">Kimberley Ong</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Sister of the bridge, maid of honor-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+                <!--<img class="wedding-party__photo" id="oli" src="/static/img/oli.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="olitxt">Oliver Reich</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Brother of the groom, best man-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
-<section id="getting-there">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 getting-there__text">
-                <h1>Manila</h1>
-                <p>Book an international flight that arrives in Manila(IATA code MNL) on Saturday, February 13,
-                and departs a day after the church wedding on Saturday night, February 20. <span>View flights to Manila >></span></p>
-                <br/>
-                <p>If you are  connecting directly to Caticlan, allow for 3 hours of transit time in Manila. You need to take a taxi
-                from one terminal to the next</p><br/>
+        <!--<div class="row">-->
+            <!--<div  class="col-sm-6">-->
+                <!--<img class="wedding-party__photo" id="kris" src="/static/img/kris.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="kristxt">Kristoffer Ong</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Brother of the bridge, groomsman-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+                <!--<img class="wedding-party__photo" id="simone" src="/static/img/simone.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="simonetxt">Simone Reich</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Sister of the groom, bridesmaid-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
-                <p>We have reserved rooms from Feb 18 - 20 at Makati Shangri-la, wedding reception and after-party location. Superior rooms cast 11,647
-                pesos per night(~$250), including breakfast, Wi-Fi, and taxes</p><br/>
+        <!--<div class="row">-->
+            <!--<div class="col-sm-4"></div>-->
+            <!--<div class="col-sm-4">-->
+                <!--<img class="wedding-party__photo" id="alec" src="/static/img/alec.jpg" height="120px" alt=""/>-->
+                <!--<div class="wedding-party__name" id="alectxt">Alec Detwiler</div>-->
+                <!--<div class="wedding-party__status">-->
+                    <!--Officiant-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-4"></div>-->
+        <!--</div>-->
 
-                <h2>reserve a room at shangri-la»</h2>
-                <h2>find other hotels near shangri-la»</h2>
-            </div>
-            <div class="col-sm-6 getting-there__text">
-                <h1>Boracay</h1>
-                <p>Book a domestic flight out of Manila and into Caticlan (IATA code MPH) on sunday morning,
-                 Feb 14. <span>View flights >></span> Fly back to Manila on Thursday early afternoon, Feb 18 <span>View flights >></span></p>
-                <br/>
-                <p>We have reserved rooms at two hotels from Feb 14 - 18 <span>Asya</span>, the wedding location, and Villa Caemilla, a 15-minute walk away.</p>
-                <br/>
-                <p>Asay rooms start at 17,100 pesos per night (~$375). Villa Cemilla rooms start at 7,800 pesos per night (~$170). Prices include round-trip
-                land and boat transfers from Caticlan, breakfast, Wi-Fi, and taxes.</p><br/>
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+                <!--<h1 class="bridesmaids_list__title">bridesmaids</h1>-->
+                <!--<div class="bridesmaids_list__person">Cectile Ang</div>-->
+                <!--<div class="bridesmaids_list__person">Marie-Jose Helene Banham</div>-->
+                <!--<div class="bridesmaids_list__person">Chitra Balireddi</div>-->
+                <!--<div class="bridesmaids_list__person">Gladys Jane Co-Chan</div>-->
+                <!--<div class="bridesmaids_list__person">Carissa Dizon-Gajria</div>-->
+                <!--<div class="bridesmaids_list__person">Sally Handerson-Kettle</div>-->
+                <!--<div class="bridesmaids_list__person">Ellen Ke</div>-->
+                <!--<div class="bridesmaids_list__person">Melissa Lau</div>-->
+                <!--<div class="bridesmaids_list__person">Angela Leonar</div>-->
+                <!--<div class="bridesmaids_list__person">Simone Reich</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+                <!--<h1 class="groomsman_list__title">GroomsMen</h1>-->
+                <!--<div class="groomsman_list__person">Alec Detwiler</div>-->
+                <!--<div class="groomsman_list__person">Scott Griffin</div>-->
+                <!--<div class="groomsman_list__person">Jason Kreuziger</div>-->
+                <!--<div class="groomsman_list__person">Markus Hanauer</div>-->
+                <!--<div class="groomsman_list__person">Karl Neumar</div>-->
+                <!--<div class="groomsman_list__person">Kristoffer Ong</div>-->
+                <!--<div class="groomsman_list__person">Christian Papp</div>-->
+                <!--<div class="groomsman_list__person">Florian Sallman</div>-->
+                <!--<div class="groomsman_list__person">Fabian Schneider</div>-->
+                <!--<div class="groomsman_list__person">Gunther Tutein</div>-->
+                <!--<div class="groomsman_list__person">Rafael Zikavashvili</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
-                <h2>reserve a room at asya »</h2>
-                <h2>reserve a room at villa caemilla »</h2>
-            </div>
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+                <!--<h1 class="bridesmaids_list__title">Flower Girls</h1>-->
 
-        </div>
-    </div>
-</section>
+                <!--<div class="bridesmaids_list__person">Liza Anquetil</div>-->
+                <!--<div class="bridesmaids_list__person">Linda Babettte Hanauer</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+                <!--<h1 class="groomsman_list__title">Ring Bearers</h1>-->
+
+                <!--<div class="groomsman_list__person">Andre Anquetil</div>-->
+                <!--<div class="groomsman_list__person">Jorge Conde</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!--<section id="church-wedding-img">-->
+    <!--<img id="bubble-church-wedding" src="/static/img/church-wedding.svg" alt="" width="120" height="120" />-->
+<!--</section>-->
+
+<!--<section id="dress-code" class="church-wedding">-->
+    <!--<div class="container">-->
+        <!--<div class="row church-wedding__pinktxt">-->
+            <!--<div>the location</div>-->
+            <!--<div class="church-wedding__pinktxt__title">santuario de san antonio</div>-->
+            <!--<div>Friday, Fabruary 19, 2016</div>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6 church-wedding__sometxt">-->
+                <!--<p>Ceremony start at 1 PM at Santuario de San Antonio. Cocktails start at 6 PM at Makati Shnagri-la, followed by dinner and dancing</p>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 church-wedding__sometxt">-->
+                <!--<p>See <span class="church-wedding__sometxt__blue"> day-by-day schedule, flight and hotel info</span>, and <span class="church-wedding__sometxt__blue">other things to do in Manila</span></p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="container">-->
+        <!--<img id="bubble-dress-code" class="church-wedding" src="/static/img/dress-code.svg" alt=""  height="120px" />-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+                <!--<div class="dress-code__title">Hers</div>-->
+                <!--<div class="dress-code__description">Eveninggown</div>-->
+                <!--<img src="/static/img/hers-manila.png" height="200px" alt=""/>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+                <!--<div class="dress-code__title">His</div>-->
+                <!--<div class="dress-code__description">Tuxedo</div>-->
+                <!--<img src="/static/img/his-manila.png" height="200px" alt=""/>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!--<section id="when-where">-->
+    <!--<div class="container">-->
+        <!--<img id="bubble-when-where" src="/static/img/when-where.svg" alt=""  height="120px" />-->
+        <!--<div class="row">-->
+            <!--<div class="row">-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<div class="row">-->
+                                <!--<div class="col-sm-4 col-xs-4  col-xs-offset-2 col-sm-offset-0">-->
+                                <!--<img src="/static/img/flight.svg" height="70px" alt=""/>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-8 when_where_text">-->
+                                <!--<h3>Before Sunday, Feb 14</h3>-->
+                                <!--<div>Fly to Caticlan</div>-->
+                                <!--<div class="when_where_text__blue">Which flight should I book?</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="row">-->
+                            <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                                <!--<img  src="/static/img/cruise.svg" height="70px" alt=""/>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-8 when_where_text">-->
+                                <!--<h3>Sunday, Feb 14</h3>-->
+                                <!--<div>Sunset cruise</div>-->
+                                <!--<div>3 pm | Boracay SunCruiser</div>-->
+                                <!--<div>All-white beach/swimwear</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="row">-->
+                            <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                                <!--<img src="/static/img/palm-trees.svg" height="70px" alt=""/>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-8 when_where_text">-->
+                                <!--<h3>Monday, Feb 15</h3>-->
+                                <!--<div>Beach wedding</div>-->
+                                <!--<div>4 pm | Asya</div>-->
+                                <!--<div>All-white beach/swimwear</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                            <!--<img src="/static/img/beach-ball.svg" height="70px" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-8 when_where_text">-->
+                            <!--<h3>Tuesday, Feb 16</h3>-->
+                            <!--<div>Chill on the beach</div>-->
+                            <!--<div>1 pm | Asya beachfront</div>-->
+                            <!--<div>Beachwear/swimwear</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                            <!--<img src="/static/img/snorkel.svg" height="70px" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-8 when_where_text">-->
+                            <!--<h3>Wednesday, Feb 17</h3>-->
+                            <!--<div>Free day</div>-->
+                            <!--<div>Chill on the beach</div>-->
+                            <!--<div class="when_where_text__blue">What else can I do?</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                            <!--<img src="/static/img/flight.svg" height="70px" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-8 when_where_text">-->
+                            <!--<h3>Thursday, Feb 18</h3>-->
+                            <!--<div>Flight back from Caticlan to Manila</div>-->
+                            <!--<div>Before 3pm</div>-->
+                            <!--<div class="when_where_text__blue">Which flight should I book?</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                            <!--<img src="/static/img/church.svg" height="70px" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-8 when_where_text">-->
+                            <!--<h3>Friday, Feb 19</h3>-->
+                            <!--<div>Church wedding</div>-->
+                            <!--<div>1 pm | Santuario de San Antonio</div>-->
+                            <!--<div>Black tie</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                            <!--<img src="/static/img/dinner.svg" height="70px" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-8 when_where_text">-->
+                            <!--<h3>Friday, Feb 19</h3>-->
+                            <!--<div>Reception</div>-->
+                            <!--<div>7 pm | Makati Shangri-la</div>-->
+                            <!--<div>Black tie</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-0">-->
+                            <!--<img src="/static/img/dimsum.svg" height="70px" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-8 when_where_text">-->
+                            <!--<h3>Saturday, Feb 20</h3>-->
+                            <!--<div>Dimsum brunch</div>-->
+                            <!--<div>12 noon | Makati Shangri-la</div>-->
+                            <!--<div>Sunday best</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</section>-->
+
+<!--<section id="getting-there-img">-->
+    <!--<div class="container">-->
+        <!--<div class="plane_path">-->
+            <!--<img id="bubble-plain" src="/static/img/plane.svg" height="70px" alt=""/>-->
+            <!--<img id="bubble-path"  src="/static/img/flight-path.svg" height="280px" alt=""/>-->
+        <!--</div>-->
+        <!--<img id="bubble-getting-there" src="/static/img/getting-there.svg" height="120px" alt=""/>-->
+
+    <!--</div>-->
+<!--</section>-->
+
+<!--<section id="getting-there">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6 getting-there__text">-->
+                <!--<h1>Manila</h1>-->
+                <!--<p>Book an international flight that arrives in Manila(IATA code MNL) on Saturday, February 13,-->
+                <!--and departs a day after the church wedding on Saturday night, February 20. <span>View flights to Manila >></span></p>-->
+                <!--<br/>-->
+                <!--<p>If you are  connecting directly to Caticlan, allow for 3 hours of transit time in Manila. You need to take a taxi-->
+                <!--from one terminal to the next</p><br/>-->
+
+                <!--<p>We have reserved rooms from Feb 18 - 20 at Makati Shangri-la, wedding reception and after-party location. Superior rooms cast 11,647-->
+                <!--pesos per night(~$250), including breakfast, Wi-Fi, and taxes</p><br/>-->
+
+                <!--<h2>reserve a room at shangri-la»</h2>-->
+                <!--<h2>find other hotels near shangri-la»</h2>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 getting-there__text">-->
+                <!--<h1>Boracay</h1>-->
+                <!--<p>Book a domestic flight out of Manila and into Caticlan (IATA code MPH) on sunday morning,-->
+                 <!--Feb 14. <span>View flights >></span> Fly back to Manila on Thursday early afternoon, Feb 18 <span>View flights >></span></p>-->
+                <!--<br/>-->
+                <!--<p>We have reserved rooms at two hotels from Feb 14 - 18 <span>Asya</span>, the wedding location, and Villa Caemilla, a 15-minute walk away.</p>-->
+                <!--<br/>-->
+                <!--<p>Asay rooms start at 17,100 pesos per night (~$375). Villa Cemilla rooms start at 7,800 pesos per night (~$170). Prices include round-trip-->
+                <!--land and boat transfers from Caticlan, breakfast, Wi-Fi, and taxes.</p><br/>-->
+
+                <!--<h2>reserve a room at asya »</h2>-->
+                <!--<h2>reserve a room at villa caemilla »</h2>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 <section id="rsvp">
