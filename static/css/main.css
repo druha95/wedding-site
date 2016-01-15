@@ -2508,5 +2508,134 @@ html, body {
         background: #2e3a38;
         color: white;
     }
+
+    #wedding-party {
+        padding-bottom: 100px;
+    }
+
+    .wedding-party-row {
+        background: #f2f2f2;
+        padding-top: 74px;
+        padding-bottom: 90px;
+    }
+
+    .wedding-party-title {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #b4b6b7;
+    }
+
+    .family {
+        margin-top: 48px;
+    }
+
+    .family.family--hers {
+        margin-top: 107px;
+    }
+
+    .wedding-party__name {
+        font-size: 18px;
+        color: #4a4a4a;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .wedding-party__status {
+        font-size: 14px;
+        color: #4a4a4a;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        margin-top: 6px;
+    }
+
+    .some_list {
+        margin-top: 65px;
+    }
+
+    .bridesmaids_list__title {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+        font-size: 28px;
+    }
+
+    .groomsman_list__title {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+        font-size: 28px;
+    }
+
+    .bridesmaids_list__person {
+        margin-top: 13px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #4a4a4a;
+    }
+
+    .groomsman_list__person {
+        margin-top: 13px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #4a4a4a;
+    }
+
+    .list__person--first {
+        margin-top: 23px;
+    }
+
+    img#bubble-when-where {
+        width: 100%;
+    }
+
+    #when-where {
+        padding-top: 45px;
+        padding-bottom: 92px;
+    }
+
+
+    .when-where-main-title {
+        font-size: 64px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+        text-align: center;
+    }
+
+    .when-where-day {
+        font-size: 36px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        margin-top: 60px;
+    }
+
+    .when-where-date {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        margin-top: 5px;
+    }
+
+    .when-where-title {
+        font-size: 14px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        font-weight: bold;
+        color: #4a4a4a;
+        margin-top: 17px;
+    }
+
+    .when-where-description {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        color: #4a4a4a;
+        text-transform: none;
+        margin-top: 5px;
+    }
 }
 
