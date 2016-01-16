@@ -2637,5 +2637,110 @@ html, body {
         text-transform: none;
         margin-top: 5px;
     }
+
+    section#googlemap {
+        position: relative;
+        height: 410px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    #map-wrap {
+        height: 100%;
+        width: 100%;
+    }
+
+    #getting-there {
+        padding-bottom: 108px;
+    }
+
+    .getting-there-title {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 64px;
+        color: #b4b6b7;
+        margin-top: 30px;
+    }
+
+    .getting-there__text div {
+        font-size: 36px;
+        color: #4a4a4a;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        margin-top: 52px;
+        margin-bottom: 26px;
+    }
+
+    .getting-there__text p {
+        font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #4a4a4a;
+        margin-top: 6px;
+    }
+
+    .getting-there__text .link_block {
+        margin: 0;
+    }
+
+    .link_block div {
+        margin-top: 10px;
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+
+    .link_block a {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    #getting-there-img img {
+        width: 100%;
+    }
+
+    #rsvp {
+        padding-top: 45px;
+    }
+
+    .rsvp-title {
+        font-size: 64px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+    }
+
+    .rsvp_block {
+        margin-top: 45px;
+    }
+
+    .label_wrapper {
+        padding: 0;
+    }
+    .label_rsvp {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    .label_rsvp input {
+        width: 18px;
+        height: 18px;
+        background: white;
+        vertical-align: top;
+
+    }
+
+    .forms_wrapper {
+        margin-top: 24px;
+    }
+
+    .smart-forms form input  {
+        height: 45px;
+        background: #f2f2f2;
+        outline: none;
+        border-radius: 0;
+        border: none;
+    }
+
 }
 

@@ -568,69 +568,80 @@
     <div id="map-wrap"></div>
 </section>
 
-<!--<section id="getting-there-img">-->
-    <!--<div class="container">-->
-        <!--<div class="plane_path">-->
-            <!--<img id="bubble-plain" src="/static/img/plane.svg" height="70px" alt=""/>-->
-            <!--<img id="bubble-path"  src="/static/img/flight-path.svg" height="280px" alt=""/>-->
-        <!--</div>-->
-        <!--<img id="bubble-getting-there" src="/static/img/getting-there.svg" height="120px" alt=""/>-->
 
-    <!--</div>-->
-<!--</section>-->
 
-<!--<section id="getting-there">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-sm-6 getting-there__text">-->
-                <!--<h1>Manila</h1>-->
-                <!--<p>Book an international flight that arrives in Manila(IATA code MNL) on Saturday, February 13,-->
-                <!--and departs a day after the church wedding on Saturday night, February 20. <span>View flights to Manila >></span></p>-->
-                <!--<br/>-->
-                <!--<p>If you are  connecting directly to Caticlan, allow for 3 hours of transit time in Manila. You need to take a taxi-->
-                <!--from one terminal to the next</p><br/>-->
+<section id="getting-there">
+    <div class="container">
+        <div class="row">
+            <div class="getting-there-title">Getting There </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-5 getting-there__text">
+                        <div>Manila</div>
+                        <p>Book an international flight that arrives in Manila(IATA code MNL) on Saturday, February 13,
+                            and departs a day after the church wedding on Saturday night, February 20. <a>View flights to Manila »</a></p>
+                        <br/>
+                        <p>If you are  connecting directly to Caticlan, allow for 3 hours of transit time in Manila. You need to take a taxi
+                            from one terminal to the next</p><br/>
 
-                <!--<p>We have reserved rooms from Feb 18 - 20 at Makati Shangri-la, wedding reception and after-party location. Superior rooms cast 11,647-->
-                <!--pesos per night(~$250), including breakfast, Wi-Fi, and taxes</p><br/>-->
+                        <p>We have reserved rooms from Feb 18 - 20 at <a href="">Makati Shangri-la</a>, wedding reception and after-party location. Superior rooms cast 11,647
+                            pesos per night(~$250), including breakfast, Wi-Fi, and taxes</p>
 
-                <!--<h2>reserve a room at shangri-la»</h2>-->
-                <!--<h2>find other hotels near shangri-la»</h2>-->
-            <!--</div>-->
-            <!--<div class="col-sm-6 getting-there__text">-->
-                <!--<h1>Boracay</h1>-->
-                <!--<p>Book a domestic flight out of Manila and into Caticlan (IATA code MPH) on sunday morning,-->
-                 <!--Feb 14. <span>View flights >></span> Fly back to Manila on Thursday early afternoon, Feb 18 <span>View flights >></span></p>-->
-                <!--<br/>-->
-                <!--<p>We have reserved rooms at two hotels from Feb 14 - 18 <span>Asya</span>, the wedding location, and Villa Caemilla, a 15-minute walk away.</p>-->
-                <!--<br/>-->
-                <!--<p>Asay rooms start at 17,100 pesos per night (~$375). Villa Cemilla rooms start at 7,800 pesos per night (~$170). Prices include round-trip-->
-                <!--land and boat transfers from Caticlan, breakfast, Wi-Fi, and taxes.</p><br/>-->
+                        <div class="link_block">
+                            <div><a href="">reserve a room at shangri-la»</a></div>
+                            <div><a>find other hotels near shangri-la»</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 getting-there__text">
+                        <div>Boracay</div>
+                        <p>Book a domestic flight out of Manila and into Caticlan (IATA code MPH) on sunday morning,
+                            Feb 14. <a>View flights »</a> Fly back to Manila on Thursday early afternoon, Feb 18 <span>View flights »</span></p>
+                        <br/>
+                        <p>We have reserved rooms at two hotels from Feb 14 - 18 <a>Asya</a>, the wedding location, and Villa Caemilla, a 15-minute walk away.</p>
+                        <br/>
+                        <p>Asay rooms start at 17,100 pesos per night (~$375). <a href="">Villa Cemilla</a> rooms start at 7,800 pesos per night (~$170). Prices include round-trip
+                            land and boat transfers from Caticlan, breakfast, Wi-Fi, and taxes.</p>
 
-                <!--<h2>reserve a room at asya »</h2>-->
-                <!--<h2>reserve a room at villa caemilla »</h2>-->
-            <!--</div>-->
+                        <div class="link_block">
+                            <div><a>reserve a room at asya »</a></div>
+                            <div><a>reserve a room at villa caemilla »</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
+        </div>
+    </div>
+</section>
+
+
+    <section id="getting-there-img">
+        <img src="/static/img/getting-there-img.png" alt=""/>
+    </section>
 
 
 <section id="rsvp">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 rsvp_block">
+                <div class="rsvp-title">Come Party with us! </div>
+
+
+                <div class="col-sm-4 col-sm-offset-4 rsvp_block">
+
                     <div class="row">
-                        <img id="i-will" src="/static/img/i-will.svg" height="120px" alt=""/>
-                        <img id="will-party" src="/static/img/will-party.svg" height="80px" alt=""/>
-                    </div>
-                    <div class="row">
-                        <label class="label_rsvp label_rsvp--yes" for="rsvp_yes"><input type="radio" id="rsvp_yes" value="rsvp" name="yes_no"><span>YEAH!!</span></label>
-                        <label class="label_rsvp label_rsvp--no"  for="rsvp_no"><input type="radio" id="rsvp_no" value="rsvp_mini" name="yes_no" checked><span>CAN'T :(</span></label>
-                        <div id="rsvp-form-mini" class="smart-forms">
-                            {% include "pages/submit_rsvp_mini.html" %}
+                        <div class="col-sm-5 label_wrapper">
+                            <label class="label_rsvp label_rsvp--yes" for="rsvp_yes"><input type="radio" id="rsvp_yes" value="rsvp" name="yes_no"><span>I will attend!</span></label>
                         </div>
-                        <div id="rsvp-form" class="smart-forms">
-                            {% include "pages/submit_rsvp.html" %}
+                        <div class="col-sm-7 label_wrapper">
+                            <label class="label_rsvp label_rsvp--no"  for="rsvp_no"><input type="radio" id="rsvp_no" value="rsvp_mini" name="yes_no" checked><span>Sorry, I can’t make it.</span></label>
+                        </div>
+                        <div class="col-sm-12 forms_wrapper">
+                            <div id="rsvp-form-mini" class="smart-forms">
+                                {% include "pages/submit_rsvp_mini.html" %}
+                            </div>
+                            <div id="rsvp-form" class="smart-forms">
+                                {% include "pages/submit_rsvp.html" %}
+                            </div>
                         </div>
                     </div>
                     <div class="row icons_img">
@@ -644,16 +655,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 pull-right gift_text">
-                    <img id="gifts" src="/static/img/gifts.svg" height="120px" alt=""/>
-                    <div class="gift_text__txt">
-                        <h1>Come to the Philipines for our wedding week!</h1><br/>
-                        <h3>Celebrating with you is the only gift we need.</h3><br/>
-                        <p>If you are so determined to do more to make us extra happy, it's easy</p><br/>
-                        <p>We would like to remember our wedding as one big party, and we would be thrilled you if you you could party
-                            with us - till  the sun comes up.</p>
-                    </div>
-                </div>
+
+
+
+                <!--<div class="col-sm-4 pull-right gift_text">-->
+                    <!--<img id="gifts" src="/static/img/gifts.svg" height="120px" alt=""/>-->
+                    <!--<div class="gift_text__txt">-->
+                        <!--<h1>Come to the Philipines for our wedding week!</h1><br/>-->
+                        <!--<h3>Celebrating with you is the only gift we need.</h3><br/>-->
+                        <!--<p>If you are so determined to do more to make us extra happy, it's easy</p><br/>-->
+                        <!--<p>We would like to remember our wedding as one big party, and we would be thrilled you if you you could party-->
+                            <!--with us - till  the sun comes up.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
     </section>
