@@ -643,60 +643,73 @@
                                 {% include "pages/submit_rsvp.html" %}
                             </div>
                         </div>
-                    </div>
-                    <div class="row icons_img">
-                        <div class="col-sm-4 col-xs-4 icons_img__block icons_img__block--mail">
-                            <img class="icons_img__block__image" src="/static/img/mail.svg" height="40px" alt=""/>
-                            <div class="icons_img__block__link">party@karenmichael.com</div>
-                        </div>
-                        <div class="col-sm-4 xol-xs-4 icons_img__block icons_img__block--phone pull-right">
-                            <img class="icons_img__block__image" src="/static/img/phone.svg" height="40px" alt=""/>
-                            <div class="icons_img__block__link">+49 15901048528</div>
+                        <div class="col-sm-12">
+                            <div class="col-sm-12">
+                                <div class="row icons_img">
+                                    <div class="col-sm-7 icons_img__block icons_img__block--mail">
+                                        <div class="icons_img__block__link">
+                                            <span class="glyphicon glyphicon-envelope"></span>
+                                            party@karenmichael.com
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 icons_img__block icons_img__block--phone pull-right">
+                                        <div class="icons_img__block__link">
+                                            <span class="glyphicon glyphicon-earphone"></span>
+                                            +49 15901048528
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
-                <!--<div class="col-sm-4 pull-right gift_text">-->
-                    <!--<img id="gifts" src="/static/img/gifts.svg" height="120px" alt=""/>-->
-                    <!--<div class="gift_text__txt">-->
-                        <!--<h1>Come to the Philipines for our wedding week!</h1><br/>-->
-                        <!--<h3>Celebrating with you is the only gift we need.</h3><br/>-->
-                        <!--<p>If you are so determined to do more to make us extra happy, it's easy</p><br/>-->
-                        <!--<p>We would like to remember our wedding as one big party, and we would be thrilled you if you you could party-->
-                            <!--with us - till  the sun comes up.</p>-->
-                    <!--</div>-->
-                <!--</div>-->
             </div>
         </div>
+    </section>
+
+    <section id="gifts">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="gifts-small-title">
+                        gifts?
+                    </div>
+                    <div class="gifts-big-title">
+                        Come to the Philippines for our wedding week
+                    </div>
+                    <div class="gifts-small-title">
+                        celebrating with you is the only gift we need
+                    </div>
+                    <div class="col-sm-12 gifts-title-text">
+                        If you are determined to do more to make us extra happy, its easy.
+                        We would like to remember our wedding as one big party,
+                        and we would be thrilled if you would party with us – til the sun comes up.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gifts-img">
+        <img src="/static/img/gifts.png" alt=""/>
     </section>
 
 
 <section id="instagram">
    <div class="container">
        <div class="row">
-           <div class="col-sm-12">
-               <h1 class="center txtmagenta">#KarenMichael</h1>
-               <div class="partycontent">
-                   <p class="center">Help us relive the fun by tagging all of your photos with #KarenMichael before, during, and after our Polterweekend in Germany and wedding in the Philippines. View the feed real-time at: </p></div>
-               <div id="col-double-last"><h1 class="highlight txtmagenta"><a href="/photos/" target="_blank">polterweekend.com/photos</a></h1></div>
-                <div id="col-last"><div id="instafeed"></div></div>
+           <div class="instagram-title">#KarenMichael</div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-10 col-sm-offset-1 instagram-text">
+                       Help us relive the fun by tagging all of your photos with #KarenMichael before, during, and after our Polterweekend in Germany and wedding in the Philippines. View the feed real-time at:
+                   </div>
+               </div>
            </div>
+           <a class="real-time-link" href="/photos/" target="_blank">polterweekend.com/photos</a>
+           <div id="col-last"><div id="instafeed"></div></div>
        </div>
    </div>
-</section>
-
-
-
-
-
-<section id="footer">
-    <div class="row">
-       <div class="col-sm-12">
-          <a href="#" class="toTop"><p class="entypo txtwhite">&hearts;</p></a>
-       </div>
-    </div>
 </section>
 <!-- Scripts -->
 <script src="{% static "js/jquery.scrollmagic.min.js" %}"></script>

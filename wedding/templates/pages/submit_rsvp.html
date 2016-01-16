@@ -38,7 +38,6 @@
             </div>
 
             <div id="div_country" class="form-group">
-                <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 {% country_field %}
                 {{ form.country.errors }}
                 <div class="arrow_up"></div>
@@ -134,7 +133,6 @@
 
             <div id="div_manila_staying" class="form-group">
                 {{ form.manila_staying.errors }}
-                <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <select id="id_manila_staying" name="manila_staying">
                     <option value="" selected="selected">Staying in Manila</option>
                     <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
@@ -213,7 +211,6 @@
 
             <div id="div_boracay_staying" class="form-group">
                 {{ form.boracay_staying.errors }}
-                <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <select id="id_boracay_staying" name="boracay_staying">
                     <option value="" selected="selected">Staying in Boracay</option>
                     <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
@@ -229,7 +226,6 @@
 
             <div id="div_shoe_size" class="form-group">
                 {{ form.shoe_size.errors }}
-                <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <select id="id_shoe_size" name="shoe_size">
                     <option value="" selected="selected">Your shoe size</option>
                     <option value="1">1</option>
@@ -243,7 +239,6 @@
 
             <div id="div_dietary_restrictions" class="form-group">
                 {{ form.dietary_restrictions.errors }}
-                <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <select id="id_dietary_restrictions" name="dietary_restrictions">
                     <option value="" selected="selected">Your dietary restrictions</option>
                     <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
@@ -259,7 +254,6 @@
 
             <div id="div_number_of_guests" class="form-group">
                 {{ form.number_of_guests.errors }}
-                <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <select id="id_number_of_guests" name="number_of_guests">
                     <option value="" selected="selected">No. of guests</option>
                     <option value="1">1</option>
@@ -272,184 +266,184 @@
                 <div class="arrow_up"></div>
             </div>
 
-            <div class="row guest_form guest_form_1">
-                <div id="div_guests_name_1" class="form-group">
-                    <input id="id_guests_name_1" class="form-control" maxlength="50" name="guests_name_1" type="text" placeholder="Guest's name" required>
-                    {{ form.guests_name_1.errors }}
+            <div class="col-sm-12">
+                <div class="row guest_form guest_form_1">
+                    <div id="div_guests_name_1" class="form-group">
+                        <input id="id_guests_name_1" class="form-control" maxlength="50" name="guests_name_1" type="text" placeholder="Guest's name" required>
+                        {{ form.guests_name_1.errors }}
+                    </div>
+                    <div id="div_guests_email_1" class="form-group">
+                        <input id="id_guests_email_1" class="form-control" maxlength="50" name="guests_email_1" type="email" placeholder="Guest's email (optional)" >
+                        {{ form.guests_email_1.errors }}
+                    </div>
+                    <div id="div_guests_shoe_size_1" class="form-group">
+                        {{ form.guests_shoe_size_1.errors }}
+
+                        <select id="id_guests_shoe_size_1" name="guests_shoe_size_1">
+                            <option value="" selected="selected">Guest's shoe size</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
+                    <div id="div_guests_dietary_restrictions_1" class="form-group">
+                        {{ form.guests_dietary_restrictions_1.errors }}
+                        <select id="id_guests_dietary_restrictions_1" name="guests_dietary_restrictions_1">
+                            <option value="" selected="selected">Guest's dietary restrictions</option>
+                            <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                            <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                            <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                            <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                            <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
                 </div>
-                <div id="div_guests_email_1" class="form-group">
-                    <input id="id_guests_email_1" class="form-control" maxlength="50" name="guests_email_1" type="email" placeholder="Guest's email (optional)" >
-                    {{ form.guests_email_1.errors }}
+                <div class="row guest_form guest_form_2">
+                    <div id="div_guests_name_2" class="form-group">
+                        <input id="id_guests_name_2" class="form-control" maxlength="50" name="guests_name_2" type="text" placeholder="Guest's name" required>
+                        {{ form.guests_name_2.errors }}
+                    </div>
+                    <div id="div_guests_email_2" class="form-group">
+                        <input id="id_guests_email_2" class="form-control" maxlength="50" name="guests_email_2" type="email" placeholder="Guest's email (optional)" >
+                        {{ form.guests_email_2.errors }}
+                    </div>
+                    <div id="div_guests_shoe_size_2" class="form-group">
+                        {{ form.guests_shoe_size_2.errors }}
+                        <select id="id_guests_shoe_size_2" name="guests_shoe_size_2">
+                            <option value="" selected="selected">Guest's shoe size</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
+                    <div id="div_guests_dietary_restrictions_2" class="form-group">
+                        {{ form.guests_dietary_restrictions_2.errors }}
+
+                        <select id="id_guests_dietary_restrictions_2" name="guests_dietary_restrictions_2">
+                            <option value="" selected="selected">Guest's dietary restrictions</option>
+                            <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                            <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                            <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                            <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                            <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
                 </div>
-                <div id="div_guests_shoe_size_1" class="form-group">
-                    {{ form.guests_shoe_size_1.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_shoe_size_1" name="guests_shoe_size_1">
-                        <option value="" selected="selected">Guest's shoe size</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <div class="arrow_up"></div>
+                <div class="row guest_form guest_form_3">
+                    <div id="div_guests_name_3" class="form-group">
+                        <input id="id_guests_name_3" class="form-control" maxlength="50" name="guests_name_3" type="text" placeholder="Guest's name" required>
+                        {{ form.guests_name_3.errors }}
+                    </div>
+                    <div id="div_guests_email_3" class="form-group">
+                        <input id="id_guests_email_3" class="form-control" maxlength="50" name="guests_email_3" type="email" placeholder="Guest's email (optional)" >
+                        {{ form.guests_email_3.errors }}
+                    </div>
+                    <div id="div_guests_shoe_size_3" class="form-group">
+                        {{ form.guests_shoe_size_3.errors }}
+
+                        <select id="id_guests_shoe_size_3" name="guests_shoe_size_3">
+                            <option value="" selected="selected">Guest's shoe size</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
+                    <div id="div_guests_dietary_restrictions_3" class="form-group">
+                        {{ form.guests_dietary_restrictions_3.errors }}
+
+                        <select id="id_guests_dietary_restrictions_3" name="guests_dietary_restrictions_3">
+                            <option value="" selected="selected">Guest's dietary restrictions</option>
+                            <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                            <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                            <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                            <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                            <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
                 </div>
-                <div id="div_guests_dietary_restrictions_1" class="form-group">
-                    {{ form.guests_dietary_restrictions_1.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_dietary_restrictions_1" name="guests_dietary_restrictions_1">
-                        <option value="" selected="selected">Guest's dietary restrictions</option>
-                        <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                        <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                        <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                        <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                        <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
-                    </select>
-                    <div class="arrow_up"></div>
+                <div class="row guest_form guest_form_4">
+                    <div id="div_guests_name_4" class="form-group">
+                        <input id="id_guests_name_4" class="form-control" maxlength="50" name="guests_name_4" type="text" placeholder="Guest's name" required>
+                        {{ form.guests_name_4.errors }}
+                    </div>
+                    <div id="div_guests_email_4" class="form-group">
+                        <input id="id_guests_email_4" class="form-control" maxlength="50" name="guests_email_4" type="email" placeholder="Guest's email (optional)" >
+                        {{ form.guests_email_4.errors }}
+                    </div>
+                    <div id="div_guests_shoe_size_4" class="form-group">
+                        {{ form.guests_shoe_size_4.errors }}
+
+                        <select id="id_guests_shoe_size_4" name="guests_shoe_size_4">
+                            <option value="" selected="selected">Guest's shoe size</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
+                    <div id="div_guests_dietary_restrictions_4" class="form-group">
+                        {{ form.guests_dietary_restrictions_4.errors }}
+
+                        <select id="id_guests_dietary_restrictions_4" name="guests_dietary_restrictions_4">
+                            <option value="" selected="selected">Guest's dietary restrictions</option>
+                            <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                            <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                            <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                            <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                            <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row guest_form guest_form_2">
-                <div id="div_guests_name_2" class="form-group">
-                    <input id="id_guests_name_2" class="form-control" maxlength="50" name="guests_name_2" type="text" placeholder="Guest's name" required>
-                    {{ form.guests_name_2.errors }}
-                </div>
-                <div id="div_guests_email_2" class="form-group">
-                    <input id="id_guests_email_2" class="form-control" maxlength="50" name="guests_email_2" type="email" placeholder="Guest's email (optional)" >
-                    {{ form.guests_email_2.errors }}
-                </div>
-                <div id="div_guests_shoe_size_2" class="form-group">
-                    {{ form.guests_shoe_size_2.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_shoe_size_2" name="guests_shoe_size_2">
-                        <option value="" selected="selected">Guest's shoe size</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-                <div id="div_guests_dietary_restrictions_2" class="form-group">
-                    {{ form.guests_dietary_restrictions_2.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_dietary_restrictions_2" name="guests_dietary_restrictions_2">
-                        <option value="" selected="selected">Guest's dietary restrictions</option>
-                        <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                        <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                        <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                        <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                        <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-            </div>
-            <div class="row guest_form guest_form_3">
-                <div id="div_guests_name_3" class="form-group">
-                    <input id="id_guests_name_3" class="form-control" maxlength="50" name="guests_name_3" type="text" placeholder="Guest's name" required>
-                    {{ form.guests_name_3.errors }}
-                </div>
-                <div id="div_guests_email_3" class="form-group">
-                    <input id="id_guests_email_3" class="form-control" maxlength="50" name="guests_email_3" type="email" placeholder="Guest's email (optional)" >
-                    {{ form.guests_email_3.errors }}
-                </div>
-                <div id="div_guests_shoe_size_3" class="form-group">
-                    {{ form.guests_shoe_size_3.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_shoe_size_3" name="guests_shoe_size_3">
-                        <option value="" selected="selected">Guest's shoe size</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-                <div id="div_guests_dietary_restrictions_3" class="form-group">
-                    {{ form.guests_dietary_restrictions_3.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_dietary_restrictions_3" name="guests_dietary_restrictions_3">
-                        <option value="" selected="selected">Guest's dietary restrictions</option>
-                        <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                        <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                        <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                        <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                        <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-            </div>
-            <div class="row guest_form guest_form_4">
-                <div id="div_guests_name_4" class="form-group">
-                    <input id="id_guests_name_4" class="form-control" maxlength="50" name="guests_name_4" type="text" placeholder="Guest's name" required>
-                    {{ form.guests_name_4.errors }}
-                </div>
-                <div id="div_guests_email_4" class="form-group">
-                    <input id="id_guests_email_4" class="form-control" maxlength="50" name="guests_email_4" type="email" placeholder="Guest's email (optional)" >
-                    {{ form.guests_email_4.errors }}
-                </div>
-                <div id="div_guests_shoe_size_4" class="form-group">
-                    {{ form.guests_shoe_size_4.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_shoe_size_4" name="guests_shoe_size_4">
-                        <option value="" selected="selected">Guest's shoe size</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-                <div id="div_guests_dietary_restrictions_4" class="form-group">
-                    {{ form.guests_dietary_restrictions_4.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_dietary_restrictions_4" name="guests_dietary_restrictions_4">
-                        <option value="" selected="selected">Guest's dietary restrictions</option>
-                        <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                        <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                        <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                        <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                        <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-            </div>
-            <div class="row guest_form guest_form_5">
-                <div id="div_guests_name_5" class="form-group">
-                    <input id="id_guests_name_5" class="form-control" maxlength="50" name="guests_name_5" type="text" placeholder="Guest's name" required>
-                    {{ form.guests_name_5.errors }}
-                </div>
-                <div id="div_guests_email_5" class="form-group">
-                    <input id="id_guests_email_5" class="form-control" maxlength="50" name="guests_email_5" type="email" placeholder="Guest's email (optional)" >
-                    {{ form.guests_email_5.errors }}
-                </div>
-                <div id="div_guests_shoe_size_5" class="form-group">
-                    {{ form.guests_shoe_size_5.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_shoe_size_5" name="guests_shoe_size_5">
-                        <option value="" selected="selected">Guest's shoe size</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <div class="arrow_up"></div>
-                </div>
-                <div id="div_guests_dietary_restrictions_5" class="form-group">
-                    {{ form.guests_dietary_restrictions_5.errors }}
-                    <div class="arrow_down"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <select id="id_guests_dietary_restrictions_5" name="guests_dietary_restrictions_5">
-                        <option value="" selected="selected">Guest's dietary restrictions</option>
-                        <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                        <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                        <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                        <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                        <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
-                    </select>
-                    <div class="arrow_up"></div>
+                <div class="row guest_form guest_form_5">
+                    <div id="div_guests_name_5" class="form-group">
+                        <input id="id_guests_name_5" class="form-control" maxlength="50" name="guests_name_5" type="text" placeholder="Guest's name" required>
+                        {{ form.guests_name_5.errors }}
+                    </div>
+                    <div id="div_guests_email_5" class="form-group">
+                        <input id="id_guests_email_5" class="form-control" maxlength="50" name="guests_email_5" type="email" placeholder="Guest's email (optional)" >
+                        {{ form.guests_email_5.errors }}
+                    </div>
+                    <div id="div_guests_shoe_size_5" class="form-group">
+                        {{ form.guests_shoe_size_5.errors }}
+
+                        <select id="id_guests_shoe_size_5" name="guests_shoe_size_5">
+                            <option value="" selected="selected">Guest's shoe size</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
+                    <div id="div_guests_dietary_restrictions_5" class="form-group">
+                        {{ form.guests_dietary_restrictions_5.errors }}
+
+                        <select id="id_guests_dietary_restrictions_5" name="guests_dietary_restrictions_5">
+                            <option value="" selected="selected">Guest's dietary restrictions</option>
+                            <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
+                            <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
+                            <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
+                            <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
+                            <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                        </select>
+                        <div class="arrow_up"></div>
+                    </div>
                 </div>
             </div>
 

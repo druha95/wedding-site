@@ -2682,8 +2682,12 @@ html, body {
         margin: 0;
     }
 
-    .link_block div {
+    .link_block {
         margin-top: 10px;
+    }
+
+    .link_block div {
+        margin-top: 0;
         margin-bottom: 0;
         line-height: 24px;
     }
@@ -2732,6 +2736,16 @@ html, body {
 
     .forms_wrapper {
         margin-top: 24px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .smart-forms div {
+        position: relative;
+    }
+
+    .smart-forms h2 {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        margin-bottom: 20px;
     }
 
     .smart-forms form input  {
@@ -2740,6 +2754,145 @@ html, body {
         outline: none;
         border-radius: 0;
         border: none;
+    }
+
+    .smart-forms form #id_events li  {
+        text-align: left;
+    }
+
+    .smart-forms form #id_events input  {
+        height: auto;
+    }
+
+    .smart-forms form select {
+        width: 100%;
+        height: 45px;
+        background: #f2f2f2;
+        outline: none;
+        border-radius: 0;
+        border: none;
+    }
+
+    .smart-forms textarea {
+        width: 100%;
+    }
+
+    #rsvp-form {
+        display: none;
+    }
+
+    .guest_form_1,
+    .guest_form_2,
+    .guest_form_3,
+    .guest_form_4,
+    .guest_form_5 {
+        display: none;
+    }
+
+    .glyphicon.glyphicon-calendar {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        pointer-events: none;
+    }
+    .icons_img {
+        margin-top: 18px;
+    }
+
+    .icons_img__block__link {
+        font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #94b4c3;
+        padding: 0;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .icons_img__block__link span {
+        font-size: 14px;
+        vertical-align: middle;
+    }
+
+    #gogo {
+        margin-top: 20px;
+        box-sizing: border-box;
+        width: 150px;
+        height: 52px;
+        border: 2px solid #2e3a38;
+        color: #2e3a38;
+        background: white;
+    }
+
+    #gogo:hover {
+        background: #2e3a38;
+        color: white;
+    }
+
+    #gifts {
+        padding-top: 87px;
+        padding-bottom: 100px;
+    }
+
+    .gifts-small-title {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        font-size: 18px;
+        color: #4a4a4a;
+        margin-bottom: 7px;
+    }
+
+    .gifts-big-title {
+        font-family: MahlauEFOP-Regular, sans-serif;
+        font-size: 36px;
+        color: #4a4a4a;
+        margin-bottom: 12px;
+    }
+
+    .gifts-title-text {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        color: #4a4a4a;
+        margin-top: 24px;
+    }
+
+    #gifts-img img {
+        width: 100%;
+    }
+
+    #instagram {
+        padding-top: 44px;
+        padding-bottom: 714px;
+        background: url("../img/waves-background3x.png") top left no-repeat;
+        background-size: cover;
+    }
+
+    .instagram-title {
+        font-size: 64px;
+        color: #b4b6b7;
+        font-family: MahlauEFOP-Regular, sans-serif;
+    }
+
+    .instagram-text {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        color: #4a4a4a;
+        margin-top: 37px;
+    }
+
+    .real-time-link {
+        display: inline-block;
+        font-size: 18px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        margin-top: 16px;
+    }
+
+    #instafeed a {
+        width: 125px;
+        height: 125px;
+        margin-right: 25px;
+    }
+
+    #col-last {
+        margin-top: 43px;
     }
 
 }
