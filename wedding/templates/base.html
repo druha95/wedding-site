@@ -86,9 +86,12 @@
                 <li class="nav-main navbar-element link5"><a href="#rsvp">RSVP</a></li>
                 <li class="nav-main navbar-element link6"><a href="#instagram">Photos</a></li>
                 <li id="nav-mobile" class="dropdown">
-                    <a id="menu-btn" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <!--<img id="logohome" src="{% static "img/MK.svg" %}">-->
-                    </a>
+                    <button id="menu-btn" href="#" class="dropdown-toggle navbar-toggle pull-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <ul class="dropdown-menu" style="padding-top: 80px;">
                         <li class="nav-fix"></li>
                         <li class="navbar-element link6"><a href="#couple">Bride & groom</a></li>
@@ -107,17 +110,6 @@
     </nav>
 </section>
 
-<!--<section id="home">-->
-    <!--<div id="scrolldown">-->
-        <!--<p>SCROLL</p>-->
-        <!--<div class="mouse">-->
-            <!--<span><p>&#8595;</p></span>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="container"></div>-->
-<!--</section>-->
-
-{% block main %}{% endblock %}
 
 <section id="getting-married">
     <img id="karen-michael" src="/static/img/karen-michael.png" alt=""/>
