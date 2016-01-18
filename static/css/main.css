@@ -54,6 +54,10 @@ html, body {
   -webkit-font-smoothing: antialiased;
   text-align: center; }
 
+a {
+    color: #94b4c3 !important;
+}
+
 /*
 ------------------------------------------------
 	// Typgraphy 
@@ -2228,13 +2232,24 @@ html, body {
 /*}*/
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
 
     .body {
-        padding-top: 164px;
+
     }
+
+    body {
+        background: #F2F2F2;
+    }
+
+    .global_wrapper {
+        background: white;
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+
     .navbar {
-        width: 100%;
+        width: 1280px;
         text-align: center;
         position: fixed;
         background: white;
@@ -2303,11 +2318,33 @@ html, body {
         font-size: 24px;
     }
 
+    #karentxt {
+        padding-left: 148px;
+    }
+
+    #michaeltxt {
+        padding-right: 148px;
+    }
+
     .story_row {
         margin-top: 74px;
         background: #f2f2f2;
         padding-top: 75px;
         padding-bottom: 72px;
+    }
+
+    #date1 {
+        padding-left: 66px;
+    }
+
+    #date2 {
+        padding-right: 66px;
+    }
+
+    .story_row {
+        margin-left: 52px;
+        margin-right: 52px;
+        width: 1050px;
     }
 
     .story_row .col-sm-6 div div {
@@ -2377,6 +2414,19 @@ html, body {
         margin-top: 2px;
     }
 
+    #wedding1 {
+        padding-left: 124px;
+    }
+
+    #wedding2 {
+        padding-right: 124px;
+    }
+
+    #beach-wedding-img .col-sm-6 {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
     #img-beach-wedding {
         width: 100%;
     }
@@ -2416,10 +2466,9 @@ html, body {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
-        margin-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
         font-weight: bold;
+        width: 475px;
+        margin: 0 auto 15px;
     }
 
     #bubble-dress-code {
@@ -2433,6 +2482,14 @@ html, body {
         padding-top: 28px;
         text-align: center;
         display: inline-block;
+    }
+
+    #dress-code .left {
+        padding-left: 56px;
+    }
+
+    #dress-code .right {
+        padding-right: 56px;
     }
 
     #dress-code.wedding-party {
@@ -2456,6 +2513,11 @@ html, body {
     .dress-code__description span {
         display: inline-block;
         margin-top: 10px;
+    }
+
+    #church-wedding-img .col-sm-6 {
+        padding-left: 33px;
+        padding-right: 33px;
     }
 
     #img-church-wedding {
@@ -2488,11 +2550,9 @@ html, body {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
-        margin-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
         font-weight: bold;
-        margin-top: 54px;
+        width: 474px;
+        margin: 54px auto 15px;
     }
 
     #dress-code.church-party {
@@ -2513,10 +2573,16 @@ html, body {
         padding-bottom: 100px;
     }
 
+    #wedding-party .container {
+        width: 1050px !important;
+    }
+
     .wedding-party-row {
         background: #f2f2f2;
         padding-top: 74px;
         padding-bottom: 90px;
+        padding-left: 130px;
+        padding-right: 130px;
     }
 
     .wedding-party-title {
@@ -2524,6 +2590,7 @@ html, body {
         text-transform: uppercase;
         font-size: 36px;
         color: #b4b6b7;
+        padding-left: 70px;
     }
 
     .family {
@@ -2552,6 +2619,14 @@ html, body {
 
     .some_list {
         margin-top: 65px;
+    }
+
+    .wedding-party-row .col-sm-6.left {
+        padding-right: 65px;
+    }
+
+    .wedding-party-row .col-sm-6.right {
+        padding-left: 65px;
     }
 
     .bridesmaids_list__title {
@@ -2597,6 +2672,13 @@ html, body {
         padding-bottom: 92px;
     }
 
+    #when-where .left {
+        padding-left: 152px;
+    }
+
+    #when-where .right {
+        padding-right: 152px;
+    }
 
     .when-where-main-title {
         font-size: 64px;
@@ -2641,7 +2723,7 @@ html, body {
     section#googlemap {
         position: relative;
         height: 410px;
-        padding: 20px;
+        padding: 20px 0;
         width: 100%;
     }
 
@@ -2667,15 +2749,18 @@ html, body {
         color: #4a4a4a;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
-        margin-top: 52px;
-        margin-bottom: 26px;
+        /*margin-top: 52px;*/
+        /*margin-bottom: 26px;*/
+        width: 475px;
+        margin: 52px auto 26px;
     }
 
     .getting-there__text p {
         font-size: 14px;
         font-family: 'Josefin Sans', sans-serif;
         color: #4a4a4a;
-        margin-top: 6px;
+        width: 445px;
+        margin: 6px auto 0;
     }
 
     .getting-there__text .link_block {
@@ -2705,6 +2790,11 @@ html, body {
         padding-top: 45px;
     }
 
+    .rsvp_row {
+        width: 425px;
+        margin: 0 auto;
+    }
+
     .rsvp-title {
         font-size: 64px;
         font-family: MahlauEFOP-Regular, sans-serif;
@@ -2727,8 +2817,8 @@ html, body {
     }
 
     .label_rsvp input {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
         background: white;
         vertical-align: top;
 
@@ -2854,6 +2944,11 @@ html, body {
         margin-top: 24px;
     }
 
+    .gifts-title-text div {
+        width: 800px;
+        margin: 0 auto;
+    }
+
     #gifts-img img {
         width: 100%;
     }
@@ -2878,6 +2973,11 @@ html, body {
         margin-top: 37px;
     }
 
+    .instagram-text div {
+        width: 800px;
+        margin: 0 auto;
+    }
+
     .real-time-link {
         display: inline-block;
         font-size: 18px;
@@ -2896,7 +2996,7 @@ html, body {
     }
 
 }
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1279px) and (min-width: 768px) {
 
     .body {
         padding-top: 164px;
