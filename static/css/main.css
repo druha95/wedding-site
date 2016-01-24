@@ -2240,6 +2240,7 @@ a {
 
     body {
         background: #F2F2F2;
+        font-size: 1em;
     }
 
     .global_wrapper {
@@ -2257,8 +2258,8 @@ a {
     }
 
     .navbar .nav_wrapper  {
-        margin-top: 59px;
-        margin-bottom: 52px;
+        margin-top: 38px;
+        margin-bottom: 37px;
         display: inline-block;
     }
 
@@ -2267,6 +2268,8 @@ a {
         color: #2e3a38 !important;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
+        padding-left: 13px;
+        padding-right: 13px;
     }
     
     img#karen-michael {
@@ -2276,7 +2279,7 @@ a {
     #couple {
         background: url("../img/waves-background3x.png") top left no-repeat;
         background-size: cover;
-        padding-top: 68px;
+        padding-top: 58px;
         padding-bottom: 86px;
     }
 
@@ -2286,6 +2289,11 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
+        line-height: 42px;
+    }
+
+    #getting-married {
+        padding-top: 130px;
     }
 
     .karenmichael_married {
@@ -2294,11 +2302,25 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 10px;
+        margin-top: 20px;
+        line-height: 30px;
     }
 
     .bride_groom_row {
-        margin-top: 102px;
+        margin-top: 108px;
+    }
+
+    .bride_groom_row .txtmagenta {
+        margin-top: 14px;
+    }
+
+    .bride_groom_row .txtmagenta span {
+        display: inline-block;
+        margin-top: 7px;
+    }
+
+    .bride_groom_row #michaeltxt .txtmagenta {
+        margin-top: 16px;
     }
 
     .bride_groom_row nobr {
@@ -2316,34 +2338,36 @@ a {
         text-transform: uppercase;
         color: #4a4a4a;
         font-size: 24px;
+        line-height: 30px;
     }
 
     #karentxt {
-        padding-left: 148px;
+        padding-left: 137px;
     }
 
     #michaeltxt {
-        padding-right: 148px;
+        padding-right: 137px;
+        padding-top: 5px;
     }
 
     .story_row {
-        margin-top: 74px;
+        margin-top: 85px;
         background: #f2f2f2;
-        padding-top: 75px;
+        padding-top: 66px;
         padding-bottom: 72px;
     }
 
     #date1 {
-        padding-left: 66px;
+        padding-left: 50px;
     }
 
     #date2 {
-        padding-right: 66px;
+        padding-right: 80px;
     }
 
     .story_row {
-        margin-left: 52px;
-        margin-right: 52px;
+        margin-left: 53px;
+        margin-right: 60px;
         width: 1050px;
     }
 
@@ -2352,24 +2376,30 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 5px;
+        margin-top: 4px;
         margin-bottom: 10px;
     }
 
     .story_row .col-sm-6 div span {
+        display: inline-block;
         font-size: 18px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 2px;
+        margin-top: 4px;
     }
 
     .story__continues {
-        margin-top: 76px;
+        margin-top: 88px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         font-size: 36px;
         color: #b4b6b7;
+    }
+
+    .story__continues__text span:last-child {
+        display: inline-block;
+        margin-top: 4px;
     }
 
     img#two-weddings-img {
@@ -2377,8 +2407,8 @@ a {
     }
 
     #two-wedding-section {
-        padding-top: 44px;
-        padding-bottom: 90px;
+        padding-top: 47px;
+        padding-bottom: 102px;
     }
 
     #two-wedding-section {
@@ -2394,7 +2424,7 @@ a {
     }
 
     .two_wedding_date_row {
-        margin-top: 60px;
+        margin-top: 48px;
     }
 
     .two_wedding_date_row .col-sm-6 div div {
@@ -2402,16 +2432,17 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin-top: 8px;
+        margin-bottom: 6px;
     }
 
     .two_wedding_date_row .col-sm-6 div span {
+        display: inline-block;
         font-size: 18px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 2px;
+        margin-top:7px;
     }
 
     #wedding1 {
@@ -2424,7 +2455,7 @@ a {
 
     #beach-wedding-img .col-sm-6 {
         padding-left: 33px;
-        padding-right: 33px;
+        padding-right: 32px;
     }
 
     #img-beach-wedding {
@@ -2432,7 +2463,7 @@ a {
     }
 
     .beach_wedding__txt {
-        margin-top: 30px;
+        margin-top: 32px;
     }
 
     .beach_wedding__txt .col-sm-12 div div {
@@ -2441,7 +2472,7 @@ a {
         text-transform: uppercase;
         color: #4a4a4a;
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
 
     .beach_wedding__txt .col-sm-12 div span {
@@ -2458,7 +2489,8 @@ a {
         text-transform: uppercase;
         color: #b4b6b7;
         margin-top: 70px;
-        margin-bottom: 70px;
+        margin-bottom: 63px;
+        line-height: 38px;
     }
 
     .boracay_paragraph {
@@ -2466,9 +2498,10 @@ a {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
-        font-weight: bold;
         width: 475px;
         margin: 0 auto 15px;
+        line-height: 18px;
+        padding: 0px 15px;
     }
 
     #bubble-dress-code {
@@ -2479,9 +2512,11 @@ a {
         border-radius: 50px;
         width: 100px;
         height: 100px;
-        padding-top: 28px;
+        padding-top: 26px;
         text-align: center;
         display: inline-block;
+        line-height: 22px;
+        margin-top: 2px;
     }
 
     #dress-code .left {
@@ -2489,11 +2524,11 @@ a {
     }
 
     #dress-code .right {
-        padding-right: 56px;
+        padding-right: 48px;
     }
 
     #dress-code.wedding-party {
-        padding-top: 43px;
+        padding-top: 55px;
         padding-bottom: 90px;
     }
 
@@ -2502,6 +2537,7 @@ a {
         text-align: center;
         font-size: 24px;
         color: #4a4a4a;
+        margin-top: 5px;
     }
 
     .dress-code__description {
@@ -2509,15 +2545,16 @@ a {
         text-align: center;
         font-size: 18px;
         color: #4a4a4a;
+        margin-top: 5px;
     }
     .dress-code__description span {
         display: inline-block;
-        margin-top: 10px;
+        line-height: 24px;
     }
 
     #church-wedding-img .col-sm-6 {
         padding-left: 33px;
-        padding-right: 33px;
+        padding-right: 32px;
     }
 
     #img-church-wedding {
@@ -2525,7 +2562,11 @@ a {
     }
 
     .beach_wedding__txt {
-        margin-top: 30px;
+        margin-top: 32px;
+    }
+
+    #church-wedding {
+        padding-top: 32px;
     }
 
     .church_wedding__txt .col-sm-12 div div {
@@ -2534,7 +2575,7 @@ a {
         text-transform: uppercase;
         color: #4a4a4a;
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
 
     .church_wedding__txt .col-sm-12 div span {
@@ -2546,22 +2587,36 @@ a {
     }
 
     .antonio_paragraph {
+        padding: 0 20px;
         text-align: center;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
-        font-weight: bold;
         width: 474px;
-        margin: 54px auto 15px;
+        margin: 48px auto 15px;
+        line-height: 18px;
+    }
+
+    .antonio_paragraph.antonio_paragraph-2 {
+        margin-top: 15px;
     }
 
     #dress-code.church-party {
-        padding-top: 43px;
+        padding-top: 28px;
         padding-bottom: 90px;
     }
 
     #dress-code.church-party .dress-code__title {
-        padding-top: 15px;
+        padding-top: 13px;
+    }
+
+
+    #dress-code.church-party .col-sm-2 {
+        padding-right: 0;
+    }
+
+    #dress-code.church-party .left {
+        padding-left: 71px;
     }
 
     .church-party #bubble-dress-code {
@@ -2579,8 +2634,8 @@ a {
 
     .wedding-party-row {
         background: #f2f2f2;
-        padding-top: 74px;
-        padding-bottom: 90px;
+        padding-top: 65px;
+        padding-bottom: 86px;
         padding-left: 130px;
         padding-right: 130px;
     }
@@ -2594,7 +2649,7 @@ a {
     }
 
     .family {
-        margin-top: 48px;
+        margin-top: 30px;
     }
 
     .family.family--hers {
@@ -2606,27 +2661,29 @@ a {
         color: #4a4a4a;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     .wedding-party__status {
         font-size: 14px;
         color: #4a4a4a;
-        font-family: MahlauEFOP-Regular, sans-serif;
-        text-transform: uppercase;
-        margin-top: 6px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 12px;
+        padding: 0 30px;
+        line-height: 18px;
     }
 
     .some_list {
-        margin-top: 65px;
+        margin-top: 40px;
+        margin-bottom: 45px;
     }
 
     .wedding-party-row .col-sm-6.left {
-        padding-right: 65px;
+        padding-right: 50px;
     }
 
     .wedding-party-row .col-sm-6.right {
-        padding-left: 65px;
+        padding-left: 85px;
     }
 
     .bridesmaids_list__title {
@@ -2644,7 +2701,7 @@ a {
     }
 
     .bridesmaids_list__person {
-        margin-top: 13px;
+        line-height: 28px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         font-size: 18px;
@@ -2652,7 +2709,7 @@ a {
     }
 
     .groomsman_list__person {
-        margin-top: 13px;
+        line-height: 28px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         font-size: 18px;
@@ -2660,7 +2717,7 @@ a {
     }
 
     .list__person--first {
-        margin-top: 23px;
+        margin-top: 17px;
     }
 
     img#bubble-when-where {
@@ -2668,12 +2725,12 @@ a {
     }
 
     #when-where {
-        padding-top: 45px;
+        padding-top: 48px;
         padding-bottom: 92px;
     }
 
     #when-where .left {
-        padding-left: 152px;
+        padding-left: 148px;
     }
 
     #when-where .right {
@@ -2706,10 +2763,10 @@ a {
 
     .when-where-title {
         font-size: 14px;
-        font-family: MahlauEFOP-Regular, sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         font-weight: bold;
         color: #4a4a4a;
-        margin-top: 17px;
+        margin-top: 20px;
     }
 
     .when-where-description {
@@ -2736,6 +2793,14 @@ a {
         padding-bottom: 108px;
     }
 
+    .getting-there__text.left {
+        padding-left: 35px;
+    }
+
+    .getting-there__text.right {
+        padding-right: 35px;
+    }
+
     .getting-there-title {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
@@ -2751,7 +2816,7 @@ a {
         text-transform: uppercase;
         /*margin-top: 52px;*/
         /*margin-bottom: 26px;*/
-        width: 475px;
+        /*width: 475px;*/
         margin: 52px auto 26px;
     }
 
@@ -2791,7 +2856,7 @@ a {
     }
 
     .rsvp_row {
-        width: 425px;
+        width: 455px;
         margin: 0 auto;
     }
 
@@ -2803,12 +2868,19 @@ a {
     }
 
     .rsvp_block {
-        margin-top: 45px;
+        margin-top: 37px;
     }
 
-    .label_wrapper {
-        padding: 0;
+
+
+    .label_wrapper--left {
+        text-align: left;
     }
+
+    .label_wrapper--right {
+        text-align: right;
+    }
+
     .label_rsvp {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
@@ -2817,6 +2889,7 @@ a {
     }
 
     .label_rsvp input {
+        margin-right: 5px;
         width: 16px;
         height: 16px;
         background: white;
@@ -2825,7 +2898,7 @@ a {
     }
 
     .forms_wrapper {
-        margin-top: 24px;
+        margin-top: 28px;
         font-family: 'Josefin Sans', sans-serif;
     }
 
@@ -2884,6 +2957,7 @@ a {
         right: 15px;
         top: 15px;
         pointer-events: none;
+        text-align: right;
     }
     .icons_img {
         margin-top: 18px;
