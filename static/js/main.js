@@ -25,4 +25,15 @@ $(document).ready(function($) {
             $(".guest_form_" + j).css('display', "block");
         }
     });
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 130) {
+            $('nav').addClass('shrink');
+            $('#getting-married').addClass('shrink');
+        } else {
+            $('nav').removeClass('shrink');
+            $('#getting-married').removeClass('shrink');
+        }
+    });
 });
+

@@ -2267,6 +2267,15 @@ a {
         margin-top: 38px;
         margin-bottom: 37px;
         display: inline-block;
+        -webkit-transition: all 0.5s ease-out 0s;
+        -moz-transition: all 0.5s ease-out 0s;
+        -o-transition: all 0.5s ease-out 0s;
+        transition: all 0.5s ease-out 0s;
+    }
+
+    .navbar.shrink .nav_wrapper  {
+        margin-top: 17px;
+        margin-bottom: 17px;
     }
 
     .navbar li a {
@@ -2300,6 +2309,14 @@ a {
 
     #getting-married {
         padding-top: 130px;
+        -webkit-transition: padding-top 0.5s ease-out 0s;
+        -moz-transition: padding-top 0.5s ease-out 0s;
+        -o-transition: padding-top 0.5s ease-out 0s;
+        transition: padding-top 0.5s ease-out 0s;
+    }
+
+    #getting-married.shrink {
+        padding-top: 84px;
     }
 
     .karenmichael_married {
