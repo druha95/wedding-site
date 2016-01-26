@@ -58,6 +58,12 @@ a {
     color: #94b4c3 !important;
 }
 
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura-Book-BT_18987.ttf');
+}
+
 /*
 ------------------------------------------------
 	// Typgraphy 
@@ -84,10 +90,10 @@ a {
 /*a:visited {*/
   /*color: #ff46af !important; }*/
 /*p {*/
-  /*font: 600 1.5em/1.4em 'Josefin Sans', sans-serif; }*/
+  /*font: 600 1.5em/1.4em 'Futura', sans-serif; }*/
 
 /*p.lead {*/
-  /*font: 700 1.5em/1.4em 'Josefin Sans', sans-serif; }*/
+  /*font: 700 1.5em/1.4em 'Futura', sans-serif; }*/
 
 /*p.highlight {*/
   /*font: 700 3em/1em 'Amatic SC', sans-serif !important; }*/
@@ -96,7 +102,7 @@ a {
   /*font: 400 3.5em/1em 'Amatic SC', sans-serif !important; }*/
 
 /*p.legal {*/
-  /*font: 700 0.9em/1.3em 'Josefin Sans', sans-serif !important; }*/
+  /*font: 700 0.9em/1.3em 'Futura', sans-serif !important; }*/
 
 /*.festcontent p, .uebernachtencontent p, .parkencontent p, .partycontent p, .geschenkecontent p {*/
   /*font-size: 18px; }*/
@@ -106,7 +112,7 @@ a {
   /*text-align: left; }*/
 
 /*p.map {*/
-  /*font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;*/
+  /*font: 600 1.2em/1.4em 'Futura', sans-serif;*/
   /*text-align: left; }*/
 /*.map a:hover, .entypo:hover {*/
   /*color: #bf50b6 !important;*/
@@ -514,7 +520,7 @@ a {
   /*text-align: center; }*/
 
 /*#scrolldown p {*/
-  /*font: 700 0.7em/1em 'Josefin Sans', sans-serif;*/
+  /*font: 700 0.7em/1em 'Futura', sans-serif;*/
   /*color: #ff46af;*/
   /*-webkit-animation-duration: 2s;*/
   /*animation-duration: 2s;*/
@@ -746,7 +752,7 @@ a {
 
 /*#anslingerlink a {*/
   /*color: #FFF;*/
-  /*font: 700 0.6em/1em 'Josefin Sans', sans-serif !important; }*/
+  /*font: 700 0.6em/1em 'Futura', sans-serif !important; }*/
 
 /**/
 /*------------------------------------------------*/
@@ -757,7 +763,7 @@ a {
 /*------------------------------------------------------------- */
 /*.smart-forms label, .smart-forms input, .smart-forms button, .smart-forms select, .smart-forms textarea {*/
   /*margin: 10px 0 !important;*/
-  /*font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;*/
+  /*font: 600 1.2em/1.4em 'Futura', sans-serif;*/
   /*outline: none;*/
 /*}*/
 
@@ -930,11 +936,11 @@ a {
   /*background-color: #ff46af; }*/
 
 /*.smart-forms .notification .close-btn:hover, .smart-forms .alert-info, .smart-forms .alert-success, .smart-forms .alert-warning, .smart-forms .alert-error {*/
-  /*font: 700 1.4em/1em 'Josefin Sans', sans-serif !important;*/
+  /*font: 700 1.4em/1em 'Futura', sans-serif !important;*/
   /*padding: 10px 5px; }*/
 
 /*.error {*/
-  /*font: 700 1.2em/1em 'Josefin Sans', sans-serif !important;*/
+  /*font: 700 1.2em/1em 'Futura', sans-serif !important;*/
   /*display: block;*/
   /*width: 100%;*/
   /*color: #ff46af; }*/
@@ -1432,7 +1438,7 @@ a {
   /*.smart-forms .button {*/
     /*font: 700 1.5em/1em 'Amatic SC', sans-serif !important; }*/
   /*.smart-forms label, .smart-forms input, .smart-forms button, .smart-forms select, .smart-forms textarea {*/
-    /*font: 600 1em/1.2em 'Josefin Sans', sans-serif;*/
+    /*font: 600 1em/1.2em 'Futura', sans-serif;*/
     /*width: 100%; }*/
 
 
@@ -1617,7 +1623,7 @@ a {
 /*.beach_wedding__sometxt {*/
     /*text-align: justify;*/
     /*color: #8c7466;*/
-    /*font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;*/
+    /*font: 600 0.3em/1.3em 'Futura', sans-serif;*/
 /*}*/
 
 /*.beach_wedding__sometxt__remark {*/
@@ -1649,7 +1655,7 @@ a {
 
 /*.wedding-party__status {*/
     /*color: #3399FF;*/
-    /*font: 600 0.75em/1.4em 'Josefin Sans', sans-serif;*/
+    /*font: 600 0.75em/1.4em 'Futura', sans-serif;*/
 /*}*/
 
 /*#wedding-party .col-sm-6 {*/
@@ -1696,7 +1702,7 @@ a {
 /*.church-wedding__sometxt {*/
     /*text-align: justify;*/
     /*color: #8c7466;*/
-    /*font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;*/
+    /*font: 600 0.3em/1.3em 'Futura', sans-serif;*/
     /*margin: 15px 0;*/
 /*}*/
 
@@ -1710,7 +1716,7 @@ a {
 /*}*/
 
 /*.when_where_text div {*/
-    /*font: 600 0.4em/1.3em 'Josefin Sans', sans-serif;*/
+    /*font: 600 0.4em/1.3em 'Futura', sans-serif;*/
 /*}*/
 
 /*.when_where_text h3 {*/
@@ -1723,7 +1729,7 @@ a {
 /*}*/
 
 /*.getting-there__text {*/
-    /*font: 600 0.3em/1.3em 'Josefin Sans', sans-serif;*/
+    /*font: 600 0.3em/1.3em 'Futura', sans-serif;*/
     /*text-align: justify;*/
     /*color: #8c7466;*/
 /*}*/
@@ -1763,7 +1769,7 @@ a {
 /*}*/
 
 /*.gift_text p {*/
-    /*font: 600 1.1em/1.5em 'Josefin Sans', sans-serif;*/
+    /*font: 600 1.1em/1.5em 'Futura', sans-serif;*/
     /*text-align: justify;*/
     /*color: #8c7466;*/
 /*}*/
@@ -1920,7 +1926,7 @@ a {
     /*color: #FF46AF;*/
 /*}*/
 /*section#instagram .partycontent {*/
-    /*font: 600 1em/1.3em 'Josefin Sans', sans-serif;*/
+    /*font: 600 1em/1.3em 'Futura', sans-serif;*/
     /*color: #8c7466;*/
 /*}*/
 
@@ -1982,7 +1988,7 @@ a {
     /*background: white;*/
     /*width: 100%;*/
     /*margin: 10px 0 !important;*/
-    /*font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;*/
+    /*font: 600 1.2em/1.4em 'Futura', sans-serif;*/
     /*outline: none;*/
     /*height: 34px;*/
     /*padding: 6px 24px;*/
@@ -1995,7 +2001,7 @@ a {
     /*background: white;*/
     /*width: 100%;*/
     /*margin: 10px 0 !important;*/
-    /*font: 600 1.2em/1.4em 'Josefin Sans', sans-serif;*/
+    /*font: 600 1.2em/1.4em 'Futura', sans-serif;*/
     /*outline: none;*/
     /*padding: 6px 24px;*/
     /*border: 1px solid #cccccc;*/
@@ -2008,7 +2014,7 @@ a {
 /*}*/
 
 /*#div_events label {*/
-    /*font: 600 1em/2em 'Josefin Sans', sans-serif;*/
+    /*font: 600 1em/2em 'Futura', sans-serif;*/
     /*text-align: justify;*/
     /*color: #8c7466;*/
 /*}*/
@@ -2488,21 +2494,27 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #b4b6b7;
-        margin-top: 70px;
-        margin-bottom: 63px;
-        line-height: 38px;
+        margin-top: 67px;
+        margin-bottom: 64px;
+        line-height: 40px;
     }
 
     .boracay_paragraph {
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         width: 475px;
         margin: 0 auto 15px;
         line-height: 18px;
-        padding: 0px 15px;
+        padding: 0px;
     }
+
+    .boracay_paragraph:nth-child(3) {
+        margin-top: 34px;
+        margin-bottom: 14px;
+    }
+
 
     #bubble-dress-code {
         background: #f2f2f2;
@@ -2528,7 +2540,7 @@ a {
     }
 
     #dress-code.wedding-party {
-        padding-top: 55px;
+        padding-top: 35px;
         padding-bottom: 90px;
     }
 
@@ -2587,23 +2599,24 @@ a {
     }
 
     .antonio_paragraph {
-        padding: 0 20px;
+        padding: 0;
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         width: 474px;
         margin: 48px auto 15px;
-        line-height: 18px;
+        line-height: 17px;
     }
 
     .antonio_paragraph.antonio_paragraph-2 {
         margin-top: 15px;
+        margin-bottom: 19px;
     }
 
     #dress-code.church-party {
         padding-top: 28px;
-        padding-bottom: 90px;
+        padding-bottom: 89px;
     }
 
     #dress-code.church-party .dress-code__title {
@@ -2617,6 +2630,10 @@ a {
 
     #dress-code.church-party .left {
         padding-left: 71px;
+    }
+
+    #dress-code.church-party .right {
+        padding-right: 30px;
     }
 
     .church-party #bubble-dress-code {
@@ -2634,8 +2651,8 @@ a {
 
     .wedding-party-row {
         background: #f2f2f2;
-        padding-top: 65px;
-        padding-bottom: 86px;
+        padding-top: 64px;
+        padding-bottom: 88px;
         padding-left: 130px;
         padding-right: 130px;
     }
@@ -2656,25 +2673,29 @@ a {
         margin-top: 107px;
     }
 
+    .family.family--his {
+        margin-top: 26px;
+    }
+
     .wedding-party__name {
         font-size: 18px;
         color: #4a4a4a;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
-        margin-top: 8px;
+        margin-top: 9px;
     }
 
     .wedding-party__status {
         font-size: 14px;
         color: #4a4a4a;
-        font-family: 'Josefin Sans', sans-serif;
-        margin-top: 12px;
-        padding: 0 30px;
+        font-family: 'Futura', sans-serif;
+        margin-top: 8px;
+        padding: 0 18px;
         line-height: 18px;
     }
 
     .some_list {
-        margin-top: 40px;
+        margin-top: 56px;
         margin-bottom: 45px;
     }
 
@@ -2750,7 +2771,7 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 60px;
+        margin-top: 62px;
     }
 
     .when-where-date {
@@ -2763,14 +2784,14 @@ a {
 
     .when-where-title {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-weight: bold;
         color: #4a4a4a;
-        margin-top: 20px;
+        margin-top: 18px;
     }
 
     .when-where-description {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         text-transform: none;
@@ -2790,15 +2811,15 @@ a {
     }
 
     #getting-there {
-        padding-bottom: 108px;
+        padding-bottom: 107px;
     }
 
     .getting-there__text.left {
-        padding-left: 35px;
+        padding-left: 27px;
     }
 
     .getting-there__text.right {
-        padding-right: 35px;
+        padding-right: 25px;
     }
 
     .getting-there-title {
@@ -2806,7 +2827,7 @@ a {
         text-transform: uppercase;
         font-size: 64px;
         color: #b4b6b7;
-        margin-top: 30px;
+        margin-top: 16px;
     }
 
     .getting-there__text div {
@@ -2817,24 +2838,22 @@ a {
         /*margin-top: 52px;*/
         /*margin-bottom: 26px;*/
         /*width: 475px;*/
-        margin: 52px auto 26px;
+        margin: 50px auto 32px;
     }
 
     .getting-there__text p {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         color: #4a4a4a;
-        width: 445px;
-        margin: 6px auto 0;
+        width: 479px;
+        margin: 2px auto 0;
+        line-height: 18px;
     }
 
     .getting-there__text .link_block {
-        margin: 0;
+        margin: 10px 0 0 0;
     }
 
-    .link_block {
-        margin-top: 10px;
-    }
 
     .link_block div {
         margin-top: 0;
@@ -2852,7 +2871,7 @@ a {
     }
 
     #rsvp {
-        padding-top: 45px;
+        padding-top: 47px;
     }
 
     .rsvp_row {
@@ -2868,7 +2887,8 @@ a {
     }
 
     .rsvp_block {
-        margin-top: 37px;
+        padding-left: 30px;
+        margin-top: 39px;
     }
 
 
@@ -2899,7 +2919,7 @@ a {
 
     .forms_wrapper {
         margin-top: 28px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
     }
 
     .smart-forms div {
@@ -2917,6 +2937,12 @@ a {
         outline: none;
         border-radius: 0;
         border: none;
+        padding-left: 20px;
+    }
+
+    .form-horizontal .form-group {
+        margin-top: 2px;
+        margin-bottom: 22px !important;
     }
 
     .smart-forms form #id_events li  {
@@ -2960,12 +2986,12 @@ a {
         text-align: right;
     }
     .icons_img {
-        margin-top: 18px;
+        margin-top: 9px;
     }
 
     .icons_img__block__link {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         color: #94b4c3;
         padding: 0;
         text-align: left;
@@ -2978,7 +3004,8 @@ a {
     }
 
     #gogo {
-        margin-top: 20px;
+        margin-right: 12px;
+        margin-top: 13px;
         box-sizing: border-box;
         width: 150px;
         height: 52px;
@@ -3012,7 +3039,7 @@ a {
     }
 
     .gifts-title-text {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-top: 24px;
@@ -3041,7 +3068,7 @@ a {
     }
 
     .instagram-text {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-top: 37px;
@@ -3256,7 +3283,7 @@ a {
 
     .boracay_paragraph {
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-bottom: 15px;
@@ -3328,7 +3355,7 @@ a {
 
     .antonio_paragraph {
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-bottom: 15px;
@@ -3474,7 +3501,7 @@ a {
     }
 
     .when-where-description {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         text-transform: none;
@@ -3516,7 +3543,7 @@ a {
 
     .getting-there__text p {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         color: #4a4a4a;
         margin-top: 6px;
     }
@@ -3579,7 +3606,7 @@ a {
 
     .forms_wrapper {
         margin-top: 24px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
     }
 
     .smart-forms div {
@@ -3644,7 +3671,7 @@ a {
 
     .icons_img__block__link {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         color: #94b4c3;
         padding: 0;
         text-align: left;
@@ -3691,7 +3718,7 @@ a {
     }
 
     .gifts-title-text {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-top: 24px;
@@ -3715,7 +3742,7 @@ a {
     }
 
     .instagram-text {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-top: 37px;
@@ -3949,7 +3976,7 @@ a {
 
     .boracay_paragraph {
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-bottom: 15px;
@@ -4030,7 +4057,7 @@ a {
 
     .antonio_paragraph {
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-bottom: 15px;
@@ -4184,7 +4211,7 @@ a {
     }
 
     .when-where-description {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         text-transform: none;
@@ -4226,7 +4253,7 @@ a {
 
     .getting-there__text p {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         color: #4a4a4a;
         margin-top: 6px;
     }
@@ -4289,7 +4316,7 @@ a {
 
     .forms_wrapper {
         margin-top: 24px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
     }
 
     .smart-forms div {
@@ -4354,7 +4381,7 @@ a {
 
     .icons_img__block__link {
         font-size: 14px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         color: #94b4c3;
         padding: 0;
         text-align: left;
@@ -4401,7 +4428,7 @@ a {
     }
 
     .gifts-title-text {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-top: 24px;
@@ -4425,7 +4452,7 @@ a {
     }
 
     .instagram-text {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Futura', sans-serif;
         font-size: 14px;
         color: #4a4a4a;
         margin-top: 37px;
