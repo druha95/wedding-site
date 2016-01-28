@@ -2259,7 +2259,7 @@ a {
         width: 1280px;
         text-align: center;
         position: fixed;
-        background: white;
+        background: rgba(255,255,255, .7);
         border: none;
     }
 
@@ -2944,6 +2944,7 @@ a {
     }
 
     .smart-forms h2 {
+        font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
         margin-bottom: 20px;
     }

@@ -8,39 +8,18 @@
                 {{ form.name.errors }}
             </div>
             <div id="div_email" class="form-group">
-                <input id="id_email" class="form-control" maxlength="50" name="email" type="email" placeholder="Your email" required>
+                <input id="id_email" class="form-control" maxlength="50" name="email" type="email" placeholder="Your email" >
                 {{ form.email.errors }}
             </div>
 
-            <div id="div_street_address" class="form-group">
-                <input id="id_street_address" class="form-control" maxlength="50" name="street_address" type="text" placeholder="Street address" required>
-                {{ form.street_address.errors }}
-            </div>
-
-            <div id="div_street_address_cont" class="form-group">
-                <input id="id_street_address_cont" class="form-control" maxlength="50" name="street_address_cont" type="text" placeholder="Street address (continued)" required>
-                {{ form.street_address_cont.errors }}
-            </div>
-
             <div id="div_city" class="form-group">
-                <input id="id_city" class="form-control" maxlength="50" name="city" type="text" placeholder="City" required>
+                <input id="id_city" class="form-control" maxlength="50" name="city" type="text" placeholder="City" >
                 {{ form.city.errors }}
             </div>
 
-            <div id="div_state" class="form-group">
-                <input id="id_state" class="form-control" maxlength="50" name="state" type="text" placeholder="State / Province / Region" required>
-                {{ form.state.errors }}
-            </div>
-
             <div id="div_zip_code" class="form-group">
-                <input id="id_zip_code" class="form-control" maxlength="50" name="zip_code" type="number" placeholder="Zip / Postal code" required>
+                <input id="id_zip_code" class="form-control" maxlength="50" name="zip_code" type="number" placeholder="Zip / Postal code" >
                 {{ form.zip_code.errors }}
-            </div>
-
-            <div id="div_country" class="form-group">
-                {% country_field %}
-                {{ form.country.errors }}
-                <div class="arrow_up"></div>
             </div>
 
             <h2>which events will you attend?</h2>
@@ -49,19 +28,25 @@
                 <div>{{ form.events.errors }}</div>
                 <ul id="id_events">
                     <li>
-                        <label for="id_events_0"><input id="id_events_0" name="events" type="checkbox" value="sunset_cruise"> Sunset cruise, 3 PM, Sunday, Feb 14</label>
+                        <label for="id_events_0"><input id="id_events_0" name="events" type="checkbox" value="sunset_cruise"> Sunset cruise | 3 PM, Sunday, Feb 14</label>
                     </li>
                     <li>
-                        <label for="id_events_1"><input id="id_events_1" name="events" type="checkbox" value="beach_wedding"> Beach wedding, 4 PM, Monday, Feb 15</label>
+                        <label for="id_events_1"><input id="id_events_1" name="events" type="checkbox" value="dinner_14"> Dinner | 7 PM, Sunday, Feb 14</label>
                     </li>
                     <li>
-                        <label for="id_events_2"><input id="id_events_2" name="events" type="checkbox" value="chill_beach"> Chill on the beach, 1 PM, Tuesday, Feb 16</label>
+                        <label for="id_events_2"><input id="id_events_2" name="events" type="checkbox" value="beach_wedding"> Beach wedding | 4 PM, Monday, Feb 15</label>
                     </li>
                     <li>
-                        <label for="id_events_3"><input id="id_events_3" name="events" type="checkbox" value="church_wedding"> Church wedding, 1 PM, Friday, Feb 19</label>
+                        <label for="id_events_3"><input id="id_events_3" name="events" type="checkbox" value=lunch_water> Lunch and water activities, 1 PM, Tuesday, Feb 16</label>
                     </li>
                     <li>
-                        <label for="id_events_4"><input id="id_events_4" name="events" type="checkbox" value="dimsum_brunch"> Dimsum brunch, 12 noon, Saturday, Feb 20</label>
+                        <label for="id_events_4"><input id="id_events_4" name="events" type="checkbox" value="dinner_16"> Dinner | 7 PM, Tuesday, Feb 16</label>
+                    </li>
+                    <li>
+                        <label for="id_events_5"><input id="id_events_5" name="events" type="checkbox" value="church_wedding"> Church wedding | 1 PM, Friday, Feb 19</label>
+                    </li>
+                    <li>
+                        <label for="id_events_6"><input id="id_events_6" name="events" type="checkbox" value="dimsum_brunch"> Dimsum brunch | 12 noon, Saturday, Feb 20</label>
                     </li>
                 </ul>
             </div>
@@ -69,13 +54,13 @@
             <h2>when do you arrive in manila?</h2>
 
             <div id="div_manila_flight_into" class="form-group">
-                <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Manila arrival flight number (into Manila)" required>
+                <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Arrival flight number (into Manila)" >
                 {{ form.manila_flight_into.errors }}
             </div>
 
             <div id="div_manila_date_into" class="form-group">
                 <div class="date datetime_picker_wrapper" id="id_manila_date_into_picker">
-                    <input class="form-control" id="id_manila_date_into" name="manila_date_into" type="text" placeholder="Manila date into">
+                    <input class="form-control" id="id_manila_date_into" name="manila_date_into" type="text" placeholder="Arrival date">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.manila_date_into.errors }}
@@ -88,7 +73,7 @@
 
             <div id="div_manila_time_into" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_manila_time_into_picker">
-                    <input class="form-control" id="id_manila_time_into" name="manila_time_into" type="text" placeholder="Manila time into">
+                    <input class="form-control" id="id_manila_time_into" name="manila_time_into" type="text" placeholder="Arrival time">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.manila_time_into.errors }}
@@ -100,13 +85,13 @@
             </div>
 
             <div id="div_manila_flight_out" class="form-group">
-                <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila)" required>
+                <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila)" >
                 {{ form.manila_flight_out.errors }}
             </div>
 
             <div id="div_manila_date_out" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_manila_date_out_picker">
-                    <input class="form-control" id="id_manila_date_out" name="manila_date_out" type="text" placeholder="Manila date out">
+                    <input class="form-control" id="id_manila_date_out" name="manila_date_out" type="text" placeholder="Departure date">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.manila_date_out.errors }}
@@ -134,26 +119,26 @@
             <div id="div_manila_staying" class="form-group">
                 {{ form.manila_staying.errors }}
                 <select id="id_manila_staying" name="manila_staying">
-                    <option value="" selected="selected">Staying in Manila</option>
-                    <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                    <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                    <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                    <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                    <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                    <option value="" selected="selected">Where are you staying in Manila?</option>
+                    <option value="holiday_inn">Holiday Inn</option>
+                    <option value="manila_peninsula">Manila Peninsula</option>
+                    <option value="shangri_la">Makati Shangri-la (wedding venue)</option>
+                    <option value="luxe_residences">The Luxe Residences</option>
+                    <option value="other">Other [free text field]</option>
                 </select>
                 <div class="arrow_up"></div>
             </div>
 
-            <h2>when dou you arrive in boracay?</h2>
+            <h2>When do you arrive in Boracay?</h2>
 
             <div id="div_boracay_flight_into" class="form-group">
-                <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Boracay arrival flight number (into Boracay)" required>
+                <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Arrival flight number (into Caticlan)" >
                 {{ form.boracay_flight_into.errors }}
             </div>
 
             <div id="div_boracay_date_into" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_boracay_date_into_picker">
-                    <input class="form-control" id="id_boracay_date_into" name="boracay_date_into" type="text" placeholder="Boracay date into">
+                    <input class="form-control" id="id_boracay_date_into" name="boracay_date_into" type="text" placeholder="Arrival date">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.boracay_date_into.errors }}
@@ -166,7 +151,7 @@
 
             <div id="div_boracay_time_into" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_boracay_time_into_picker">
-                    <input class="form-control" id="id_boracay_time_into" name="boracay_time_into" type="text" placeholder="Boracay time into">
+                    <input class="form-control" id="id_boracay_time_into" name="boracay_time_into" type="text" placeholder="Arrival time">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.boracay_time_into.errors }}
@@ -178,14 +163,14 @@
             </div>
 
             <div id="div_boracay_flight_out" class="form-group">
-                <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Boracay)" required>
+                <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Caticlan)" >
                 {{ form.boracay_flight_out.errors }}
             </div>
 
 
             <div id="div_boracay_date_out" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_boracay_date_out_picker">
-                    <input class="form-control" id="id_boracay_date_out" name="boracay_date_out" type="text" placeholder="Boracay date out">
+                    <input class="form-control" id="id_boracay_date_out" name="boracay_date_out" type="text" placeholder="Departure date">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.boracay_date_out.errors }}
@@ -198,7 +183,7 @@
 
             <div id="div_boracay_time_out" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_boracay_time_out_picker">
-                    <input class="form-control" id="id_boracay_time_out" name="boracay_time_out" type="text" placeholder="Boracay time out">
+                    <input class="form-control" id="id_boracay_time_out" name="boracay_time_out" type="text" placeholder="Departure time">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.boracay_time_out.errors }}
@@ -212,45 +197,31 @@
             <div id="div_boracay_staying" class="form-group">
                 {{ form.boracay_staying.errors }}
                 <select id="id_boracay_staying" name="boracay_staying">
-                    <option value="" selected="selected">Staying in Boracay</option>
-                    <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                    <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                    <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                    <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                    <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                    <option value="" selected="selected">Where are you staying in Boracay?</option>
+                    <option value="asya">Asya (wedding venue)</option>
+                    <option value="discovery_shores">Discovery Shores</option>
+                    <option value="villa_caemilla">Villa Caemilla</option>
+                    <option value="other">Other [free text field]</option>
                 </select>
                 <div class="arrow_up"></div>
             </div>
 
             <h2>other important stuff like...</h2>
 
-            <div id="div_shoe_size" class="form-group">
-                {{ form.shoe_size.errors }}
-                <select id="id_shoe_size" name="shoe_size">
-                    <option value="" selected="selected">Your shoe size</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <div class="arrow_up"></div>
-            </div>
-
             <div id="div_dietary_restrictions" class="form-group">
                 {{ form.dietary_restrictions.errors }}
                 <select id="id_dietary_restrictions" name="dietary_restrictions">
                     <option value="" selected="selected">Your dietary restrictions</option>
-                    <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                    <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                    <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                    <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                    <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                    <option value="gluten_free">Gluten free</option>
+                    <option value="halal">Halal</option>
+                    <option value="kosher">Kosher</option>
+                    <option value="pescatarian">Pescatarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegeterian">Vegetarian</option>
+                    <option value="other">Other [free text field]</option>
                 </select>
                 <div class="arrow_up"></div>
             </div>
-
-            <h2>any special guests?</h2>
 
             <div id="div_number_of_guests" class="form-group">
                 {{ form.number_of_guests.errors }}
@@ -269,42 +240,32 @@
             <div class="col-sm-12">
                 <div class="row guest_form guest_form_1">
                     <div id="div_guests_name_1" class="form-group">
-                        <input id="id_guests_name_1" class="form-control" maxlength="50" name="guests_name_1" type="text" placeholder="Guest's name" required>
+                        <input id="id_guests_name_1" class="form-control" maxlength="50" name="guests_name_1" type="text" placeholder="Guest's name" >
                         {{ form.guests_name_1.errors }}
                     </div>
                     <div id="div_guests_email_1" class="form-group">
                         <input id="id_guests_email_1" class="form-control" maxlength="50" name="guests_email_1" type="email" placeholder="Guest's email (optional)" >
                         {{ form.guests_email_1.errors }}
                     </div>
-                    <div id="div_guests_shoe_size_1" class="form-group">
-                        {{ form.guests_shoe_size_1.errors }}
 
-                        <select id="id_guests_shoe_size_1" name="guests_shoe_size_1">
-                            <option value="" selected="selected">Guest's shoe size</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        <div class="arrow_up"></div>
-                    </div>
                     <div id="div_guests_dietary_restrictions_1" class="form-group">
                         {{ form.guests_dietary_restrictions_1.errors }}
                         <select id="id_guests_dietary_restrictions_1" name="guests_dietary_restrictions_1">
                             <option value="" selected="selected">Guest's dietary restrictions</option>
-                            <option value="sunset_cruise">Sunset cruise, 3 PM, Sunday, Feb 14</option>
-                            <option value="beach_wedding">Beach wedding, 4 PM, Monday, Feb 15</option>
-                            <option value="chill_beach">Chill on the beach, 1 PM, Tuesday, Feb 16</option>
-                            <option value="church_wedding">Church wedding, 1 PM, Friday, Feb 19</option>
-                            <option value="dimsum_brunch">Dimsum brunch, 12 noon, Saturday, Feb 20</option>
+                            <option value="gluten_free">Gluten free</option>
+                            <option value="halal">Halal</option>
+                            <option value="kosher">Kosher</option>
+                            <option value="pescatarian">Pescatarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="vegeterian">Vegetarian</option>
+                            <option value="other">Other [free text field]</option>
                         </select>
                         <div class="arrow_up"></div>
                     </div>
                 </div>
                 <div class="row guest_form guest_form_2">
                     <div id="div_guests_name_2" class="form-group">
-                        <input id="id_guests_name_2" class="form-control" maxlength="50" name="guests_name_2" type="text" placeholder="Guest's name" required>
+                        <input id="id_guests_name_2" class="form-control" maxlength="50" name="guests_name_2" type="text" placeholder="Guest's name" >
                         {{ form.guests_name_2.errors }}
                     </div>
                     <div id="div_guests_email_2" class="form-group">
@@ -339,7 +300,7 @@
                 </div>
                 <div class="row guest_form guest_form_3">
                     <div id="div_guests_name_3" class="form-group">
-                        <input id="id_guests_name_3" class="form-control" maxlength="50" name="guests_name_3" type="text" placeholder="Guest's name" required>
+                        <input id="id_guests_name_3" class="form-control" maxlength="50" name="guests_name_3" type="text" placeholder="Guest's name" >
                         {{ form.guests_name_3.errors }}
                     </div>
                     <div id="div_guests_email_3" class="form-group">
@@ -375,7 +336,7 @@
                 </div>
                 <div class="row guest_form guest_form_4">
                     <div id="div_guests_name_4" class="form-group">
-                        <input id="id_guests_name_4" class="form-control" maxlength="50" name="guests_name_4" type="text" placeholder="Guest's name" required>
+                        <input id="id_guests_name_4" class="form-control" maxlength="50" name="guests_name_4" type="text" placeholder="Guest's name" >
                         {{ form.guests_name_4.errors }}
                     </div>
                     <div id="div_guests_email_4" class="form-group">
@@ -411,7 +372,7 @@
                 </div>
                 <div class="row guest_form guest_form_5">
                     <div id="div_guests_name_5" class="form-group">
-                        <input id="id_guests_name_5" class="form-control" maxlength="50" name="guests_name_5" type="text" placeholder="Guest's name" required>
+                        <input id="id_guests_name_5" class="form-control" maxlength="50" name="guests_name_5" type="text" placeholder="Guest's name" >
                         {{ form.guests_name_5.errors }}
                     </div>
                     <div id="div_guests_email_5" class="form-group">
@@ -447,10 +408,8 @@
                 </div>
             </div>
 
-            <h2>anything else?</h2>
-
             <div id="div_additional_co00ent" class="form-group">
-                <textarea cols="40" id="id_additional_co00ent" maxlength="200" name="additional_co00ent" rows="10" placeholder="Anything else"></textarea>
+                <textarea cols="40" id="id_additional_co00ent" maxlength="200" name="additional_co00ent" rows="10" placeholder="Anything else you’d like to tell us?"></textarea>
                 {{ form.additional_co00ent.errors }}
             </div>
 
