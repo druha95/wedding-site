@@ -3,7 +3,7 @@
         <form action="/submit_rsvp_mini/" method="post" role="form" class="form-horizontal">
             {% csrf_token %}
             <div id="div_name" class="form-group">
-                <input id="id_name" class="form-control" maxlength="50" name="name" type="text" placeholder="Your name *" required>
+                <input id="id_name" class="form-control" maxlength="50" name="name" type="text" placeholder="Your full name *" required>
                 {{ form.name.errors }}
             </div>
             <div id="div_email" class="form-group">

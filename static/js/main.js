@@ -35,5 +35,14 @@ $(document).ready(function($) {
             $('#getting-married').removeClass('shrink');
         }
     });
+
+    $(".form-horizontal select").on('change', function(event) {
+        var value = $(this).val();
+        if(value == "other") {
+            $("#" + $(event.target).closest("div")[0].id + "_other").css("display", "inline-block");
+        } else {
+            $("#" + $(event.target).closest("div")[0].id + "_other").css("display", "none");
+        }
+    })
 });
 

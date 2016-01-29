@@ -2259,8 +2259,12 @@ a {
         width: 1280px;
         text-align: center;
         position: fixed;
-        background: rgba(255,255,255, .7);
+        background: rgba(255,255,255, .1);
         border: none;
+    }
+
+    .navbar.shrink {
+        box-shadow: 0px 3px 4px -2px rgba(0, 0, 0, 0.2);
     }
 
     .navbar .nav_wrapper  {
@@ -2286,6 +2290,10 @@ a {
         padding-left: 13px;
         padding-right: 13px;
     }
+
+    .navbar-element:hover a {
+        color: #989898 !important;
+    }
     
     img#karen-michael {
         width: 100%;
@@ -2294,7 +2302,7 @@ a {
     #couple {
         background: url("../img/waves-background3x.png") top left no-repeat;
         background-size: cover;
-        padding-top: 58px;
+        margin-top: 58px;
         padding-bottom: 86px;
     }
 
@@ -2430,7 +2438,7 @@ a {
     }
 
     #two-wedding-section {
-        padding-top: 47px;
+        margin-top: 47px;
         padding-bottom: 102px;
     }
 
@@ -2557,7 +2565,7 @@ a {
     }
 
     #dress-code.wedding-party {
-        padding-top: 35px;
+        margin-top: 35px;
         padding-bottom: 90px;
     }
 
@@ -2595,7 +2603,7 @@ a {
     }
 
     #church-wedding {
-        padding-top: 32px;
+        margin-top: 32px;
     }
 
     .church_wedding__txt .col-sm-12 div div {
@@ -2632,7 +2640,7 @@ a {
     }
 
     #dress-code.church-party {
-        padding-top: 28px;
+        margin-top: 28px;
         padding-bottom: 89px;
     }
 
@@ -2763,7 +2771,7 @@ a {
     }
 
     #when-where {
-        padding-top: 48px;
+        margin-top: 48px;
         padding-bottom: 92px;
     }
 
@@ -2828,6 +2836,7 @@ a {
     }
 
     #getting-there {
+        margin-top: 16px;
         padding-bottom: 107px;
     }
 
@@ -2844,7 +2853,10 @@ a {
         text-transform: uppercase;
         font-size: 64px;
         color: #b4b6b7;
-        margin-top: 16px;
+    }
+
+    #getting-there br {
+        line-height: 18px;
     }
 
     .getting-there__text div {
@@ -2887,8 +2899,9 @@ a {
         width: 100%;
     }
 
-    #rsvp {
-        padding-top: 47px;
+    #rsvp-link {
+        margin-top: 47px;
+        padding-bottom: 93px;
     }
 
     .rsvp_row {
@@ -2946,10 +2959,24 @@ a {
     .smart-forms h2 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 45px;
     }
 
+    .smart-forms form select {
+        padding-left: 15px;
+    }
+
+    .smart-forms form span,
+    .smart-forms form option,
+    .smart-forms form select,
+    .smart-forms form label {
+        font-size: 14px !important;
+        color: #9D9D9D !important;
+    }
     .smart-forms form input  {
+        font-size: 14px !important;
+        color: #9D9D9D !important;
         height: 45px;
         background: #f2f2f2;
         outline: none;
@@ -2986,6 +3013,10 @@ a {
 
     #rsvp-form {
         display: none;
+    }
+
+    .guest_form {
+        margin-top: 20px;
     }
 
     .guest_form_1,
@@ -3072,8 +3103,8 @@ a {
         width: 100%;
     }
 
-    #instagram {
-        padding-top: 44px;
+    #instagram-link {
+        margin-top: 44px;
         padding-bottom: 714px;
         background: url("../img/waves-background3x.png") top left no-repeat;
         background-size: cover;
@@ -3114,6 +3145,9 @@ a {
         margin-top: 43px;
     }
 
+    .guests_wrapper {
+        padding: 0 30px;
+    }
 }
 @media (max-width: 1279px) and (min-width: 768px) {
 
