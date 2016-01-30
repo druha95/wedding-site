@@ -38,42 +38,18 @@ class SubmitRsvpMiniForm(forms.ModelForm):
 
 class SubmitRsvpForm(forms.ModelForm):
     """Class for Rsvp submit form"""
-    manila_date_into = forms.DateField(
-        widget=DateTimePicker(
-            options={"format": "MM-DD-YYYY", "pickTime": False}),
-        input_formats=['%m-%d-%Y', ])
-    manila_time_into = forms.TimeField(
-        widget=DateTimePicker(
-            options={"format": "HH:mm", "pickSeconds": False,
-                     "pickDate": False}),
-        input_formats=['%H:%M', ])
-    manila_date_out = forms.DateField(
-        widget=DateTimePicker(
-            options={"format": "MM-DD-YYYY", "pickTime": False}),
-        input_formats=['%m-%d-%Y', ])
-    manila_time_out = forms.TimeField(
-        widget=DateTimePicker(
-            options={"format": "HH:mm", "pickSeconds": False,
-                     "pickDate": False}),
-        input_formats=['%H:%M', ])
-    boracay_date_into = forms.DateField(
-        widget=DateTimePicker(
-            options={"format": "MM-DD-YYYY", "pickTime": False}),
-        input_formats=['%m-%d-%Y', ])
-    boracay_time_into = forms.TimeField(
-        widget=DateTimePicker(
-            options={"format": "HH:mm", "pickSeconds": False,
-                     "pickDate": False}),
-        input_formats=['%H:%M', ])
-    boracay_date_out = forms.DateField(
-        widget=DateTimePicker(
-            options={"format": "MM-DD-YYYY", "pickTime": False}),
-        input_formats=['%m-%d-%Y', ])
-    boracay_time_out = forms.TimeField(
-        widget=DateTimePicker(
-            options={"format": "HH:mm", "pickSeconds": False,
-                     "pickDate": False}),
-        input_formats=['%H:%M', ])
+    manila_date_into = forms.DateTimeField(
+        required=False, localize=True,
+        input_formats=['%d %b %y %H:%M'])
+    manila_date_out = forms.DateTimeField(
+        required=False, localize=True,
+        input_formats=['%d %b %y %H:%M'])
+    boracay_date_into = forms.DateTimeField(
+        required=False, localize=True,
+        input_formats=['%d %b %y %H:%M'])
+    boracay_date_out = forms.DateTimeField(
+        required=False, localize=True,
+        input_formats=['%d %b %y %H:%M'])
 
     class Meta:
         model = Rsvp
@@ -86,12 +62,20 @@ class SubmitRsvpForm(forms.ModelForm):
         name = self.cleaned_data['name']
         email = self.cleaned_data['email']
         number_of_guests = self.cleaned_data['number_of_guests']
-        if int(number_of_guests) == 0 or int(number_of_guests) == 1:
-            post_data['guests_template'] = u'guest'
-        else:
-            post_data['guests_template'] = u'guests'
-        subject_party = u'{} will come to the Philippines with {} {}'\
-            .format(name, number_of_guests, post_data['guests_template'])
+        try:
+            if int(number_of_guests) == 0 or int(number_of_guests) == 1:
+                post_data['guests_template'] = u'guest'
+            else:
+                post_data['guests_template'] = u'guests'
+        except TypeError:
+            pass
+        try:
+            subject_party = u'{} will come to the Philippines with {} {}'\
+                .format(name, number_of_guests, post_data['guests_template'])
+        except KeyError:
+            subject_party = u'{} will come to the Philippines with 0 guests'\
+                .format(name)
+            pass
         subject_guest = u'Woohoo! Can\'t wait to celebrate with you :)'
         # send mail to party@karenmichael.com
         body_party_html = render_to_string(
