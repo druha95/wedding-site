@@ -1,4 +1,11 @@
 $(document).ready(function($) {
+
+    if(window.location.hash != "") {
+        window.setTimeout(function() {
+            $(document).scrollTop($(document).scrollTop()-50);
+        },  4);
+    }
+
     $("input:radio[name=yes_no]").click(function() {
         var value = $(this).val();
         if(value == 'rsvp') {
@@ -14,6 +21,7 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
+
     $("#id_number_of_guests").on('change', function() {
         for(var i=1; i<=5; i++) {
             $(".guest_form_" + i).css('display', "none");
@@ -43,6 +51,12 @@ $(document).ready(function($) {
         } else {
             $("#" + $(event.target).closest("div")[0].id + "_other").css("display", "none");
         }
-    })
+    });
+
+    $(".navbar-element a").on("click", function() {
+        window.setTimeout(function() {
+            $(document).scrollTop($(document).scrollTop()-50);
+        },  4);
+    });
 });
 
