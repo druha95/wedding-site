@@ -26,7 +26,7 @@ class SubmitRsvpMiniForm(forms.ModelForm):
         # send mail to party@karenmichael.com
         send_mail(
             subject_party, body_party, 'Karen + Michael <party@karenmichael.com>',
-            ['cherkaev.oleg@gmail.com'])
+            ['party@karenmichael.com'])
         # send mail to guest email
         send_mail(
             subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
@@ -100,7 +100,7 @@ class SubmitRsvpForm(forms.ModelForm):
             'mail/body_party.html', {'data': post_data})
         send_mail(
             subject_party, body_party, 'Karen + Michael <party@karenmichael.com>',
-            ['cherkaev.oleg@gmail.com'], html_message=body_party_html)
+            ['party@karenmichael.com'], html_message=body_party_html)
         # send mail to guest email
         body_guest_html = render_to_string(
             'mail/body_guest.html', {'data': post_data})
