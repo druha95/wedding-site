@@ -25,11 +25,11 @@ class SubmitRsvpMiniForm(forms.ModelForm):
         body_guest = u':(\n\nWe\'re sad that we can\'t celebrate with you. We hope to find another occasion for us to celebrate with you.\n\nLove,\nKaren + Michael'
         # send mail to party@karenmichael.com
         send_mail(
-            subject_party, body_party, 'party@karenmichael.com',
+            subject_party, body_party, 'Karen + Michael <party@karenmichael.com>',
             ['cherkaev.oleg@gmail.com'])
         # send mail to guest email
         send_mail(
-            subject_guest, body_guest, 'party@karenmichael.com',
+            subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
             [str(email)])
         if commit:
             new_rsvp.save()
@@ -99,7 +99,7 @@ class SubmitRsvpForm(forms.ModelForm):
         body_party = render_to_string(
             'mail/body_party.html', {'data': post_data})
         send_mail(
-            subject_party, body_party, 'party@karenmichael.com',
+            subject_party, body_party, 'Karen + Michael <party@karenmichael.com>',
             ['cherkaev.oleg@gmail.com'], html_message=body_party_html)
         # send mail to guest email
         body_guest_html = render_to_string(
@@ -107,7 +107,7 @@ class SubmitRsvpForm(forms.ModelForm):
         body_guest = render_to_string(
             'mail/body_guest.html', {'data': post_data})
         send_mail(
-            subject_guest, body_guest, 'party@karenmichael.com',
+            subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
             [str(email)], html_message=body_guest_html)
         if commit:
             new_rsvp.save()
