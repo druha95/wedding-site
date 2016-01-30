@@ -95,21 +95,21 @@
     		<script type="text/javascript">
     			var feed = new Instafeed({
     				get: 'tagged',
-    				tagName: 'karenmichael',
+    				tagName: 'KMWeddingWeek',
     				clientId: 'c2a1ec3f7e24475d8d7bd60e746f8cab',
     				resolution: 'low_resolution',
     				limit: '60',
     				sortBy: 'random',
     				template: '<div class="tile"><a class="pic" href="{{link}}" target="blank"><img src="{{image}}" /></a><div class="ig-meta"><p class="likes txtmagenta">{{likes}} likes</p><p class="caption">"{{caption}}"</p></div></div>',
-    				filter: function(image) {
-		                var date = new Date(image.created_time*1000);
-		                if (date.getFullYear()>=2015 && date.getMonth()>=7 && date.getDate()>=1) {
-		                    return true; 
-		                } 
-		                else {
-		                    return false; 
-		                }
-		            }
+    				// filter: function(image) {
+		      //           var date = new Date(image.created_time*1000);
+		      //           if (date.getFullYear()>=2015 && date.getMonth()>=7 && date.getDate()>=1) {
+		      //               return true; 
+		      //           } 
+		      //           else {
+		      //               return false; 
+		      //           }
+		      //       }
     			});
     			feed.run();
     		</script>
