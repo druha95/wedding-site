@@ -22,7 +22,7 @@ class SubmitRsvpMiniForm(forms.ModelForm):
         subject_party = u'{} can\'t make it to the Philippines :('.format(name)
         subject_guest = u'Sad that we can\'t celebrate with you :('
         body_party = u'{} can\'t make it to the Philippines :('.format(name)
-        body_guest = u':(\n\nWe\'re sad that we can\'t celebrate with you. We hope to find another occasion for us to celebrate with you.\n\nLove,\nKaren + Michael'
+        body_guest = u':(\n\nWe\'re sad that we can\'t celebrate with you. We hope to find another occasion to post-celebrate with you.\n\nLove,\nKaren + Michael'
         # send mail to party@karenmichael.com
         send_mail(
             subject_party, body_party, 'Karen + Michael <party@karenmichael.com>',
