@@ -39,10 +39,10 @@ class Rsvp(models.Model):
         ("pescatarian", _("Pescatarian")),
         ("vegan", _("Vegan")),
         ("vegetarian", _("Vegetarian")),
-        ("diet_other", _("Other")),
+        ("other", _("Other")),
     )
 
-    NUMBER_OF_GUESTS_CHOICES = [(i, i) for i in range(1, 7)]
+    NUMBER_OF_GUESTS_CHOICES = [(i, i) for i in range(1, 6)]
 
     name = models.CharField(_("Name"), max_length=50)
     email = models.EmailField(_("Email"), max_length=50)
@@ -91,26 +91,36 @@ class Rsvp(models.Model):
     guests_dietary_restrictions_1 = models.CharField(
         _("Guest’s dietary restrictions"), max_length=50,
         choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_1_other = models.TextField(
+        _("Other..."), max_length=200, null=True, blank=True)
     guests_name_2 = models.CharField(_("Guest's name"), blank=True, max_length=50)
     guests_email_2 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
     guests_dietary_restrictions_2 = models.CharField(
         _("Guest’s dietary restrictions"), max_length=50,
         choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_2_other = models.TextField(
+        _("Other..."), max_length=200, null=True, blank=True)
     guests_name_3 = models.CharField(_("Guest's name"), blank=True, max_length=50)
     guests_email_3 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
     guests_dietary_restrictions_3 = models.CharField(
         _("Guest’s dietary restrictions"), max_length=50,
         choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_3_other = models.TextField(
+        _("Other..."), max_length=200, null=True, blank=True)
     guests_name_4 = models.CharField(_("Guest's name"), blank=True, max_length=50)
     guests_email_4 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
     guests_dietary_restrictions_4 = models.CharField(
         _("Guest’s dietary restrictions"), max_length=50,
         choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_4_other = models.TextField(
+        _("Other..."), max_length=200, null=True, blank=True)
     guests_name_5 = models.CharField(_("Guest's name"), blank=True, max_length=50)
     guests_email_5 = models.EmailField(_("Guest's email"), blank=True, max_length=50)
     guests_dietary_restrictions_5 = models.CharField(
         _("Guest’s dietary restrictions"), max_length=50,
         choices=DIETARY_CHOICES, null=True, blank=True)
+    guests_dietary_restrictions_5_other = models.TextField(
+        _("Other..."), max_length=200, null=True, blank=True)
     additional_comment = models.TextField(
         _("Anything else"), max_length=200, null=True, blank=True)
 
