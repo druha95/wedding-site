@@ -506,8 +506,8 @@ a {
         background: #f2f2f2;
         padding-top: 64px;
         padding-bottom: 88px;
-        padding-left: 130px;
-        padding-right: 130px;
+        padding-left: 115px;
+        padding-right: 115px;
     }
 
     .wedding-party-title {
@@ -523,11 +523,13 @@ a {
     }
 
     .family.family--hers {
-        margin-top: 107px;
+        margin-top: 77px;
+        padding: 0;
     }
 
     .family.family--his {
         margin-top: 26px;
+        padding: 0;
     }
 
     .wedding-party__name {
@@ -604,11 +606,11 @@ a {
     }
 
     #when-where .left {
-        padding-left: 148px;
+        padding-left: 133px;
     }
 
     #when-where .right {
-        padding-right: 152px;
+        padding-right: 137px;
     }
 
     .when-where-main-title {
@@ -2340,7 +2342,7 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #b4b6b7;
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .groomsman_list__title {
@@ -2387,6 +2389,10 @@ a {
         text-align: center;
     }
 
+    .when-where-main-row {
+        margin: 0;
+    }
+
     .when-where-day {
         font-size: 36px;
         font-family: MahlauEFOP-Regular, sans-serif;
@@ -2413,7 +2419,7 @@ a {
 
     .when-where-description {
         font-family: 'Futura', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         color: #4a4a4a;
         text-transform: none;
         margin-top: 5px;
@@ -2495,7 +2501,6 @@ a {
     }
 
     .rsvp_row {
-        width: 455px;
         margin: 0 auto;
     }
 
@@ -2507,7 +2512,6 @@ a {
     }
 
     .rsvp_block {
-        padding-left: 30px;
         margin-top: 39px;
     }
 
@@ -2522,7 +2526,7 @@ a {
     }
 
     .label_rsvp {
-        font-size: 20px;
+        font-size: 13px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
@@ -2530,10 +2534,10 @@ a {
 
     .label_rsvp input {
         margin-right: 5px;
-        width: 16px;
-        height: 16px;
+        width: 13px;
+        height: 13px;
         background: white;
-        vertical-align: top;
+        vertical-align: sub;
 
     }
 
@@ -2629,7 +2633,7 @@ a {
     }
 
     .icons_img__block__link {
-        font-size: 14px;
+        font-size: 8px;
         font-family: 'Futura', sans-serif;
         color: #94b4c3;
         padding: 0;
@@ -2703,7 +2707,7 @@ a {
     }
 
     .instagram-title {
-        font-size: 54px;
+        font-size: 40px;
         color: #b4b6b7;
         font-family: MahlauEFOP-Regular, sans-serif;
     }
