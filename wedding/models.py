@@ -39,6 +39,7 @@ class Rsvp(models.Model):
         ("pescatarian", _("Pescatarian")),
         ("vegan", _("Vegan")),
         ("vegetarian", _("Vegetarian")),
+        ("diet_other", _("Other")),
     )
 
     NUMBER_OF_GUESTS_CHOICES = [(i, i) for i in range(1, 7)]
