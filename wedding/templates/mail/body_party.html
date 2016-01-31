@@ -1,28 +1,27 @@
-<strong>{{ data.name }}</strong> will come to the Philippines with {{ data.number_of_guests }} {{ data.guests_template }}.
+<strong>{{ data.name }}</strong> will come to the Philippines with {% if data.number_of_guests %}{{ data.number_of_guests }} {{ data.guests_template }}{% else %}0 guests{% endif %}.
 <br><br>
-<h3>Which events will you attend?</h3><br>
-Yes: Sunset cruise, 5 PM, Sunday Feb 14<br>
-Yes: Beach wedding, 4 PM, Monday, Feb 15<br>
-Yes: Chill on the beach, 1 PM, Tuesday, Feb 16<br>
-Yes: Dads’ birthdays, 7 PM, Thursday, Feb 18<br>
-Yes: Church wedding, 1 PM, Friday, Feb 19<br>
-No: Dimsum brunch, 12 noon, Saturday, Feb 20<br>
+<h3>Which events will you attend?</h3>
+{% for event in data.events %}
+	{% if event in 'sunset_cruise' %}Yes: Sunset cruise, 5 PM, Sunday Feb 14<br>{% endif %}
+	{% if event in 'dinner_1' %}Yes: Dinner, 7 PM, Sunday Feb 14<br>{% endif %}
+	{% if event in 'beach_wedding' %}Yes: Beach wedding, 4 PM, Monday Feb 15<br>{% endif %}
+	{% if event in 'lunch_water' %}Yes: Lunch and water activities, 1 PM, Tuesday Feb 16<br>{% endif %}
+	{% if event in 'dinner_2' %}Yes: Dinner, 7 PM, Tuesday Feb 16<br>{% endif %}
+	{% if event in 'church_wedding' %}Yes: Church wedding, 1 PM, Friday Feb 19<br>{% endif %}
+	{% if event in 'dimsum_brunch' %}Yes: Dimsum brunch, 12 noon, Saturday Feb 20<br>{% endif %}
+{% endfor %}
 <br>
-<h3>When do you arrive in Manila?</h3>
-Arrival flight number: {{ data.manila_flight_into }}<br>
-Arrival date: {{ data.manila_date_into }}<br>
-Arrival time: {{ data.manila_time_into }}<br>
-Departure flight number: {{ data.manila_flight_out }}<br>
-Departure date: {{ data.manila_date_out }}<br>
-Departure time: {{ data.manila_time_out }}<br>
-Hotel name: {{ data.manila_staying }}<br>
-<h3>When do you arrive in Boracay?</h3>
-Arrival flight number: {{ data.boracay_flight_into }}<br>
-Arrival date: {{ data.boracay_date_into }}<br>
-Arrival time: {{ data.boracay_time_into }}<br>
-Departure flight number: {{ data.boracay_flight_out }}<br>
-Departure date: {{ data.boracay_date_out }}<br>
-Departure time: {{ data.boracay_time_out }}<br>
-Hotel name: {{ data.boracay_staying }}<br>
+<h3>When do you arrive in Manila from overseas?</h3>
+Arrival flight number: {% if data.manila_flight_into %}{{ data.manila_flight_into }}{% endif %}<br>
+Arrival date and time: {% if data.manila_date_into %}{{ data.manila_date_into }}{% endif %}<br>
+Departure flight number: {% if data.manila_flight_out %}{{ data.manila_flight_out }}{% endif %}<br>
+Departure date and time: {% if data.manila_data_out %}{{ data.manila_date_out }}{% endif %}<br>
+Hotel name: {% if data.manila_staying %}{{ data.manila_staying }}{% endif %}<br><br>
+<h3>When do you arrive in Boracay from Manila?</h3>
+Arrival flight number: {% if data.boracay_flight_into %}{{ data.boracay_flight_into }}{% endif %}<br>
+Arrival date and time: {% if data.boracay_date_into %}{{ data.boracay_date_into }}{% endif %}<br>
+Departure flight number: {% if data.boracay_flight_out %}{{ data.boracay_flight_out }}{% endif %}<br>
+Departure date and time: {% if data.boracay_date_out %}{{ data.boracay_date_out }}{% endif %}<br>
+Hotel name: {% if data.boracay_staying %}{{ data.boracay_staying }}{% endif %}<br><br>
 <h3>Any special guests?</h3>
-Number of guests (excluding you): {{ data.number_of_guests }}<br>
+Number of guests (excluding you): {% if data.number_of_guests %}{{ data.number_of_guests }}{% else %}1{% endif %}<br>
