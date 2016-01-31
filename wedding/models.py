@@ -17,6 +17,21 @@ class Rsvp(models.Model):
         ("dimsum_brunch", _("Dimsum brunch, 12 noon, Saturday, Feb 20")),
     )
 
+    MANILA_CHOICES = (
+        ("holiday_inn", _("Holiday Inn")),
+        ("manila_peninsula", _("Manila Peninsula")),
+        ("shangri_la", _("Makati Shangri-la (wedding venue)")),
+        ("luxe_residences", _("The Luxe Residences")),
+        ("manila_other", _("Other")),
+    )
+
+    BORACAY_CHOICES = (
+        ("asya", _("Asya (wedding venue)")),
+        ("discovery_shores", _("Discovery Shores")),
+        ("villa_caemilla", _("Villa Caemilla")),
+        ("boracay_other", _("Other")),
+    )
+
     DIETARY_CHOICES = (
         ("gluten_free", _("Gluten Free")),
         ("halal", _("Halal")),
@@ -44,7 +59,7 @@ class Rsvp(models.Model):
     manila_date_out = models.DateTimeField(
         _("Manila departure date and time"), auto_now=False, null=True, blank=True)
     manila_staying = models.CharField(
-        _("Staying in Manila"), max_length=50, choices=EVENTS_CHOICES,
+        _("Staying in Manila"), max_length=50, choices=MANILA_CHOICES,
         null=True, blank=True)
     manila_staying_other = models.TextField(
         _("Other..."), max_length=200, null=True, blank=True)
@@ -59,7 +74,7 @@ class Rsvp(models.Model):
     boracay_date_out = models.DateTimeField(
         _("Boracay departure date and time"), auto_now=False, null=True, blank=True)
     boracay_staying = models.CharField(
-        _("Staying in Boracay"), max_length=50, choices=EVENTS_CHOICES,
+        _("Staying in Boracay"), max_length=50, choices=BORACAY_CHOICES,
         null=True, blank=True)
     boracay_staying_other = models.TextField(
         _("Other..."), max_length=200, null=True, blank=True)
