@@ -664,7 +664,7 @@ a {
     }
 
     #getting-there {
-        padding-top: 16px;
+        padding-top: 70px;
         padding-bottom: 99px;
     }
 
@@ -977,6 +977,10 @@ a {
 
     .guests_wrapper {
         padding: 0 30px;
+    }
+
+    #googlemap-img {
+        width: 100%;
     }
 }
 @media (max-width: 1279px) and (min-width: 768px) {
@@ -1537,7 +1541,7 @@ a {
     }
 
     #getting-there {
-        padding-top: 16px;
+        padding-top: 70px;
         padding-bottom: 99px;
     }
 
@@ -1842,6 +1846,10 @@ a {
 
     .guests_wrapper {
         padding: 0 30px;
+    }
+
+    #googlemap-img {
+        width: 100%;
     }
 
 }
@@ -2392,7 +2400,7 @@ a {
     }
 
     #getting-there {
-        padding-top: 16px;
+        padding-top: 70px;
         padding-bottom: 99px;
     }
 
@@ -2697,6 +2705,10 @@ a {
 
     .guests_wrapper {
         padding: 0 30px;
+    }
+
+    #googlemap-img {
+        width: 100%;
     }
 }
 
