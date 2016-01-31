@@ -1,7 +1,7 @@
 {% load country l10n %}
 <div class="col-sm-12">
     <div class="col-sm-12">
-        <form action="/submit_rsvp/" method="post" role="form" class="form-horizontal">
+        <form action="/submit_rsvp/" id="smart-form-2"  method="post" role="form" class="form-horizontal">
             {% csrf_token %}
             <div id="div_name" class="form-group">
                 <input id="id_name" class="form-control" maxlength="50" name="name" type="text" placeholder="Your full name *" required>
@@ -359,7 +359,8 @@
 
 
             <div class="form-group submit_button_center">
-                <button type="submit" id="gogo" class="button btn-primary">SUBMIT</button>
+                <button type="submit" id="gogo-2" class="button btn-primary">SUBMIT</button>
+                <div class="result"></div>
             </div>
 
         </form>

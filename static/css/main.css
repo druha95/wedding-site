@@ -653,7 +653,6 @@ a {
 
     section#googlemap {
         position: relative;
-        height: 410px;
         padding: 20px 0;
         width: 100%;
     }
@@ -664,7 +663,7 @@ a {
     }
 
     #getting-there {
-        padding-top: 70px;
+        padding-top: 50px;
         padding-bottom: 99px;
     }
 
@@ -882,7 +881,8 @@ a {
         vertical-align: middle;
     }
 
-    #gogo {
+    #gogo-1,
+    #gogo-2 {
         margin-right: 12px;
         margin-top: 13px;
         box-sizing: border-box;
@@ -893,7 +893,8 @@ a {
         background: white;
     }
 
-    #gogo:hover {
+    #gogo-1:hover,
+    #gogo-2:hover {
         background: #2e3a38;
         color: white;
     }
@@ -981,6 +982,21 @@ a {
 
     #googlemap-img {
         width: 100%;
+    }
+
+    em.error {
+        margin-top: 15px;
+        display: inline-block;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+    }
+
+    .result h1 {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
     }
 }
 @media (max-width: 1279px) and (min-width: 768px) {
@@ -1530,7 +1546,6 @@ a {
 
     section#googlemap {
         position: relative;
-        height: 410px;
         padding: 20px 0;
         width: 100%;
     }
@@ -1752,7 +1767,8 @@ a {
         vertical-align: middle;
     }
 
-    #gogo {
+    #gogo-1,
+    #gogo-2 {
         margin-right: 12px;
         margin-top: 13px;
         box-sizing: border-box;
@@ -1763,7 +1779,8 @@ a {
         background: white;
     }
 
-    #gogo:hover {
+    #gogo-1:hover,
+    #gogo-2:hover {
         background: #2e3a38;
         color: white;
     }
@@ -1850,6 +1867,21 @@ a {
 
     #googlemap-img {
         width: 100%;
+    }
+
+    em.error {
+        margin-top: 15px;
+        display: inline-block;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+    }
+
+    .result h1 {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
     }
 
 }
@@ -2389,7 +2421,6 @@ a {
 
     section#googlemap {
         position: relative;
-        height: 410px;
         padding: 20px 0;
         width: 100%;
     }
@@ -2611,7 +2642,8 @@ a {
         vertical-align: middle;
     }
 
-    #gogo {
+    #gogo-1,
+    #gogo-2 {
         margin-right: 12px;
         margin-top: 13px;
         box-sizing: border-box;
@@ -2622,7 +2654,8 @@ a {
         background: white;
     }
 
-    #gogo:hover {
+    #gogo-1:hover,
+    #gogo-2:hover {
         background: #2e3a38;
         color: white;
     }
@@ -2709,6 +2742,21 @@ a {
 
     #googlemap-img {
         width: 100%;
+    }
+
+    em.error {
+        margin-top: 15px;
+        display: inline-block;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
+    }
+
+    .result h1 {
+        font-size: 18px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        text-transform: uppercase;
+        color: #b4b6b7;
     }
 }
 
