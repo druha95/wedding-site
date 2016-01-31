@@ -45,15 +45,15 @@
 							$(form).ajaxSubmit({
 								    target:'.result',			   
 									beforeSubmit:function(){ 
-											$('.form-footer').addClass('progress');
+											$('#loading_gif-1').css({'display' : 'block'});
+                                            $('#gogo-1').css({'display' : 'none'});
 									},
 									error:function(){
 											$('.form-footer').removeClass('progress');
 									},
 									success:function(){
-											$('.form-footer').removeClass('progress');
+                                            $('#loading_gif-1').css({'display' : 'none'});
 											$('.alert-success').show().delay(10000).fadeOut();
-											$('#gogo-1').css({'display' : 'none'});
 											$('.result').html('<h1 class="txtmagenta">Sad that we can\'t celebrate with you..</h1>');
 											// if( $('.alert-error').length == 0){
 											// 	$('#smart-form').resetForm();
@@ -99,15 +99,15 @@
 							$(form).ajaxSubmit({
 								    target:'.result',
 									beforeSubmit:function(){
-											$('.form-footer').addClass('progress');
+                                        $('#loading_gif-2').css({'display' : 'block'});
+                                        $('#gogo-2').css({'display' : 'none'});
 									},
 									error:function(){
 											$('.form-footer').removeClass('progress');
 									},
 									success:function(){
-											$('.form-footer').removeClass('progress');
+                                            $('#loading_gif-2').css({'display' : 'none'});
 											$('.alert-success').show().delay(10000).fadeOut();
-											$('#gogo-2').css({'display' : 'none'});
 											$('.result').html('<h1 class="txtmagenta">Woohoo! Can\'t wait to celebrate with you!</h1>');
 											// if( $('.alert-error').length == 0){
 											// 	$('#smart-form').resetForm();
