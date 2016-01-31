@@ -46,7 +46,7 @@ $(document).ready(function($) {
 
     $(".form-horizontal select").on('change', function(event) {
         var value = $(this).val();
-        if(value == "other") {
+        if(value == "other" || value == "manila_other" || value || "boracay_other") {
             $("#" + $(event.target).closest("div")[0].id + "_other").css("display", "inline-block");
         } else {
             $("#" + $(event.target).closest("div")[0].id + "_other").css("display", "none");
