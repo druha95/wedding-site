@@ -54,7 +54,7 @@
 									success:function(){
                                             $('#loading_gif-1').css({'display' : 'none'});
 											$('.alert-success').show().delay(10000).fadeOut();
-											$('.result').html('<h1 class="txtmagenta">Sad that we can\'t celebrate with you..</h1>');
+											$('.result').html('<h1 class="txtmagenta">Sad that we can’t celebrate with you…</h1>');
 											// if( $('.alert-error').length == 0){
 											// 	$('#smart-form').resetForm();
 												// reloadCaptcha();

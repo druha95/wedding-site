@@ -8,7 +8,7 @@
                 {{ form.name.errors }}
             </div>
             <div id="div_email" class="form-group">
-                <input id="id_email" class="form-control" maxlength="50" name="email" type="email" placeholder="Your email *" >
+                <input id="id_email" class="form-control" maxlength="50" name="email" type="email" placeholder="Your email " >
                 {{ form.email.errors }}
             </div>
 
@@ -41,16 +41,16 @@
                 </ul>
             </div>
 
-            <h2>When do you arrive in Manila from overseas?</h2>
+            <h2>When do you arrive in Manila?</h2>
 
             <div id="div_manila_flight_into" class="form-group">
-                <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Arrival flight number (into Manila) *" >
+                <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Arrival flight number (into Manila) " >
                 {{ form.manila_flight_into.errors }}
             </div>
 
             <div id="div_manila_date_into" class="form-group">
                 <div class="date datetime_picker_wrapper" id="id_manila_date_into_picker">
-                    <input class="form-control" id="id_manila_date_into" name="manila_date_into" type="text" placeholder="Arrival date and time *">
+                    <input class="form-control" id="id_manila_date_into" name="manila_date_into" type="text" placeholder="Arrival date and time ">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.manila_date_into.errors }}
@@ -62,13 +62,13 @@
             </div>
 
             <div id="div_manila_flight_out" class="form-group">
-                <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila) *" >
+                <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila) " >
                 {{ form.manila_flight_out.errors }}
             </div>
 
             <div id="div_manila_date_out" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_manila_date_out_picker">
-                    <input class="form-control" id="id_manila_date_out" name="manila_date_out" type="text" placeholder="Departure date and time *">
+                    <input class="form-control" id="id_manila_date_out" name="manila_date_out" type="text" placeholder="Departure date and time ">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.manila_date_out.errors }}
@@ -85,7 +85,7 @@
                     <option disabled value="" selected="selected">Where are you staying in Manila?</option>
                     <option value="holiday_inn">Holiday Inn</option>
                     <option value="manila_peninsula">Manila Peninsula</option>
-                    <option value="shangri_la">Makati Shangri-la (wedding venue)</option>
+                    <option value="shangri_la">Makati Shangri-la</option>
                     <option value="luxe_residences">The Luxe Residences</option>
                     <option value="manila_other">Other</option>
                 </select>
@@ -97,16 +97,16 @@
                 {{ form.manila_staying_other.errors }}
             </div>
 
-            <h2>When do you arrive in Boracay from Manila?</h2>
+            <h2>When do you arrive in Boracay?</h2>
 
             <div id="div_boracay_flight_into" class="form-group">
-                <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Arrival flight number (into Caticlan) *" >
+                <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Arrival flight number (into Caticlan) " >
                 {{ form.boracay_flight_into.errors }}
             </div>
 
             <div id="div_boracay_date_into" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_boracay_date_into_picker">
-                    <input class="form-control" id="id_boracay_date_into" name="boracay_date_into" type="text" placeholder="Arrival date and time *">
+                    <input class="form-control" id="id_boracay_date_into" name="boracay_date_into" type="text" placeholder="Arrival date and time ">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.boracay_date_into.errors }}
@@ -119,14 +119,14 @@
 
 
             <div id="div_boracay_flight_out" class="form-group">
-                <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Caticlan) *" >
+                <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Caticlan) " >
                 {{ form.boracay_flight_out.errors }}
             </div>
 
 
             <div id="div_boracay_date_out" class="form-group">
                 <div class="datetime_picker_wrapper date" id="id_boracay_date_out_picker">
-                    <input class="form-control" id="id_boracay_date_out" name="boracay_date_out" type="text" placeholder="Departure date and time *">
+                    <input class="form-control" id="id_boracay_date_out" name="boracay_date_out" type="text" placeholder="Departure date and time ">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </div>
                 {{ form.boracay_date_out.errors }}
@@ -143,7 +143,7 @@
                 {{ form.boracay_staying.errors }}
                 <select id="id_boracay_staying" name="boracay_staying">
                     <option disabled value="" selected="selected">Where are you staying in Boracay?</option>
-                    <option value="asya">Asya (wedding venue)</option>
+                    <option value="asya">Asya</option>
                     <option value="discovery_shores">Discovery Shores</option>
                     <option value="villa_caemilla">Villa Caemilla</option>
                     <option value="boracay_other">Other</option>
@@ -182,7 +182,7 @@
             <div id="div_number_of_guests" class="form-group">
                 {{ form.number_of_guests.errors }}
                 <select id="id_number_of_guests" name="number_of_guests">
-                    <option disabled value="" selected="selected">Number of guests excl. you</option>
+                    <option disabled value="" selected="selected">Number of guests (excluding you)</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -195,11 +195,11 @@
             <div class="row guests_wrapper">
                 <div class="row guest_form guest_form_1">
                     <div id="div_guests_name_1" class="form-group">
-                        <input id="id_guests_name_1" class="form-control" maxlength="50" name="guests_name_1" type="text" placeholder="Guest's name *" >
+                        <input id="id_guests_name_1" class="form-control" maxlength="50" name="guests_name_1" type="text" placeholder="Guest's name" >
                         {{ form.guests_name_1.errors }}
                     </div>
                     <div id="div_guests_email_1" class="form-group">
-                        <input id="id_guests_email_1" class="form-control" maxlength="50" name="guests_email_1" type="email" placeholder="Guest's email (optional) *" >
+                        <input id="id_guests_email_1" class="form-control" maxlength="50" name="guests_email_1" type="email" placeholder="Guest's email (optional) " >
                         {{ form.guests_email_1.errors }}
                     </div>
 
@@ -226,11 +226,11 @@
                 </div>
                 <div class="row guest_form guest_form_2">
                     <div id="div_guests_name_2" class="form-group">
-                        <input id="id_guests_name_2" class="form-control" maxlength="50" name="guests_name_2" type="text" placeholder="Guest's name *" >
+                        <input id="id_guests_name_2" class="form-control" maxlength="50" name="guests_name_2" type="text" placeholder="Guest's name " >
                         {{ form.guests_name_2.errors }}
                     </div>
                     <div id="div_guests_email_2" class="form-group">
-                        <input id="id_guests_email_2" class="form-control" maxlength="50" name="guests_email_2" type="email" placeholder="Guest's email (optional) *" >
+                        <input id="id_guests_email_2" class="form-control" maxlength="50" name="guests_email_2" type="email" placeholder="Guest's email (optional) " >
                         {{ form.guests_email_2.errors }}
                     </div>
                     <div id="div_guests_dietary_restrictions_2" class="form-group">
@@ -257,11 +257,11 @@
                 </div>
                 <div class="row guest_form guest_form_3">
                     <div id="div_guests_name_3" class="form-group">
-                        <input id="id_guests_name_3" class="form-control" maxlength="50" name="guests_name_3" type="text" placeholder="Guest's name *" >
+                        <input id="id_guests_name_3" class="form-control" maxlength="50" name="guests_name_3" type="text" placeholder="Guest's name " >
                         {{ form.guests_name_3.errors }}
                     </div>
                     <div id="div_guests_email_3" class="form-group">
-                        <input id="id_guests_email_3" class="form-control" maxlength="50" name="guests_email_3" type="email" placeholder="Guest's email (optional) *" >
+                        <input id="id_guests_email_3" class="form-control" maxlength="50" name="guests_email_3" type="email" placeholder="Guest's email (optional) " >
                         {{ form.guests_email_3.errors }}
                     </div>
                     <div id="div_guests_dietary_restrictions_3" class="form-group">
@@ -288,11 +288,11 @@
                 </div>
                 <div class="row guest_form guest_form_4">
                     <div id="div_guests_name_4" class="form-group">
-                        <input id="id_guests_name_4" class="form-control" maxlength="50" name="guests_name_4" type="text" placeholder="Guest's name *" >
+                        <input id="id_guests_name_4" class="form-control" maxlength="50" name="guests_name_4" type="text" placeholder="Guest's name " >
                         {{ form.guests_name_4.errors }}
                     </div>
                     <div id="div_guests_email_4" class="form-group">
-                        <input id="id_guests_email_4" class="form-control" maxlength="50" name="guests_email_4" type="email" placeholder="Guest's email (optional) *" >
+                        <input id="id_guests_email_4" class="form-control" maxlength="50" name="guests_email_4" type="email" placeholder="Guest's email (optional) " >
                         {{ form.guests_email_4.errors }}
                     </div>
                     <div id="div_guests_dietary_restrictions_4" class="form-group">
@@ -319,11 +319,11 @@
                 </div>
                 <div class="row guest_form guest_form_5">
                     <div id="div_guests_name_5" class="form-group">
-                        <input id="id_guests_name_5" class="form-control" maxlength="50" name="guests_name_5" type="text" placeholder="Guest's name *" >
+                        <input id="id_guests_name_5" class="form-control" maxlength="50" name="guests_name_5" type="text" placeholder="Guest's name " >
                         {{ form.guests_name_5.errors }}
                     </div>
                     <div id="div_guests_email_5" class="form-group">
-                        <input id="id_guests_email_5" class="form-control" maxlength="50" name="guests_email_5" type="email" placeholder="Guest's email (optional) *" >
+                        <input id="id_guests_email_5" class="form-control" maxlength="50" name="guests_email_5" type="email" placeholder="Guest's email (optional) " >
                         {{ form.guests_email_5.errors }}
                     </div>
                     <div id="div_guests_dietary_restrictions_5" class="form-group">

@@ -777,7 +777,7 @@ a {
         font-family: 'Futura', sans-serif;
     }
 
-    .smart-forms div {
+    .smart-forms form > div {
         position: relative;
     }
 
@@ -833,7 +833,10 @@ a {
     }
 
     .smart-forms textarea {
+        padding-left: 15px;
+        padding-top: 10px;
         width: 100%;
+        color: #9D9D9D !important;
     }
 
     #rsvp-form {
@@ -991,8 +994,20 @@ a {
     .result h1 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        text-transform: uppercase;
         color: #b4b6b7;
+    }
+
+    .arrow_up {
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        right: 0;
+        background: url(../img/arrow-down.png) center center no-repeat,
+        #F2F2F2;
+        top: 0;
+        z-index: 10;
+        background-size: 35%;
+        pointer-events: none;
     }
 }
 @media (max-width: 1279px) and (min-width: 768px) {
@@ -1663,7 +1678,7 @@ a {
         font-family: 'Futura', sans-serif;
     }
 
-    .smart-forms div {
+    .smart-forms form > div {
         position: relative;
     }
 
@@ -1719,7 +1734,10 @@ a {
     }
 
     .smart-forms textarea {
+        padding-left: 15px;
+        padding-top: 10px;
         width: 100%;
+        color: #9D9D9D !important;
     }
 
     #rsvp-form {
@@ -1876,8 +1894,20 @@ a {
     .result h1 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        text-transform: uppercase;
         color: #b4b6b7;
+    }
+
+    .arrow_up {
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        right: 0;
+        background: url(../img/arrow-down.png) center center no-repeat,
+        #F2F2F2;
+        top: 0;
+        z-index: 10;
+        background-size: 35%;
+        pointer-events: none;
     }
 
 }
@@ -2540,7 +2570,7 @@ a {
         font-family: 'Futura', sans-serif;
     }
 
-    .smart-forms div {
+    .smart-forms form  > div {
         position: relative;
     }
 
@@ -2596,7 +2626,10 @@ a {
     }
 
     .smart-forms textarea {
+        padding-left: 15px;
+        padding-top: 10px;
         width: 100%;
+        color: #9D9D9D !important;
     }
 
     #rsvp-form {
@@ -2753,8 +2786,20 @@ a {
     .result h1 {
         font-size: 18px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        text-transform: uppercase;
         color: #b4b6b7;
+    }
+
+    .arrow_up {
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        right: 0;
+        background: url(../img/arrow-down.png) center center no-repeat,
+        #F2F2F2;
+        top: 0;
+        z-index: 10;
+        background-size: 35%;
+        pointer-events: none;
     }
 }
 
