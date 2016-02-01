@@ -1945,6 +1945,7 @@ a {
         color: #2e3a38 !important;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
+        text-align: center !important;
     }
 
     #getting-married {
@@ -2164,7 +2165,7 @@ a {
         color: #b4b6b7;
         margin-top: 67px;
         margin-bottom: 64px;
-        line-height: 40px;
+        line-height: 28px;
     }
 
     .boracay_paragraph {
@@ -2328,8 +2329,12 @@ a {
         margin-top: 30px;
     }
 
+    .family .col-sm-3 {
+        margin-top: 35px;
+    }
+
     .family.family--hers {
-        margin-top: 107px;
+        margin-top: 87px;
     }
 
     .family.family--his {
@@ -2358,8 +2363,8 @@ a {
         margin-bottom: 45px;
     }
 
-    .wedding-party-row .col-sm-6.right {
-        margin-top: 50px;
+    .wedding-party-row .col-sm-6.right .list__person--first {
+        margin-top: 0;
     }
 
     .bridesmaids_list__title {
@@ -2521,7 +2526,7 @@ a {
 
     #rsvp-link {
         padding-top: 47px;
-        padding-bottom: 93px;
+        padding-bottom: 63px;
     }
 
     .rsvp_row {
@@ -2542,15 +2547,15 @@ a {
 
 
     .label_wrapper--left {
-        text-align: left;
+        text-align: center;
     }
 
     .label_wrapper--right {
-        text-align: right;
+        text-align: center;
     }
 
     .label_rsvp {
-        font-size: 13px;
+        font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #4a4a4a;
@@ -2561,8 +2566,6 @@ a {
         width: 13px;
         height: 13px;
         background: white;
-        vertical-align: sub;
-
     }
 
     .forms_wrapper {
@@ -2660,17 +2663,25 @@ a {
     }
 
     .icons_img__block__link {
-        font-size: 8px;
+        font-size: 20px;
         font-family: 'Futura', sans-serif;
         color: #94b4c3;
         padding: 0;
-        text-align: left;
+        text-align: center;
         line-height: 18px;
+        margin-bottom: 30px;
     }
 
     .icons_img__block__link span {
-        font-size: 14px;
+        display: inline-block;
+        font-size: 20px;
         vertical-align: middle;
+        margin-bottom: 15px;
+    }
+
+    .icons_img__block__link a {
+        display: inline-block;
+        width: 100%;
     }
 
     #gogo-1,
@@ -2747,7 +2758,11 @@ a {
     }
 
     .instagram-text div {
-        margin: 0 auto;
+        font-size: 14px;
+        font-family: 'Futura', sans-serif;
+        color: #4a4a4a;
+        margin: 17px auto 0;
+        line-height: 18px;
     }
 
     .real-time-link {
