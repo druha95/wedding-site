@@ -11,8 +11,10 @@
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link href="{% static "fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css" %}" rel="stylesheet" type="text/css">
 	<link href="{% static "css/normalize.css" %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
 	<link href="{% static "css/style.css" %}" rel="stylesheet">
-	<!--<link href="{% static "css/main.css" %}" rel="stylesheet">-->
+	<link href="{% static "css/main.css" %}" rel="stylesheet">
 	<style>
 
         @font-face {
@@ -21,9 +23,22 @@
         }
 
 		body {
-            background: #ffffff;
+            background: #F2F2F2;
             font-size: 1em;
 		}
+
+        .global_photo_container {
+            background: white;
+            margin: 0 auto;
+            max-width: 1280px;
+        }
+
+
+        div#instafeed img {
+            border: 1px solid #CCC !important;
+        }
+
+
 		h1 {
 			margin: 0;
 			text-transform: none;
@@ -38,7 +53,7 @@
 			width: 100%;
 			text-align: center;
 			margin: 0 auto;
-			margin-top: 85px;
+			margin-top: 130px;
 		}
 		.tile {
 			display: inline-block;
@@ -104,8 +119,10 @@
 	</style>
 
     		<!-- Typekit script -->
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     		<script type="text/javascript" src="//use.typekit.net/jnv1lfi.js"></script>
     		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+            <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
 
     		<!-- Instafeed -->
     		<script type="text/javascript" src="{% static "js/instafeed.min.js" %}"></script>
@@ -117,7 +134,7 @@
     				clientId: 'c2a1ec3f7e24475d8d7bd60e746f8cab',
     				resolution: 'low_resolution',
     				limit: '60',
-    				sortBy: 'random',
+    				sortBy: 'least-recent',
     				template: '<div class="tile"><a class="pic" href="{{link}}" target="blank"><img src="{{image}}" /></a><div class="ig-meta"><p class="likes txtmagenta">{{likes}} likes</p><p class="caption">"{{caption}}"</p></div></div>',
     				// filter: function(image) {
 		      //           var date = new Date(image.created_time*1000);
@@ -146,20 +163,35 @@
 	</head>
 
 	<body id="home">
-        <div class="global_wrap">
-            <div class="wrap full-width-nav">
-                <div class="contain">
-                    <div class="grid">
-                        <div class="unit whole pics">
-                            <h1 class="center txtmagenta"><a href="/">#KMWeddingWeek</a></h1>
-                        </div>
+        <div class="global_photo_container">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container-fluid">
+                    <div class="nav_wrapper">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-main navbar-element link1"><a href="/">#KMWeddingWeek</a></li>
+                            <li id="nav-mobile" class="dropdown">
+                                <button id="menu-btn" href="#" class="dropdown-toggle navbar-toggle pull-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <ul class="dropdown-menu" style="padding-top: 80px;">
+                                    <li class="nav-fix"></li>
+                                    <li class="navbar-element link6"><a href="/">#KMWeddingWeek</a></li>
+                                    <li class="navbar-element" data-toggle="dropdown"><a>&nbsp;</a></li>
+                                    <div class="nav-overlay dropdown-toggle" data-toggle="dropdown"></div>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-            <div class="grid">
-                <div class="unit whole">
-                    <div id="instafeed"></div>
+            </nav>
+            <div class="global_wrap">
+                <div class="grid">
+                    <div class="unit whole">
+                        <div id="instafeed"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,6 +210,6 @@
 		<!-- Captions -->
 		<script src="{% static "js/jquery.hcaptions.js" %}"></script>
 		<!-- Main JS -->
-		<script src="{% static "js/main_photo.js" %}"></script>
+		<script src="{% static "js/main.js" %}"></script>
 	</body>
 </html>

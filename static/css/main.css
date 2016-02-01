@@ -391,6 +391,7 @@ a {
         padding-bottom: 90px;
     }
 
+
     .dress-code__title {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-align: center;
@@ -2201,6 +2202,7 @@ a {
 
     #dress-code .left {
         margin-bottom: 50px;
+        padding-top: 130px;
     }
 
     #dress-code .right {
@@ -2210,6 +2212,12 @@ a {
     #dress-code.wedding-party {
         padding-top: 35px;
         padding-bottom: 90px;
+    }
+
+    #dress-code.wedding-party .col-sm-2 {
+        position: absolute;
+        top: 0;
+        padding-right: 40px;
     }
 
     .dress-code__title {
@@ -2286,17 +2294,24 @@ a {
         padding-bottom: 89px;
     }
 
+    #dress-code.church-party .col-sm-2 {
+        position: absolute;
+        top: 0;
+        padding-right: 40px;
+    }
+
     #dress-code.church-party .dress-code__title {
         padding-top: 13px;
     }
 
 
     #dress-code.church-party .left {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        padding-top: 130px;
     }
 
     #dress-code.church-party .right {
-       margin-top: 50px;
+       /*margin-top: 50px;*/
     }
 
     .church-party #bubble-dress-code {
