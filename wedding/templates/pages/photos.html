@@ -9,13 +9,20 @@
 	<title>#KarenMichael Photo Feed</title>
 	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="{% static "fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css" %}" rel="stylesheet" type="text/css">
 	<link href="{% static "css/normalize.css" %}" rel="stylesheet">
 	<link href="{% static "css/style.css" %}" rel="stylesheet">
-	<link href="{% static "css/main.css" %}" rel="stylesheet">
+	<!--<link href="{% static "css/main.css" %}" rel="stylesheet">-->
 	<style>
+
+        @font-face {
+            font-family: 'Futura';
+            src: url('/static/fonts/Futura-Book-BT_18987.ttf');
+        }
+
 		body {
-			margin: 0;
-			display: block;
+            background: #ffffff;
+            font-size: 1em;
 		}
 		h1 {
 			margin: 0;
@@ -31,7 +38,7 @@
 			width: 100%;
 			text-align: center;
 			margin: 0 auto;
-			margin-top: 50px;
+			margin-top: 85px;
 		}
 		.tile {
 			display: inline-block;
@@ -52,9 +59,11 @@
 			border-top: 0px;
 		}
 		p.likes {
+            color: #b4b6b7;
 			position: relative;
 			margin-bottom: 10px;
-		  	font: 700 30px 'Amatic SC', sans-serif;
+            font-family: MahlauEFOP-Regular, sans-serif;
+            font-size: 22px;
 		}
 		p.caption {
 			position: relative;
@@ -62,13 +71,22 @@
 			margin-bottom: 5px;
 			font-size: 18px;
 			padding: 0 10px;
+            font-family: Futura, sans-serif;
 		}
 		.unit.whole.pics {
 			text-align: center;
 		}
 		#instafeed a {
-    		 margin: 0; 
+    		 margin: 0;
 		}
+
+        .txtmagenta a {
+            font-family: MahlauEFOP-Regular, sans-serif;
+            color: #b4b6b7;
+            font-size: 44px;
+            font-weight: 400;
+        }
+
 		@media screen and (max-width: 400px) {
 			#instafeed img {
 				width: 100%;
@@ -128,21 +146,24 @@
 	</head>
 
 	<body id="home">
-		<div class="wrap full-width-nav">
-			<div class="contain">
-				<div class="grid">
-					<div class="unit whole pics">
-						<h1 class="center txtmagenta"><a href="/">#KMWeddingWeek</a></h1>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="global_wrap">
+            <div class="wrap full-width-nav">
+                <div class="contain">
+                    <div class="grid">
+                        <div class="unit whole pics">
+                            <h1 class="center txtmagenta"><a href="/">#KMWeddingWeek</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="grid">
-			<div class="unit whole">
-				<div id="instafeed"></div>
-			</div>
-		</div>
+            <div class="grid">
+                <div class="unit whole">
+                    <div id="instafeed"></div>
+                </div>
+            </div>
+        </div>
+
 
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
