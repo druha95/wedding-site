@@ -957,6 +957,7 @@ a {
     .instagram-text div {
         width: 800px;
         margin: 0 auto;
+        line-height: 18px;
     }
 
     .real-time-link {
@@ -973,6 +974,7 @@ a {
     }
 
     #col-last {
+        padding-left: 23px;
         margin-top: 43px;
     }
 
@@ -995,7 +997,7 @@ a {
     .result h1 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        color: #b4b6b7;
+        color: #745d5d;
     }
 
     .arrow_up {
@@ -1857,6 +1859,7 @@ a {
 
     .instagram-text div {
         margin: 0 auto;
+        line-height: 18px;
     }
 
     .real-time-link {
@@ -1895,7 +1898,7 @@ a {
     .result h1 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        color: #b4b6b7;
+        color: #745d5d;
     }
 
     .arrow_up {
@@ -1947,6 +1950,10 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         text-align: center !important;
+    }
+
+    .navbar {
+        box-shadow: 0px 3px 4px -2px rgba(0, 0, 0, 0.2);
     }
 
     #getting-married {
@@ -2394,6 +2401,8 @@ a {
         text-transform: uppercase;
         color: #b4b6b7;
         font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .bridesmaids_list__person {
@@ -2553,6 +2562,7 @@ a {
         font-family: MahlauEFOP-Regular, sans-serif;
         text-transform: uppercase;
         color: #b4b6b7;
+        padding: 0 50px;
     }
 
     .rsvp_block {
@@ -2563,6 +2573,7 @@ a {
 
     .label_wrapper--left {
         text-align: center;
+        margin-bottom: 15px;
     }
 
     .label_wrapper--right {
@@ -2816,7 +2827,7 @@ a {
     .result h1 {
         font-size: 18px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        color: #b4b6b7;
+        color: #745d5d;
     }
 
     .arrow_up {
