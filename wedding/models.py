@@ -45,7 +45,7 @@ class Rsvp(models.Model):
     NUMBER_OF_GUESTS_CHOICES = [(i, i) for i in range(1, 6)]
 
     name = models.CharField(_("Name"), max_length=50)
-    email = models.EmailField(_("Email"), max_length=50)
+    email = models.EmailField(_("Email"), null=True, blank=True, max_length=50)
     rsvp = models.BooleanField(_("Rsvp"), default=True)
     events = MultiSelectField(
         _("Events attended"), choices=EVENTS_CHOICES, null=True, blank=True)

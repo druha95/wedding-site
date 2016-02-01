@@ -17,8 +17,8 @@ class SubmitRsvpMiniForm(forms.ModelForm):
     def save(self, commit=True):
         new_rsvp = super(SubmitRsvpMiniForm, self).save(commit=False)
         new_rsvp.rsvp = False
-        name = self.cleaned_data['name']
-        email = self.cleaned_data['email']
+        name = self.cleaned_data.get('name')
+        email = self.cleaned_data.get('email')
         subject_party = u'{} can\'t make it to the Philippines :('.format(name)
         subject_guest = u'Sad that we can\'t celebrate with you :('
         body_party = u'{} can\'t make it to the Philippines :('.format(name)
@@ -28,9 +28,10 @@ class SubmitRsvpMiniForm(forms.ModelForm):
             subject_party, body_party, 'Karen + Michael <party@karenmichael.com>',
             ['party@karenmichael.com'])
         # send mail to guest email
-        send_mail(
-            subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
-            [str(email)])
+        if email:
+            send_mail(
+                subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
+                [str(email)])
         if commit:
             new_rsvp.save()
         return new_rsvp
@@ -59,9 +60,9 @@ class SubmitRsvpForm(forms.ModelForm):
         new_rsvp = super(SubmitRsvpForm, self).save(commit=False)
         new_rsvp.rsvp = True
         post_data = self.cleaned_data
-        name = self.cleaned_data['name']
-        email = self.cleaned_data['email']
-        number_of_guests = self.cleaned_data['number_of_guests']
+        name = self.cleaned_data.get('name')
+        email = self.cleaned_data.get('email')
+        number_of_guests = self.cleaned_data.get('number_of_guests')
         try:
             if int(number_of_guests) == 0 or int(number_of_guests) == 1:
                 post_data['guests_template'] = u'guest'
@@ -90,9 +91,10 @@ class SubmitRsvpForm(forms.ModelForm):
             'mail/body_guest.html', {'data': post_data})
         body_guest = render_to_string(
             'mail/body_guest.html', {'data': post_data})
-        send_mail(
-            subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
-            [str(email)], html_message=body_guest_html)
+        if email:
+            send_mail(
+                subject_guest, body_guest, 'Karen + Michael <party@karenmichael.com>',
+                [str(email)], html_message=body_guest_html)
         if commit:
             new_rsvp.save()
         return new_rsvp
