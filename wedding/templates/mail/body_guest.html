@@ -18,9 +18,9 @@ Karen + Michael
 <br>
 <h3>When do you arrive in Manila from overseas?</h3>
 Arrival flight number: {% if data.manila_flight_into %}{{ data.manila_flight_into }}{% endif %}<br>
-Arrival date and time: {% if data.manila_date_into %}{{ data.manila_date_into }}{% endif %}<br>
+Arrival date and time: {% if data.manila_date_into %}{{ data.manila_date_into|date:"M d, Y, H:i A" }}{% endif %}<br>
 Departure flight number: {% if data.manila_flight_out %}{{ data.manila_flight_out }}{% endif %}<br>
-Departure date and time: {% if data.manila_date_out %}{{ data.manila_date_out }}{% endif %}<br>
+Departure date and time: {% if data.manila_date_out %}{{ data.manila_date_out|date:"M d, Y, H:i A" }}{% endif %}<br>
 Hotel name: {% if data.manila_staying %}
 	{% if data.manila_staying in 'holiday_inn' %}Holiday Inn{% endif %}
 	{% if data.manila_staying in 'manila_peninsula' %}Manila Peninsula{% endif %}
@@ -30,9 +30,9 @@ Hotel name: {% if data.manila_staying %}
 			{% endif %}<br><br>
 <h3>When do you arrive in Boracay from Manila?</h3>
 Arrival flight number: {% if data.boracay_flight_into %}{{ data.boracay_flight_into }}{% endif %}<br>
-Arrival date and time: {% if data.boracay_date_into %}{{ data.boracay_date_into }}{% endif %}<br>
+Arrival date and time: {% if data.boracay_date_into %}{{ data.boracay_date_into|date:"M d, Y, H:i A" }}{% endif %}<br>
 Departure flight number: {% if data.boracay_flight_out %}{{ data.boracay_flight_out }}{% endif %}<br>
-Departure date and time: {% if data.boracay_date_out %}{{ data.boracay_date_out }}{% endif %}<br>
+Departure date and time: {% if data.boracay_date_out %}{{ data.boracay_date_out|date:"M d, Y, H:i A" }}{% endif %}<br>
 Hotel name: {% if data.boracay_staying %}
 	{% if data.boracay_staying in 'asya' %}Asya (wedding venue){% endif %}
 	{% if data.boracay_staying in 'discovery_shores' %}Discovery Shores{% endif %}
