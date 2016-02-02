@@ -18,14 +18,11 @@
 
     <!-- CSS general-->
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/jquery.datetimepicker.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "css/animate.css" %}">
 
     <!-- First load Scripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="{% static "js/jpreloader.js" %}"></script>
     <script type="text/javascript" src="{% static "js/jquery.datetimepicker.full.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/instafeed.min.js" %}"></script>
@@ -266,7 +263,7 @@
                             <span>maxi dress</span>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-xs-12">
+                    <div class="col-sm-2">
                         <div id="bubble-dress-code">
                             Dress<br/>
                             Code
@@ -334,7 +331,7 @@
                             <span>Evening gown</span><br/>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-xs-12">
+                    <div class="col-sm-2">
                         <div id="bubble-dress-code">
                             Dress<br/>
                             Code
@@ -477,7 +474,7 @@
         <div class="container">
             <div class="row">
                 <div class="when-where-main-title">When + Where</div>
-                <div class="col-sm-12 when-where-main-row">
+                <div class="col-sm-12 when-where-main-row when-where-main-row--large">
 
                     <div class="col-sm-12">
                         <div class="col-sm-6 left">
@@ -553,6 +550,69 @@
                         </div>
                     </div>
 
+                </div>
+
+                <div class="col-sm-12 when-where-main-row when-where-main-row--small">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Before Sunday</h3>
+                            <div class="when-where-date">Feb 14</div>
+                            <div class="when-where-title">Fly to Caticlan</div>
+                            <div class="when-where-description"><a href="http://www.google.com/search?q=MNL+to+MPH">Which flight should I book?</a></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Sunday</h3>
+                            <div class="when-where-date">Feb 14</div>
+                            <div class="when-where-title">Sunset cruise</div>
+                            <div class="when-where-description">3 pm | Boracay SunCruiser | All-white beach/swimwear</div>
+                            <div class="when-where-title">Dinner</div>
+                            <div class="when-where-description">7 PM | Discovery Shores | All-white beachwear</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Monday</h3>
+                            <div class="when-where-date">Feb 15</div>
+                            <div class="when-where-title">Beach wedding</div>
+                            <div class="when-where-description">4 pm | Asya | All-white summer chic</div>
+                            <div class="when-where-title">Cocktails, dinner, dancing</div>
+                            <div class="when-where-description">5 PM | Asya | All-white summer chic (bring swimwear)</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Tuesday</h3>
+                            <div class="when-where-date">Feb 16</div>
+                            <div class="when-where-title">Lunch and water activities</div>
+                            <div class="when-where-description">1 pm | Asya beachfront | All-white beach/swimwear</div>
+                            <div class="when-where-title">Dinner</div>
+                            <div class="when-where-description">7 PM | Discovery Shores | All-white beachwear</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Wednesday</h3>
+                            <div class="when-where-date">Feb 17</div>
+                            <div class="when-where-title">Free day</div>
+                            <div class="when-where-description"> Chill on the beach</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Thursday</h3>
+                            <div class="when-where-date">Feb 18</div>
+                            <div class="when-where-title">Flight back from Caticlan to Manila</div>
+                            <div class="when-where-description">Before 3pm <a href="http://www.google.com/search?q=MPH+to+MNL">Which flight should I book?</a></div>
+                            <div class="when-where-title">Our dads’ birthdays</div>
+                            <div class="when-where-description">7 PM | The Luxe Residences | Something red (smart casual)</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Friday</h3>
+                            <div class="when-where-date">Feb 19</div>
+                            <div class="when-where-title">Church wedding</div>
+                            <div class="when-where-description">1 PM | Santuario de San Antonio | Black tie</div>
+                            <div class="when-where-title">Cocktails, dinner, dancing</div>
+                            <div class="when-where-description">6 PM | Makati Shangri-la | Black tie</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="when-where-day">Saturday</h3>
+                            <div class="when-where-date">Feb 20</div>
+                            <div class="when-where-title">Tea ceremony and dimsum brunch</div>
+                            <div class="when-where-description">12 noon | Makati Shangri-la | Something red (smart casual)</div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -704,14 +764,10 @@
     </section>
 </div>
 <!-- Scripts -->
-<script src="{% static "js/jquery.scrollmagic.min.js" %}"></script>
-<script src="{% static "js/jquery.easing.1.3.js" %}"></script>
 <script type="text/javascript" src="{% static "js/main.js" %}"></script>
 <script type="text/javascript" src="{% static "js/jquery.form.min.js" %}"></script>
 <script type="text/javascript" src="{% static "js/jquery.validate.js" %}"></script>
-<script type="text/javascript" src="{% static "js/additional-methods.js" %}"></script>
 <script type="text/javascript" src="{% static "js/smart-form.js" %}"></script>
-<script type="text/javascript" src="{% static "js/scroll.js" %}"></script>
 
 </body>
 </html>

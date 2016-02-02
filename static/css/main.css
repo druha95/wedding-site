@@ -616,6 +616,10 @@ a {
         text-align: center;
     }
 
+    .when-where-main-row--small {
+        display: none;
+    }
+
     .when-where-day {
         font-size: 36px;
         font-family: MahlauEFOP-Regular, sans-serif;
@@ -997,7 +1001,7 @@ a {
     .result h1 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        color: #745d5d;
+        color: #b4b6b7;
     }
 
     .arrow_up {
@@ -1011,6 +1015,13 @@ a {
         z-index: 10;
         background-size: 35%;
         pointer-events: none;
+    }
+    #div_guests_dietary_restrictions_1,
+    #div_guests_dietary_restrictions_2,
+    #div_guests_dietary_restrictions_3,
+    #div_guests_dietary_restrictions_4,
+    #div_guests_dietary_restrictions_5 {
+        position: relative;
     }
 }
 @media (max-width: 1279px) and (min-width: 768px) {
@@ -1526,6 +1537,10 @@ a {
         text-align: center;
     }
 
+    .when-where-main-row--small {
+        display: none;
+    }
+
     .when-where-day {
         font-size: 36px;
         font-family: MahlauEFOP-Regular, sans-serif;
@@ -1898,7 +1913,7 @@ a {
     .result h1 {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        color: #745d5d;
+        color: #b4b6b7;
     }
 
     .arrow_up {
@@ -1912,6 +1927,14 @@ a {
         z-index: 10;
         background-size: 35%;
         pointer-events: none;
+    }
+
+    #div_guests_dietary_restrictions_1,
+    #div_guests_dietary_restrictions_2,
+    #div_guests_dietary_restrictions_3,
+    #div_guests_dietary_restrictions_4,
+    #div_guests_dietary_restrictions_5 {
+        position: relative;
     }
 
 }
@@ -2224,7 +2247,7 @@ a {
     #dress-code.wedding-party .col-sm-2 {
         position: absolute;
         top: 0;
-        padding-right: 40px;
+        width: 95%;
     }
 
     .dress-code__title {
@@ -2304,7 +2327,7 @@ a {
     #dress-code.church-party .col-sm-2 {
         position: absolute;
         top: 0;
-        padding-right: 40px;
+        width: 95%;
     }
 
     #dress-code.church-party .dress-code__title {
@@ -2445,6 +2468,10 @@ a {
     .when-where-main-row {
         margin: 0;
     }
+
+    .when-where-main-row--large {
+        display: none;
+     }
 
     .when-where-day {
         font-size: 36px;
@@ -2827,7 +2854,7 @@ a {
     .result h1 {
         font-size: 18px;
         font-family: MahlauEFOP-Regular, sans-serif;
-        color: #745d5d;
+        color: #b4b6b7;
     }
 
     .arrow_up {
@@ -2841,6 +2868,14 @@ a {
         z-index: 10;
         background-size: 35%;
         pointer-events: none;
+    }
+
+    #div_guests_dietary_restrictions_1,
+    #div_guests_dietary_restrictions_2,
+    #div_guests_dietary_restrictions_3,
+    #div_guests_dietary_restrictions_4,
+    #div_guests_dietary_restrictions_5 {
+        position: relative;
     }
 }
 

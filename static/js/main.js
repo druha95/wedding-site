@@ -58,5 +58,10 @@ $(document).ready(function($) {
             $(document).scrollTop($(document).scrollTop()-50);
         },  4);
     });
+
+    //$("#smart-form-1, #smart-form-2").on("click", function(event) {
+    //    event.preventDefault();
+    //    return false;
+    //})
 });
 
