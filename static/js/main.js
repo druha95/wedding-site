@@ -8,14 +8,17 @@ $(document).ready(function($) {
 
     $("input:radio[name=yes_no]").click(function() {
         var value = $(this).val();
+        $('.result').html("");
         if(value == 'rsvp') {
             $("#rsvp-form-mini").css('display', 'none');
             $("#rsvp-form").css('display', 'block');
             $("#guest-form").css('display', 'block');
+            $('#gogo-2').css({'display' : 'inline-block'});
         } else if(value == 'rsvp_mini') {
             $("#rsvp-form-mini").css('display', 'block');
             $("#rsvp-form").css('display', 'none');
             $("#guest-form").css('display', 'none');
+            $('#gogo-1').css({'display' : 'inline-block'});
         }
     });
 });

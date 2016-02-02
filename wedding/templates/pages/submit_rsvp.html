@@ -44,7 +44,7 @@
             <h2>When do you arrive in Manila?</h2>
 
             <div id="div_manila_flight_into" class="form-group">
-                <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Arrival flight number (into Manila) " >
+                <input id="id_manila_flight_into" class="form-control" maxlength="50" name="manila_flight_into" type="text" placeholder="Arrival flight number (into Manila from overseas) " >
                 {{ form.manila_flight_into.errors }}
             </div>
 
@@ -62,7 +62,7 @@
             </div>
 
             <div id="div_manila_flight_out" class="form-group">
-                <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila) " >
+                <input id="id_manila_flight_out" class="form-control" maxlength="50" name="manila_flight_out" type="text" placeholder="Departure flight number (out of Manila back home) " >
                 {{ form.manila_flight_out.errors }}
             </div>
 
@@ -100,7 +100,7 @@
             <h2>When do you arrive in Boracay?</h2>
 
             <div id="div_boracay_flight_into" class="form-group">
-                <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Arrival flight number (into Caticlan) " >
+                <input id="id_boracay_flight_into" class="form-control" maxlength="50" name="boracay_flight_into" type="text" placeholder="Arrival flight number (into Caticlan from Manila) " >
                 {{ form.boracay_flight_into.errors }}
             </div>
 
@@ -119,7 +119,7 @@
 
 
             <div id="div_boracay_flight_out" class="form-group">
-                <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Caticlan) " >
+                <input id="id_boracay_flight_out" class="form-control" maxlength="50" name="boracay_flight_out" type="text" placeholder="Departure flight number (out of Caticlan to Manila) " >
                 {{ form.boracay_flight_out.errors }}
             </div>
 
@@ -162,7 +162,7 @@
             <div id="div_dietary_restrictions" class="form-group">
                 {{ form.dietary_restrictions.errors }}
                 <select id="id_dietary_restrictions" name="dietary_restrictions">
-                    <option disabled value="" selected="selected">Your dietary restrictions</option>
+                    <option disabled value="" selected="selected">Your dietary restrictions (if any)</option>
                     <option value="gluten_free">Gluten free</option>
                     <option value="halal">Halal</option>
                     <option value="kosher">Kosher</option>
