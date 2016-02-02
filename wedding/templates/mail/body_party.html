@@ -2,13 +2,13 @@
 <br><br>
 <h3>Which events will you attend?</h3>
 {% for event in data.events %}
-	{% if event in 'sunset_cruise' %}Yes: Sunset cruise, 5 PM, Sunday Feb 14<br>{% endif %}
-	{% if event in 'dinner_1' %}Yes: Dinner, 7 PM, Sunday Feb 14<br>{% endif %}
-	{% if event in 'beach_wedding' %}Yes: Beach wedding, 4 PM, Monday Feb 15<br>{% endif %}
-	{% if event in 'lunch_water' %}Yes: Lunch and water activities, 1 PM, Tuesday Feb 16<br>{% endif %}
-	{% if event in 'dinner_2' %}Yes: Dinner, 7 PM, Tuesday Feb 16<br>{% endif %}
-	{% if event in 'church_wedding' %}Yes: Church wedding, 1 PM, Friday Feb 19<br>{% endif %}
-	{% if event in 'dimsum_brunch' %}Yes: Dimsum brunch, 12 noon, Saturday Feb 20<br>{% endif %}
+	{% if event in 'sunset_cruise' %}Sunset cruise | 3 PM, Sunday, Feb 14<br>{% endif %}
+	{% if event in 'dinner_1' %}Dinner | 7 PM, Sunday, Feb 14<br>{% endif %}
+	{% if event in 'beach_wedding' %}Beach wedding | 4 PM, Monday, Feb 15<br>{% endif %}
+	{% if event in 'lunch_water' %}Lunch and water activities, 1 PM, Tuesday, Feb 16<br>{% endif %}
+	{% if event in 'dinner_2' %}Dinner | 7 PM, Tuesday, Feb 16<br>{% endif %}
+	{% if event in 'church_wedding' %}Church wedding | 1 PM, Friday, Feb 19<br>{% endif %}
+	{% if event in 'dimsum_brunch' %}Dimsum brunch | 12 noon, Saturday, Feb 20<br>{% endif %}
 {% endfor %}
 <br>
 <h3>When do you arrive in Manila from overseas?</h3>
