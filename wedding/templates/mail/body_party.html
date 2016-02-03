@@ -34,6 +34,18 @@ Hotel name: {% if data.boracay_staying %}
 	{% if data.boracay_staying in 'villa_caemilla' %}Villa Caemilla{% endif %}
 	{% if data.boracay_staying in 'boracay_other' %}{{ data.boracay_staying_other }}{% endif %}
 			{% endif %}<br><br>
+<h3>Your dietary restrictions</h3>
+{% if data.dietary_restrictions %}
+{% if data.dietary_restrictions in 'gluten_free' %}Gluten free{% endif %}
+{% if data.dietary_restrictions in 'halal' %}Halal{% endif %}
+{% if data.dietary_restrictions in 'kosher' %}Kosher{% endif %}
+{% if data.dietary_restrictions in 'pescatarian' %}Pescatarian{% endif %}
+{% if data.dietary_restrictions in 'vegan' %}Vegan{% endif %}
+{% if data.dietary_restrictions in 'vegetarian' %}Vegetarian{% endif %}
+{% if data.dietary_restrictions in 'boracay_other' %}{{ data.dietary_restrictions_other }}{% endif %}
+{% else %}
+None
+{% endif %}
 <h3>Any special guests?</h3>
 Number of guests (excluding you): {% if data.number_of_guests %}{{ data.number_of_guests }}{% else %}0{% endif %}<br><br>
 	{% if data.guests_name_1 %}{{ data.guests_name_1 }}<br>{% endif %}
