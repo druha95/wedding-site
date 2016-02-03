@@ -1030,6 +1030,10 @@ a {
     #div_guests_dietary_restrictions_5 {
         position: relative;
     }
+
+    .additional_title {
+        margin-top: 10px !important;
+    }
 }
 @media (max-width: 1279px) and (min-width: 768px) {
     .body {
@@ -1949,6 +1953,10 @@ a {
     #div_guests_dietary_restrictions_4,
     #div_guests_dietary_restrictions_5 {
         position: relative;
+    }
+
+    .additional_title {
+        margin-top: 10px !important;
     }
 
 }
@@ -2897,6 +2905,10 @@ a {
     #div_guests_dietary_restrictions_4,
     #div_guests_dietary_restrictions_5 {
         position: relative;
+    }
+
+    .additional_title {
+        margin-top: 10px !important;
     }
 }
 
