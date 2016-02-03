@@ -2446,7 +2446,7 @@ a {
         text-transform: uppercase;
         color: #b4b6b7;
         font-size: 28px;
-        margin-top: 20px;
+        margin-top: 46px;
         margin-bottom: 15px;
     }
 
@@ -2854,6 +2854,7 @@ a {
     }
 
     #col-last {
+        padding-left: 25px;
         margin-top: 43px;
     }
 

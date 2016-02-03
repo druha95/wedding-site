@@ -51,6 +51,7 @@ Hotel name: {% if data.boracay_staying %}
 {% else %}
 None
 {% endif %}
+<br/>
 <h3>Any special guests?</h3>
 Number of guests (excluding you): {% if data.number_of_guests %}{{ data.number_of_guests }}{% else %}0{% endif %}<br><br>
 {% if data.guests_name_1 %}{{ data.guests_name_1 }}
@@ -68,5 +69,5 @@ Number of guests (excluding you): {% if data.number_of_guests %}{{ data.number_o
 {% if data.guests_name_5 %}{{ data.guests_name_5 }}
 {% if data.guests_dietary_restrictions_5 %}({{ data.guests_dietary_restrictions_5 }})<br>{% endif %}{% endif %}
 {% if data.guests_dietary_restrictions_5_other %}{{ data.guests_dietary_restrictions_5_other }}<br><br>{% endif %}
-
+<h3>Anything else you’d like to add?</h3>
 {% if data.additional_comment %}<br><br>{{ data.additional_comment }}{% endif %}
