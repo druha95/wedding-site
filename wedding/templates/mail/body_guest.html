@@ -53,20 +53,20 @@ None
 {% endif %}
 <h3>Any special guests?</h3>
 Number of guests (excluding you): {% if data.number_of_guests %}{{ data.number_of_guests }}{% else %}0{% endif %}<br><br>
-	{% if data.guests_name_1 %}{{ data.guests_name_1 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_1 %}{{ data.guests_dietary_restrictions_1 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_1_other %}{{ data.guests_dietary_restrictions_1_other }}<br><br>{% endif %}
-	{% if data.guests_name_2 %}{{ data.guests_name_2 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_2 %}{{ data.guests_dietary_restrictions_2 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_2_other %}{{ data.guests_dietary_restrictions_2_other }}<br><br>{% endif %}
-	{% if data.guests_name_3 %}{{ data.guests_name_3 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_3 %}{{ data.guests_dietary_restrictions_3 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_3_other %}{{ data.guests_dietary_restrictions_3_other }}<br><br>{% endif %}
-	{% if data.guests_name_4 %}{{ data.guests_name_4 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_4 %}{{ data.guests_dietary_restrictions_4 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_4_other %}{{ data.guests_dietary_restrictions_4_other }}<br><br>{% endif %}
-	{% if data.guests_name_5 %}{{ data.guests_name_5 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_5 %}{{ data.guests_dietary_restrictions_5 }}<br>{% endif %}
-	{% if data.guests_dietary_restrictions_5_other %}{{ data.guests_dietary_restrictions_5_other }}<br><br>{% endif %}
+{% if data.guests_name_1 %}{{ data.guests_name_1 }}
+{% if data.guests_dietary_restrictions_1 %}({{ data.guests_dietary_restrictions_1 }})<br>{% endif %}{% endif %}
+{% if data.guests_dietary_restrictions_1_other %}{{ data.guests_dietary_restrictions_1_other }}<br><br>{% endif %}
+{% if data.guests_name_2 %}{{ data.guests_name_2 }}
+{% if data.guests_dietary_restrictions_2 %}({{ data.guests_dietary_restrictions_2 }})<br>{% endif %}{% endif %}
+{% if data.guests_dietary_restrictions_2_other %}{{ data.guests_dietary_restrictions_2_other }}<br><br>{% endif %}
+{% if data.guests_name_3 %}{{ data.guests_name_3 }}
+{% if data.guests_dietary_restrictions_3 %}({{ data.guests_dietary_restrictions_3 }})<br>{% endif %}{% endif %}
+{% if data.guests_dietary_restrictions_3_other %}{{ data.guests_dietary_restrictions_3_other }}<br><br>{% endif %}
+{% if data.guests_name_4 %}{{ data.guests_name_4 }}
+{% if data.guests_dietary_restrictions_4 %}({{ data.guests_dietary_restrictions_4 }})<br>{% endif %}{% endif %}
+{% if data.guests_dietary_restrictions_4_other %}{{ data.guests_dietary_restrictions_4_other }}<br><br>{% endif %}
+{% if data.guests_name_5 %}{{ data.guests_name_5 }}
+{% if data.guests_dietary_restrictions_5 %}({{ data.guests_dietary_restrictions_5 }})<br>{% endif %}{% endif %}
+{% if data.guests_dietary_restrictions_5_other %}{{ data.guests_dietary_restrictions_5_other }}<br><br>{% endif %}
 
 {% if data.additional_comment %}<br><br>{{ data.additional_comment }}{% endif %}
