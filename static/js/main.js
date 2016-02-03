@@ -9,6 +9,7 @@ $(document).ready(function($) {
     $("input:radio[name=yes_no]").click(function() {
         var value = $(this).val();
         $('.result').html("");
+        $(".click_checkbox").css("display", "none");
         if(value == 'rsvp') {
             $("#rsvp-form-mini").css('display', 'none');
             $("#rsvp-form").css('display', 'block');

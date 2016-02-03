@@ -1004,6 +1004,13 @@ a {
         color: #b4b6b7;
     }
 
+    .click_checkbox {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        color: #b4b6b7;
+        margin-top: 20px;
+    }
+
     .arrow_up {
         height: 45px;
         width: 45px;
@@ -1914,6 +1921,13 @@ a {
         font-size: 20px;
         font-family: MahlauEFOP-Regular, sans-serif;
         color: #b4b6b7;
+    }
+
+    .click_checkbox {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        color: #b4b6b7;
+        margin-top: 20px;
     }
 
     .arrow_up {
@@ -2855,6 +2869,13 @@ a {
         font-size: 18px;
         font-family: MahlauEFOP-Regular, sans-serif;
         color: #b4b6b7;
+    }
+
+    .click_checkbox {
+        font-size: 20px;
+        font-family: MahlauEFOP-Regular, sans-serif;
+        color: #b4b6b7;
+        margin-top: 20px;
     }
 
     .arrow_up {
