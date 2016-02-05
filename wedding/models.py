@@ -8,13 +8,15 @@ from django_countries import countries
 class Rsvp(models.Model):
 
     EVENTS_CHOICES = (
-        ("sunset_cruise", _("Sunset cruise, 3 PM, Sunday, Feb 14")),
-        ("dinner_1", _("Dinner | 7 PM, Sunday, Feb 14")),
-        ("beach_wedding", _("Beach wedding, 4 PM, Monday, Feb 15")),
-        ("lunch_water", _("Lunch and water activities, 1 PM, Tuesday, Feb 16")),
-        ("dinner_2", _("Dinner | 7 PM, Tuesday, Feb 16")),
-        ("church_wedding", _("Church wedding, 1 PM, Friday, Feb 19")),
-        ("dimsum_brunch", _("Dimsum brunch, 12 noon, Saturday, Feb 20")),
+        ("sunset_cruise", _("Sunset cruise | 3 PM, Sun, Feb 14")),
+        ("dinner_1", _("Dinner | 7 PM, Sun, Feb 14")),
+        ("beach_wedding", _("Beach wedding | 4 PM, Mon, Feb 15")),
+        ("lunch_water", _("Lunch and water activities, 1 PM, Tue, Feb 16")),
+        ("dinner_2", _("Dinner | 7 PM, Tue, Feb 16")),
+        ("church_wedding", _("Church wedding | 1 PM, Fri, Feb 19")),
+        ("dimsum_brunch", _("Dimsum brunch | 12 noon, Sat, Feb 20<")),
+        ("dads_birthday", _("Dad's birthdays | 7 PM, Thu, Feb 18")),
+        ("dimsum_brunch", _("Reception | 7 PM, Fri, Feb 19")),
     )
 
     MANILA_CHOICES = (
