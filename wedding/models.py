@@ -13,10 +13,10 @@ class Rsvp(models.Model):
         ("beach_wedding", _("Beach wedding | 4 PM, Mon, Feb 15")),
         ("lunch_water", _("Lunch and water activities, 1 PM, Tue, Feb 16")),
         ("dinner_2", _("Dinner | 7 PM, Tue, Feb 16")),
+        ("dads_birthday", _("Dads' birthdays | 7 PM, Thu, Feb 18")),
         ("church_wedding", _("Church wedding | 1 PM, Fri, Feb 19")),
-        ("dimsum_brunch", _("Dimsum brunch | 12 noon, Sat, Feb 20<")),
-        ("dads_birthday", _("Dad's birthdays | 7 PM, Thu, Feb 18")),
-        ("dimsum_brunch", _("Reception | 7 PM, Fri, Feb 19")),
+        ("coctails_dinner", _("Cocktails and dinner | 6 PM, Fri, Feb 19")),
+        ("dimsum_brunch", _("Dimsum | 12 noon, Sat, Feb 20")),
     )
 
     MANILA_CHOICES = (
