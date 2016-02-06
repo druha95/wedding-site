@@ -52,7 +52,7 @@ class Rsvp(models.Model):
     events = MultiSelectField(
         _("Events attended"), choices=EVENTS_CHOICES, null=True, blank=True)
     manila_flight_into = models.CharField(
-        _("Manila arrival flight number (into Manila)"), max_length=20,
+        _("Manila arrival flight number (into Manila)"), max_length=50,
         null=True, blank=True)
     manila_date_into = models.DateTimeField(
         _("Manila arrival date and time"), auto_now=False, null=True, blank=True)
@@ -67,7 +67,7 @@ class Rsvp(models.Model):
     manila_staying_other = models.TextField(
         _("Other..."), max_length=200, null=True, blank=True)
     boracay_flight_into = models.CharField(
-        _("Boracay arrival flight number (into Boracay)"), max_length=20,
+        _("Boracay arrival flight number (into Boracay)"), max_length=50,
         null=True, blank=True)
     boracay_date_into = models.DateTimeField(
         _("Boracay arrival date and time"), auto_now=False, null=True, blank=True)
